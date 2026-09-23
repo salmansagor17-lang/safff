@@ -42,11 +42,19 @@ Supabase يحتفظ بالمحتوى الدائم فقط:
 لا تحتاج `npm install` ولا Node.js لتشغيل نسخة الـBeta الحالية.
 
 ## النشر
-المشروع Static Web App ومهيأ للنشر على Vercel. الخطة المعتمدة لاحقًا:
+المشروع Static Web App منشور على Vercel ومتصل بمستودع GitHub:
+
+- الموقع: https://family-challenge-lemon.vercel.app
+- المستودع: https://github.com/salmansagor17-lang/safff
+- مشروع Vercel: `family-challenge` ضمن `salman-4992`.
+- رفع التحديثات إلى فرع `main` يشغّل النشر التلقائي للإنتاج.
 
 `VS Code ↔ GitHub → Vercel → رابط عام`
 
 ويبقى Supabase هو مصدر بنك الأسئلة والمحتوى.
+
+يُحمّل بنك الأسئلة على دفعات بترتيب ثابت لتجاوز حد الاستجابة وجلب جميع الأسئلة، بما فيها أسئلة الصور.
+لتشغيل اختبارات تحميل البنك باستخدام Node.js: `node --test scripts/test-content-store.cjs`.
 
 ## التصميم
 الواجهة مبنية بـHTML/CSS/JavaScript بدون خلفيات bitmap منخفضة الدقة، وتستخدم أحجامًا responsive وCSS effects لتبقى حادة على الجوال واللابتوب والتلفزيون ودقة 4K.
