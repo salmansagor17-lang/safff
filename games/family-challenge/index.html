@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <title>تحدي العائلة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <a class="platform-link" href="../../index.html">الرئيسية ←</a>
+
+    <div class="brand">
+      <span class="brand-kicker">FAMILY CHALLENGE</span>
+      <h1>تحدي العائلة</h1>
+      <div class="brand-meta">
+        <span id="contentStatus" class="content-status checking">جاري تحميل الأسئلة…</span>
+        <span class="privacy-pill">الأسماء مؤقتة فقط</span>
+      </div>
+
+      <div id="gameInfo" class="game-info hidden">
+        <span>الدور <strong id="currentTurn">-</strong></span>
+        <span><strong id="roundInfo">الجولة 1 / 2</strong></span>
+        <span>التقدم <strong id="questionProgress">0 / 0</strong></span>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button type="button" data-feedback-game="family-challenge">💬 رأيك</button>
+      <button id="fullscreenButton" type="button" title="ملء الشاشة">⛶</button>
+      <button id="resetButton" type="button" title="إعادة اللعبة">↻</button>
+    </div>
+  </header>
+
+  <section id="scoreboard" class="scoreboard hidden"></section>
+
+  <main>
+    <section id="setupScreen" class="setup-screen">
+      <div class="setup-card">
+        <div class="setup-intro">
+          <span class="setup-badge">نسخة الفريقين</span>
+          <h2>جهّز التحدي</h2>
+          <p>سمِّ الفريقين، اختر التصنيفات، واضبط القواعد. في كل جلسة تسحب اللعبة أسئلة جديدة عشوائيًا من البنك.</p>
+        </div>
+
+        <div class="setup-section">
+          <div class="section-title"><span>01</span><div><h3>الفرق</h3><p>فريقان فقط في النسخة الحالية.</p></div></div>
+          <div class="team-inputs">
+            <div class="team-entry team-one">
+              <select id="team1Avatar" aria-label="رمز الفريق الأول">
+                <option>🦅</option><option>🐯</option><option>🦁</option><option>🐺</option><option>⚡</option><option>🔥</option><option>👑</option><option>🐉</option>
+              </select>
+              <input id="team1Input" maxlength="30" autocomplete="off" placeholder="اسم الفريق الأول">
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="team-entry team-two">
+              <select id="team2Avatar" aria-label="رمز الفريق الثاني">
+                <option>🐯</option><option>🦅</option><option>🦁</option><option>🐺</option><option>⚡</option><option>🔥</option><option>👑</option><option>🐉</option>
+              </select>
+              <input id="team2Input" maxlength="30" autocomplete="off" placeholder="اسم الفريق الثاني">
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-split">
+          <div class="setup-section compact-section">
+            <div class="section-title"><span>02</span><div><h3>مدة السؤال</h3><p>اختر الوقت المناسب للعائلة.</p></div></div>
+            <div class="timer-options">
+              <button class="timer-option" data-time="15" type="button">15 <small>ث</small></button>
+              <button class="timer-option active" data-time="30" type="button">30 <small>ث</small></button>
+              <button class="timer-option" data-time="45" type="button">45 <small>ث</small></button>
+              <button class="timer-option" data-time="60" type="button">60 <small>ث</small></button>
+            </div>
+          </div>
+
+          <div class="setup-section compact-section">
+            <div class="section-title"><span>03</span><div><h3>القواعد</h3><p>تقدر تعدلها قبل البداية.</p></div></div>
+            <div class="rules">
+              <label class="rule-card"><input id="deductWrong" type="checkbox" checked><div><strong>خصم النقاط</strong><span>عند عدم الإجابة</span></div></label>
+              <label class="rule-card"><input id="allowSteal" type="checkbox" checked><div><strong>سرقة السؤال</strong><span>للفريق الآخر</span></div></label>
+              <label class="rule-card"><input id="soundEnabled" type="checkbox" checked><div><strong>الأصوات</strong><span>مؤثرات اللعبة</span></div></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-section">
+          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر تصنيفين على الأقل. كل مستوى يسحب سؤالًا عشوائيًا من بنك التصنيف؛ تحدي الصور يحتوي 500 سؤال صوري.</p></div></div>
+
+          <div class="difficulty-legend" aria-label="مستويات الصعوبة">
+            <span class="difficulty d100"><strong>100</strong><em>سهل جدًا</em></span>
+            <span class="difficulty d200"><strong>200</strong><em>سهل</em></span>
+            <span class="difficulty d300"><strong>300</strong><em>متوسط</em></span>
+            <span class="difficulty d400"><strong>400</strong><em>صعب</em></span>
+            <span class="difficulty d500"><strong>500</strong><em>صعب جدًا</em></span>
+          </div>
+
+          <div id="categorySelector" class="category-selector"></div>
+        </div>
+
+        <button id="startButton" class="primary start-button" type="button" disabled>جاري تحميل الأسئلة…</button>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="game-screen hidden">
+      <div id="categories" class="categories"></div>
+      <div class="board-legend">
+        <span><b>100</b> سهل جدًا</span><span><b>200</b> سهل</span><span><b>300</b> متوسط</span><span><b>400</b> صعب</span><span><b>500</b> صعب جدًا</span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="questionModal" class="modal hidden">
+  <div class="question-window">
+    <div class="question-head">
+      <div class="question-meta">
+        <div id="questionCategory" class="muted"></div>
+        <div id="questionPoints" class="points"></div>
+      </div>
+      <div class="timer">⏱ <span id="timerValue">30</span></div>
+    </div>
+
+    <div id="specialQuestion" class="special hidden">⚡ سؤال مضاعف ×2</div>
+    <div id="playingTeam" class="playing-team"></div>
+
+    <div id="questionMedia" class="question-media hidden"></div>
+    <h2 id="questionText" class="question-text"></h2>
+    <div id="questionOptions" class="question-options"></div>
+
+    <button id="showAnswerButton" class="answer-btn" type="button">إظهار الإجابة</button>
+
+    <div id="answerArea" class="answer-area hidden">
+      <span class="muted">الإجابة الصحيحة</span>
+      <h3 id="answerText"></h3>
+      <div class="result-buttons">
+        <button id="currentTeamCorrect" class="correct-btn" type="button"></button>
+        <button id="otherTeamCorrect" class="steal-btn" type="button"></button>
+        <button id="nobodyCorrect" class="wrong-btn" type="button">✕ لا أحد</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="roundModal" class="modal hidden">
+  <div class="round-window">
+    <div class="round-icon">⚡</div>
+    <span class="modal-kicker">ROUND 02</span>
+    <h2>ندخل على الأسئلة الصعبة</h2>
+    <p>الجولة الثانية تحتوي مستويات 400 و500 نقطة.</p>
+    <button id="nextRoundButton" class="primary" type="button">ابدأ الجولة الثانية</button>
+  </div>
+</div>
+
+<div id="winnerModal" class="modal hidden">
+  <div class="winner-window">
+    <div class="trophy">🏆</div>
+    <span class="modal-kicker">FINAL RESULT</span>
+    <h2>انتهى التحدي</h2>
+    <h1 id="winnerName"></h1>
+    <div id="finalScores" class="final-scores"></div>
+    <div class="winner-actions">
+      <button id="playAgainButton" class="primary" type="button">لعبة جديدة</button>
+      <button class="secondary-action" type="button" data-feedback-game="family-challenge">💬 أعطنا رأيك</button>
+    </div>
+    <p class="privacy-note">انتهت الجلسة وتم حذف أسماء الفرق والنقاط من ذاكرة اللعبة.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.0"></script>
+<script src="../../js/config.js"></script>
+<script src="../../shared/js/supabaseClient.js"></script>
+<script src="../../shared/js/contentStore.js"></script>
+<script src="../../shared/js/feedback.js"></script>
+<script src="js/defaultQuestions.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
