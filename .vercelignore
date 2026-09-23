@@ -1,0 +1,7 @@
+.local-backups
+docs
+scripts
+README.md
+CHANGELOG.md
+data/visual-expansion.json
+data/visual-expansion-rows.json

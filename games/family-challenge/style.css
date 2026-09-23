@@ -18,3 +18,16 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;ba
 .category-select-text{display:flex;flex-direction:column;gap:3px}.category-select-text strong{font-size:15px}.category-select-text small{color:#6f829f;font-size:11px;font-weight:500}
 .question-card{flex-direction:column;gap:2px}.question-card strong{font-size:inherit;line-height:1}.question-card span{font-size:11px;color:#bfdbfe;font-weight:700}.question-card.level-500{background:linear-gradient(135deg,#8a1c36,#dc2626);border-color:#ef4444}.question-card.level-400{background:linear-gradient(135deg,#92400e,#d97706);border-color:#f59e0b}.question-card.level-300{background:linear-gradient(135deg,#4c1d95,#7c3aed);border-color:#8b5cf6}
 @media(min-width:2200px){.category-select-text strong{font-size:23px}.category-select-text small{font-size:16px}.question-card span{font-size:17px}}
+
+/* Three cards per level; wrap categories to keep the expanded board readable. */
+.questions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:10px}
+.question-card{width:100%;margin:0;min-height:88px;font-family:inherit;font-size:clamp(20px,2vw,34px);padding:10px 3px}
+.question-card span{font-size:10px;line-height:1.5}
+.question-card:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.question-card.used{background:#0c1322;border-color:#1d2a40;color:#65758e}
+.question-card.used span{color:#65758e}
+.question-symbols{font-family:"Segoe UI Emoji","Apple Color Emoji",sans-serif;font-size:clamp(38px,6vw,76px);line-height:1.8;letter-spacing:.08em;overflow-wrap:anywhere;background:#101d35;border:1px solid #334967;border-radius:20px;padding:18px;margin:12px 0}
+.question-hint{color:#b8c8e3;font-size:18px;margin:12px 0 22px}
+.session-size{text-align:center;color:#b8c8e3;margin-top:24px;line-height:1.7}
+@media(min-width:721px) and (max-width:1100px){.categories{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(min-width:2200px){.question-card{font-size:42px;min-height:110px}.question-card span{font-size:15px}}

@@ -46,6 +46,7 @@ async function bootstrap() {
 
   }
 
+  gameQuestions = gameQuestions.filter(window.SessionQuestions.isPlayable);
   setRounds();
   buildCategorySelector();
   startButton.disabled = gameQuestions.length < 2;
@@ -54,7 +55,7 @@ async function bootstrap() {
 
 
 async function loadLocalQuestionBank() {
-  const response = await fetch("../../data/question-bank-v0.8.1.json", { cache: "no-store" });
+  const response = await fetch("../../data/question-bank-v0.9.0.json", { cache: "no-store" });
   if (!response.ok) throw new Error(`Local bank HTTP ${response.status}`);
 
   const rows = await response.json();
@@ -125,6 +126,7 @@ function buildCategorySelector() {
     input.type = "checkbox";
     input.value = category.id;
     input.checked = true;
+    input.addEventListener("change", updateSessionSize);
 
     const text = document.createElement("span");
     text.className = "category-select-text";
@@ -137,6 +139,12 @@ function buildCategorySelector() {
     label.append(input, text);
     selector.appendChild(label);
   });
+  updateSessionSize();
+}
+
+function updateSessionSize() {
+  const count = document.querySelectorAll("#categorySelector input:checked").length;
+  document.getElementById("sessionSize").textContent = `${count} تصنيفات · ${count * 15} سؤالًا · جولتان`;
 }
 
 document.querySelectorAll(".timer-option").forEach(button => {
@@ -199,25 +207,7 @@ function cleanTeamName(value, fallback) {
 }
 
 function buildSessionCategories(selectedIds) {
-  const requiredPoints = [100, 200, 300, 400, 500];
-
-  return gameQuestions
-    .filter(category => selectedIds.includes(category.id))
-    .map(category => {
-      const picked = requiredPoints
-        .map(points => {
-          const pool = category.questions.filter(question => Number(question.points) === points);
-          if (!pool.length) return null;
-          return pool[Math.floor(Math.random() * pool.length)];
-        })
-        .filter(Boolean);
-
-      return {
-        ...category,
-        questions: picked
-      };
-    })
-    .filter(category => category.questions.length === requiredPoints.length);
+  return window.SessionQuestions.build(gameQuestions, selectedIds);
 }
 
 function getSelectedCategories() {
@@ -292,7 +282,7 @@ function createGameBoard() {
   const selectedCategories = getSelectedCategories();
 
   categoriesContainer.style.gridTemplateColumns =
-    `repeat(${Math.max(1, selectedCategories.length)}, minmax(150px,1fr))`;
+    `repeat(${Math.max(1, Math.min(4, selectedCategories.length))}, minmax(150px,1fr))`;
 
   selectedCategories.forEach(categoryData => {
     const category = document.createElement("div");
@@ -308,13 +298,15 @@ function createGameBoard() {
 
     categoryData.questions
       .filter(question => question.round === currentRound)
-      .forEach(question => {
-        const card = document.createElement("div");
+      .forEach((question, index) => {
+        const card = document.createElement("button");
+        card.type = "button";
         card.className = `question-card level-${question.points}`;
         const pointValue = document.createElement("strong");
         pointValue.textContent = question.points;
         const difficulty = document.createElement("span");
-        difficulty.textContent = getDifficultyLabel(question.points);
+        difficulty.textContent = `${getDifficultyLabel(question.points)} · ${(index % 3) + 1} / 3`;
+        card.setAttribute("aria-label", `${categoryData.category}، ${question.points} نقطة، السؤال ${(index % 3) + 1} من 3`);
         card.append(pointValue, difficulty);
 
         if (answeredQuestionIds.includes(question.id)) card.classList.add("used");
@@ -349,6 +341,12 @@ function openQuestion(question, card, categoryName) {
   document.getElementById("questionCategory").textContent = categoryName;
   document.getElementById("questionPoints").textContent = `${actualPoints} نقطة`;
   document.getElementById("questionText").textContent = question.question;
+  const symbols = document.getElementById("questionSymbols");
+  symbols.textContent = question.metadata?.symbols || "";
+  symbols.classList.toggle("hidden", !question.metadata?.symbols);
+  const hint = document.getElementById("questionHint");
+  hint.textContent = question.metadata?.hint || "";
+  hint.classList.toggle("hidden", !question.metadata?.hint);
   document.getElementById("answerText").textContent = question.answer;
   document.getElementById("specialQuestion").classList.toggle("hidden", !isSpecial);
 

@@ -65,6 +65,10 @@
 
   function getPublicMediaUrl(path) {
     if (!path) return null;
+    if (/^site:media\/flags\/[a-z]{2}\.svg$/.test(path)) {
+      const script = document.querySelector('script[src$="shared/js/contentStore.js"]');
+      return new URL(path.slice(5), new URL("../../", script.src)).href;
+    }
     const { data } = getClient().storage.from(window.APP_CONFIG.mediaBucket).getPublicUrl(path);
     return data?.publicUrl || null;
   }

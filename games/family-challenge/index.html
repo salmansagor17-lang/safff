@@ -85,7 +85,7 @@
         </div>
 
         <div class="setup-section">
-          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر تصنيفين على الأقل. في كل تصنيف، سؤال لكل مستوى من 100 إلى 500 نقطة.</p></div></div>
+          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر تصنيفين على الأقل. لكل تصنيف ٣ أسئلة في كل مستوى من 100 إلى 500 نقطة، بإجمالي ١٥ سؤالًا.</p></div></div>
 
           <div class="difficulty-legend" aria-label="مستويات الصعوبة">
             <span class="difficulty d100"><strong>100</strong><em>سهل جدًا</em></span>
@@ -98,6 +98,7 @@
           <div id="categorySelector" class="category-selector"></div>
         </div>
 
+        <p id="sessionSize" class="session-size" aria-live="polite"></p>
         <button id="startButton" class="primary start-button" type="button" disabled>جاري تحميل الأسئلة…</button>
       </div>
     </section>
@@ -126,6 +127,8 @@
 
     <div id="questionMedia" class="question-media hidden"></div>
     <h2 id="questionText" class="question-text"></h2>
+    <div id="questionSymbols" class="question-symbols hidden" dir="ltr" aria-label="رموز اللغز"></div>
+    <p id="questionHint" class="question-hint hidden"></p>
     <div id="questionOptions" class="question-options"></div>
 
     <button id="showAnswerButton" class="answer-btn" type="button">إظهار الإجابة</button>
@@ -170,6 +173,7 @@
 <script src="../../js/config.js"></script>
 <script src="../../shared/js/supabaseClient.js"></script>
 <script src="../../shared/js/contentStore.js"></script>
+<script src="../../shared/js/sessionQuestions.js"></script>
 <script src="../../shared/js/feedback.js"></script>
 <script src="js/defaultQuestions.js"></script>
 <script src="js/timer.js"></script>
