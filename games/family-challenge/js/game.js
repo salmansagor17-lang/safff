@@ -27,7 +27,6 @@ const categoriesContainer = document.getElementById("categories");
 const questionModal = document.getElementById("questionModal");
 const scoreboard = document.getElementById("scoreboard");
 const startButton = document.getElementById("startButton");
-const contentStatus = document.getElementById("contentStatus");
 
 bootstrap();
 
@@ -35,23 +34,16 @@ async function bootstrap() {
   try {
     const payload = await window.PlatformContent.loadGame(GAME_ID);
     gameQuestions = payload.categories.filter(category => category.questions.length);
-    const totalQuestions = gameQuestions.reduce((sum, category) => sum + category.questions.length, 0);
-    contentStatus.textContent = `${totalQuestions.toLocaleString("ar-SA")} سؤال من Supabase`;
-    contentStatus.className = "content-status online";
   } catch (error) {
     console.error("Supabase content load failed:", error);
 
     try {
       gameQuestions = await loadLocalQuestionBank();
-      const totalQuestions = gameQuestions.reduce((sum, category) => sum + category.questions.length, 0);
-      contentStatus.textContent = `${totalQuestions.toLocaleString("ar-SA")} سؤال - وضع احتياطي محلي`;
     } catch (localError) {
       console.error("Local question bank load failed:", localError);
       gameQuestions = normalizeFallbackQuestions(defaultQuestions);
-      contentStatus.textContent = "وضع احتياطي مصغر";
     }
 
-    contentStatus.className = "content-status offline";
   }
 
   setRounds();

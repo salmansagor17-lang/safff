@@ -9,9 +9,8 @@
     modal.innerHTML = `
       <div class="feedback-dialog" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
         <button class="feedback-close" type="button" aria-label="إغلاق">×</button>
-        <span class="feedback-badge">نسخة تجريبية</span>
         <h2 id="feedbackTitle">كيف كانت التجربة؟</h2>
-        <p>التقييم مجهول. لا نحفظ اسمك أو أسماء الفرق أو نتائج اللعب.</p>
+        <p>شاركنا تقييمك واقتراحاتك لتكون اللعبة أجمل.</p>
 
         <div class="feedback-stars" aria-label="التقييم">
           ${[1,2,3,4,5].map(v => `<button type="button" data-rating="${v}" aria-label="${v} من 5">★</button>`).join("")}
