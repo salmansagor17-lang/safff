@@ -3,6 +3,8 @@
 .theme-toggle:focus-visible{outline:3px solid #38bdf8;outline-offset:3px}
 .brand-logo{width:110px;height:100px;object-fit:contain;display:block;margin:0 auto 6px}
 .hero-logo{width:95%;max-height:350px;object-fit:contain}
+.team-inputs,.team-entry,.team-entry input,.team-entry select{min-width:0;max-width:100%}
+.team-entry input{width:100%}
 .category-cover{display:block;width:100%;height:110px;object-fit:cover}
 .category-select-card{position:relative;display:grid;grid-template-columns:24px 1fr;padding:0;gap:0;overflow:hidden;align-content:start}
 .category-select-card .category-cover{grid-column:1/-1;grid-row:1;height:135px}
