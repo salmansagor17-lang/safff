@@ -1,3 +1,7 @@
+## 0.10.0 — 2026-09-24
+
+باب الحارة: 100 سؤال؛ صور 12 تصنيفًا؛ شعار بيت سيدو؛ وضع نهاري وليلي؛ لوحة واحدة 100–500، سؤالان لكل مستوى وخمسة تصنيفات كحد أقصى.
+
 ## v0.8.1 Beta — Image Challenge Update
 - Added `تحدي الصور 🖼️` as the seventh Family Challenge category.
 - Added 500 image questions stored in Supabase Storage.

@@ -31,8 +31,8 @@ async function setup(mode) {
     questions: bank.filter(q => q.category_id === id).map(q => ({ ...q, media: { type: q.media_type, path: q.media_path, alt: q.media_alt } })) }));
   const context = { console, URL, setTimeout, clearTimeout, alert: message => { throw new Error(message); }, confirm: () => true,
     document: { getElementById: get, createElement: tag => new Element(tag),
-      querySelectorAll: selector => selector === '#categorySelector input:checked'
-        ? walk(get('categorySelector')).filter(el => el.tag === 'input' && el.checked) : [] },
+      querySelectorAll: selector => selector.startsWith('#categorySelector input')
+        ? walk(get('categorySelector')).filter(el => el.tag === 'input' && (!selector.includes(':checked') || el.checked)) : [] },
     fetch: async () => { if (mode === 'mini') throw new Error('Simulated local failure'); return { ok: true, json: async () => bank }; },
     startTimer: () => {}, stopTimer: () => {}, playCorrectSound: () => {}, playWrongSound: () => {}, playTimeoutSound: () => {},
     window: { addEventListener: () => {}, PlatformContent: {
@@ -45,18 +45,17 @@ async function setup(mode) {
   return { context, get, walk };
 }
 
-for (const mode of ['online','local','mini']) test(`complete 30-question flags/symbols game using ${mode} content`, async () => {
+for (const mode of ['online','local','mini']) test(`complete 20-question flags/symbols game using ${mode} content`, async () => {
   const { context, get, walk } = await setup(mode);
   assert.equal(get('startButton').disabled, false);
   for (const input of walk(get('categorySelector')).filter(el => el.tag === 'input')) input.checked = ['fc-image-flags','fc-symbols'].includes(input.value);
   get('startButton').listeners.click();
-  assert.equal(vm.runInContext('sessionCategories.flatMap(c => c.questions).length', context), 30);
-  assert.equal(vm.runInContext('getCurrentRoundQuestions().length', context), 18);
+  assert.equal(vm.runInContext('sessionCategories.flatMap(c => c.questions).length', context), 20);
+  assert.equal(vm.runInContext('getCurrentRoundQuestions().length', context), 20);
   let symbolSeen = false, flagSeen = false;
-  for (const round of [1,2]) {
-    if (round === 2) get('nextRoundButton').listeners.click();
+  for (const round of [1]) {
     const questions = vm.runInContext('getCurrentRoundQuestions()', context);
-    assert.equal(questions.length, round === 1 ? 18 : 12);
+    assert.equal(questions.length, 20);
     for (const q of questions) {
       context.testQuestion = q; context.testCard = new Element('button');
       vm.runInContext('openQuestion(testQuestion, testCard, "Test")', context);
@@ -71,4 +70,23 @@ for (const mode of ['online','local','mini']) test(`complete 30-question flags/s
   get('playAgainButton').listeners.click();
   assert.equal(vm.runInContext('gameEnded', context), false);
   assert.equal(vm.runInContext('sessionCategories.length', context), 0);
+});
+
+test('five selected by default, sixth disabled; all 50 cards and levels visible', async () => {
+  const { context, get, walk } = await setup('online');
+  const inputs = walk(get('categorySelector')).filter(el => el.tag === 'input');
+  assert.equal(inputs.filter(el => el.checked).length, 5);
+  assert.ok(inputs.filter(el => !el.checked).every(el => el.disabled));
+  inputs[0].checked = false;
+  inputs[0].listeners.change();
+  assert.ok(inputs.every(el => !el.disabled));
+  inputs[0].checked = true;
+  get('startButton').listeners.click();
+  const cards = walk(get('categories')).filter(el => el.tag === 'button');
+  assert.equal(cards.length, 50);
+  for (const points of [100,200,300,400,500]) {
+    assert.equal(cards.filter(card => card.children[0].textContent === points).length, 10);
+  }
+  inputs[5].checked = true;
+  assert.throws(() => get('startButton').listeners.click(), /خمسة/);
 });

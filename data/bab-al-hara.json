@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "fc-bab-al-hara-001",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "ما اسم الحارة الرئيسية في الأجزاء الأصلية؟",
+    "answer": "حارة الضبع",
+    "options": [
+      "حارة الصالحية",
+      "حارة الضبع",
+      "حارة الماوي",
+      "حارة الشاغور"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3001,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 1,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-002",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من كان زعيم حارة الضبع في بداية المسلسل؟",
+    "answer": "أبو صالح",
+    "options": [
+      "أبو شهاب",
+      "أبو حاتم",
+      "أبو صالح",
+      "أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3002,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 2,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-003",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من كان عقيد حارة الضبع؟",
+    "answer": "أبو شهاب",
+    "options": [
+      "أبو شهاب",
+      "أبو بدر",
+      "أبو مرزوق",
+      "أبو جودت"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3003,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 3,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-004",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "ما كنية حكيم حارة الضبع؟",
+    "answer": "أبو عصام",
+    "options": [
+      "أبو خاطر",
+      "أبو عصام",
+      "أبو قاسم",
+      "أبو بشير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3004,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 4,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-005",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "ما اسم زوجة أبو عصام؟",
+    "answer": "سعاد",
+    "options": [
+      "فريال",
+      "سعاد",
+      "فوزية",
+      "شهيرة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3005,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 5,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-006",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من الابن الأكبر لأبو عصام؟",
+    "answer": "عصام",
+    "options": [
+      "معتز",
+      "عصام",
+      "بشير",
+      "خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3006,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 6,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-007",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من أخو عصام؟",
+    "answer": "معتز",
+    "options": [
+      "سعيد",
+      "معتز",
+      "إبراهيم",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3007,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 7,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-008",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من صاحب قهوة حارة الضبع؟",
+    "answer": "أبو حاتم",
+    "options": [
+      "أبو حاتم",
+      "أبو بشير",
+      "أبو قاسم",
+      "أبو خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3008,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 8,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-009",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من صاحب فرن الحارة؟",
+    "answer": "أبو بشير",
+    "options": [
+      "أبو مرزوق",
+      "أبو بشير",
+      "أبو بدر",
+      "أبو سمير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3009,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 9,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-010",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من كان صاحب الحمّام؟",
+    "answer": "أبو قاسم",
+    "options": [
+      "أبو قاسم",
+      "أبو شهاب",
+      "أبو صالح",
+      "أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3010,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 10,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-011",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من شيخ حارة الضبع؟",
+    "answer": "الشيخ عبدالعليم",
+    "options": [
+      "الشيخ عبدالعليم",
+      "الشيخ صياح",
+      "الشيخ موسى",
+      "الشيخ مأمون"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3011,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 11,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-012",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "ما مهنة أبو مرزوق؟",
+    "answer": "خضرجي",
+    "options": [
+      "حداد",
+      "خضرجي",
+      "خباز",
+      "حلاق"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3012,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 12,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-013",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من زوجة أبو بدر؟",
+    "answer": "فوزية",
+    "options": [
+      "فريال",
+      "أم زكي",
+      "فوزية",
+      "أم بشير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3013,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 13,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-014",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من زوج بوران بنت أبو عصام؟",
+    "answer": "سعيد",
+    "options": [
+      "سعيد",
+      "بشير",
+      "رياض",
+      "إبراهيم"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3014,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 14,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-015",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من زوج جميلة بنت أبو عصام؟",
+    "answer": "بشير",
+    "options": [
+      "خاطر",
+      "بشير",
+      "عبده",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3015,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 15,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-016",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من كان الزوج الأول لدلال؟",
+    "answer": "إبراهيم",
+    "options": [
+      "سمعو",
+      "معتز",
+      "إبراهيم",
+      "ظافر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3016,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 16,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-017",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "خيرية هي ابنة من؟",
+    "answer": "أبو خاطر",
+    "options": [
+      "أبو خاطر",
+      "أبو حاتم",
+      "أبو بشير",
+      "أبو قاسم"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3017,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 17,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-018",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "أبو النار كان ماذا؟",
+    "answer": "عقيد حارة أخرى",
+    "options": [
+      "عقيد حارة أخرى",
+      "حكيم الحارة",
+      "شيخ الحارة",
+      "حارس الحارة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3018,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 18,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-019",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "أبو جودت كان يعمل في؟",
+    "answer": "الشرطة والدرك",
+    "options": [
+      "المخبز",
+      "الشرطة والدرك",
+      "الحمام",
+      "القهوة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3019,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 19,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-020",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 100,
+    "type": "text",
+    "question": "من سرق ذهب أبو إبراهيم في الجزء الأول؟",
+    "answer": "الإدعشري",
+    "options": [
+      "صطيف",
+      "الإدعشري",
+      "أبو النار",
+      "أبو غالب"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3020,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 20,
+      "source_level": "1 - سهل جدًا",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-021",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من قتل حارس الحارة أبو سمعو؟",
+    "answer": "الإدعشري",
+    "options": [
+      "صطيف",
+      "الإدعشري",
+      "أبو دراع",
+      "أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3021,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 21,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-022",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "ما اسم زوجة الإدعشري؟",
+    "answer": "نظمية",
+    "options": [
+      "نظمية",
+      "فريال",
+      "شهيرة",
+      "سعاد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3022,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 22,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-023",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من أبناء الإدعشري؟",
+    "answer": "صبحي",
+    "options": [
+      "معتز",
+      "صبحي",
+      "بشير",
+      "خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3023,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 23,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-024",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "الذهب الذي سرقه الإدعشري كان ملك من؟",
+    "answer": "أبو إبراهيم",
+    "options": [
+      "أبو صالح",
+      "أبو حاتم",
+      "أبو إبراهيم",
+      "أبو خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3024,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 24,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-025",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من قتل الزعيم أبو صالح؟",
+    "answer": "صطيف",
+    "options": [
+      "أبو دراع",
+      "مأمون",
+      "صطيف",
+      "حمدي"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3025,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 25,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-026",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من تولى إدارة الحارة بعد مقتل أبو صالح؟",
+    "answer": "أبو شهاب",
+    "options": [
+      "أبو شهاب",
+      "أبو عصام",
+      "أبو حاتم",
+      "أبو قاسم"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3026,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 26,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-027",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "ماذا اتضح بشأن صطيف؟",
+    "answer": "جاسوس",
+    "options": [
+      "طبيب",
+      "جاسوس",
+      "تاجر",
+      "ثائر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3027,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 27,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-028",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "ماذا اعتقد أهل الحارة في البداية عن أبو عصام بعد اختفائه؟",
+    "answer": "أنه استشهد",
+    "options": [
+      "أنه هاجر",
+      "أنه استشهد",
+      "أصبح زعيم حارة أخرى",
+      "سافر للحج"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3028,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 28,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-029",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "أين اتضح لاحقًا أن أبو عصام كان محتجزًا؟",
+    "answer": "سجن أرواد",
+    "options": [
+      "سجن أرواد",
+      "سجن المزة",
+      "بيروت",
+      "حلب"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3029,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 29,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-030",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من نقل خبر أن أبو عصام ما زال حيًا؟",
+    "answer": "أبو دياب",
+    "options": [
+      "أبو دياب",
+      "أبو غالب",
+      "أبو النار",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3030,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 30,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-031",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من تزوج مأمون بيك؟",
+    "answer": "فريال",
+    "options": [
+      "أم عصام",
+      "فريال",
+      "أم بشير",
+      "فوزية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3031,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 31,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-032",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "ما حقيقة مأمون بيك؟",
+    "answer": "جاسوس للفرنسيين",
+    "options": [
+      "ثائر",
+      "جاسوس للفرنسيين",
+      "طبيب",
+      "تاجر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3032,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 32,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-033",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من قتل أبو شهاب؟",
+    "answer": "أبو دراع",
+    "options": [
+      "أبو دراع",
+      "صطيف",
+      "أبو جودت",
+      "مأمون"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3033,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 33,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-034",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من اعترف لاحقًا بقتل أبو شهاب؟",
+    "answer": "أبو دراع",
+    "options": [
+      "أبو دراع",
+      "أبو النار",
+      "حمدي",
+      "أبو الورد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3034,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 34,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-035",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من تولى دور العقيد لاحقًا بعد غياب أبو شهاب؟",
+    "answer": "معتز",
+    "options": [
+      "عصام",
+      "معتز",
+      "سعيد",
+      "بشير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3035,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 35,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-036",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "ما مهنة ناديا؟",
+    "answer": "ممرضة",
+    "options": [
+      "معلمة",
+      "ممرضة",
+      "محامية",
+      "خياطة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3036,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 36,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-037",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "لمن كانت ناديا تتجسس؟",
+    "answer": "الفرنسيين",
+    "options": [
+      "البريطانيين",
+      "الفرنسيين",
+      "الثوار",
+      "الألمان"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3037,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 37,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-038",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "سارة التي أحبها معتز كانت ابنة من؟",
+    "answer": "الحكيم موسى",
+    "options": [
+      "الحكيم موسى",
+      "أبو حاتم",
+      "أبو بشير",
+      "أبو جودت"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3038,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 38,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-039",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من تزوج دلال بعد إبراهيم؟",
+    "answer": "سمعو",
+    "options": [
+      "ظافر",
+      "سمعو",
+      "سعيد",
+      "عبده"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3039,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 39,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-040",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 200,
+    "type": "text",
+    "question": "من والد ظافر؟",
+    "answer": "أبو ظافر",
+    "options": [
+      "أبو حاتم",
+      "أبو ظافر",
+      "أبو قاسم",
+      "أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3040,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 40,
+      "source_level": "2 - سهل",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-041",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "في أي جزء توفي أبو إبراهيم؟",
+    "answer": "الثالث",
+    "options": [
+      "الأول",
+      "الثاني",
+      "الثالث",
+      "الخامس"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3041,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 41,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-042",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من استشهد في بداية الجزء الرابع وكان زوجًا لدلال؟",
+    "answer": "إبراهيم",
+    "options": [
+      "إبراهيم",
+      "بشير",
+      "خاطر",
+      "سعيد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3042,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 42,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-043",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من اعتنى بخاطر أثناء إصابته؟",
+    "answer": "أم جوزيف",
+    "options": [
+      "أم زكي",
+      "أم جوزيف",
+      "فريال",
+      "أم بشير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3043,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 43,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-044",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من تزوج الطبيب حمزة؟",
+    "answer": "حميدة",
+    "options": [
+      "شريفة",
+      "حميدة",
+      "جميلة",
+      "خيرية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3044,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 44,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-045",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من خطف أبو جودت لإجباره على المساعدة في الإفراج عن رجال الحارة؟",
+    "answer": "معتز",
+    "options": [
+      "عصام",
+      "معتز",
+      "أبو النار",
+      "بشير"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3045,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 45,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-046",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من قُتل على يد الفرنسيين بعد خروجه من الحارة في الجزء الرابع؟",
+    "answer": "أبو يوسف",
+    "options": [
+      "أبو يوسف",
+      "أبو قاسم",
+      "أبو بشير",
+      "أبو بدر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3046,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 46,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-047",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من كان وراء مسألة مصادرة أراضي الوقف؟",
+    "answer": "مأمون بيك",
+    "options": [
+      "أبو ظافر",
+      "مأمون بيك",
+      "أبو غالب",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3047,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 47,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-048",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من بدأ خطة للإيقاع بمأمون وكشفه؟",
+    "answer": "أبو دياب",
+    "options": [
+      "أبو دياب",
+      "أبو بدر",
+      "سعيد",
+      "خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3048,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 48,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-049",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من أخبر رجال الحارة بأن أبو عصام على قيد الحياة؟",
+    "answer": "أبو خاطر",
+    "options": [
+      "أبو خاطر",
+      "أبو قاسم",
+      "أبو مرزوق",
+      "أبو جودت"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3049,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 49,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-050",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من أنقذ معتز من الموت ثم اعترف بقتل أبو شهاب؟",
+    "answer": "أبو دراع",
+    "options": [
+      "أبو دراع",
+      "أبو النار",
+      "مأمون",
+      "أبو الورد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3050,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 50,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-051",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من استشهد بعد هجوم الفرنسيين عليه في الجزء الخامس؟",
+    "answer": "أبو حسن",
+    "options": [
+      "أبو حسن",
+      "أبو جودت",
+      "أبو قاسم",
+      "أبو ظافر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3051,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 51,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-052",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من كانت الزوجة الثالثة لعصام؟",
+    "answer": "فايزة",
+    "options": [
+      "خيرية",
+      "فايزة",
+      "شريفة",
+      "حميدة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3052,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 52,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-053",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من فاز بزعامة الحارة في بداية الجزء السادس؟",
+    "answer": "أبو ظافر",
+    "options": [
+      "أبو ظافر",
+      "أبو النار",
+      "أبو عصام",
+      "معتز"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3053,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 53,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-054",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "في أي جزء عاد أبو عصام فعليًا إلى حارة الضبع؟",
+    "answer": "السادس",
+    "options": [
+      "الرابع",
+      "الخامس",
+      "السادس",
+      "السابع"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3054,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 54,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-055",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "من كانت تتنصت على أبو عصام وتنقل أخباره للفرنسيين؟",
+    "answer": "ناديا",
+    "options": [
+      "سارة",
+      "ناديا",
+      "فريال",
+      "بهية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3055,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 55,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-056",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "ما المرض الذي أصاب ناديا لاحقًا؟",
+    "answer": "السل",
+    "options": [
+      "السل",
+      "الجدري",
+      "الملاريا",
+      "الطاعون"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3056,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 56,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-057",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "ماذا فعلت ناديا تجاه جنسيتها الفرنسية؟",
+    "answer": "تنازلت عنها",
+    "options": [
+      "تمسكت بها",
+      "تنازلت عنها",
+      "منحتها لمعتز",
+      "لم تكن فرنسية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3057,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 57,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-058",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "لماذا ترك معتز لص الحارة في الجزء السابع؟",
+    "answer": "لأنه فقير ويسرق من الجوع",
+    "options": [
+      "لأنه قريبه",
+      "لأنه فقير ويسرق من الجوع",
+      "لأنه شرطي",
+      "لأنه دفع المال"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3058,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 58,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-059",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "ماذا سُرق من جميلة في بداية الجزء السابع؟",
+    "answer": "مصوغاتها",
+    "options": [
+      "ذهب أبيها",
+      "مصوغاتها",
+      "طعامها",
+      "نقود الفرن"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3059,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 59,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-060",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 300,
+    "type": "text",
+    "question": "ماذا اكتشف أبو ظافر عن خروج أبو عصام من السجن؟",
+    "answer": "خرج بأوراق السجين الدوماني",
+    "options": [
+      "دفع رشوة",
+      "خرج بأوراق السجين الدوماني",
+      "أطلقه أبو جودت",
+      "هرب عبر البحر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3060,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 60,
+      "source_level": "3 - متوسط",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-061",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "ماذا كان وضع زهرة ابنة أبو خاطر في بداية المسلسل؟",
+    "answer": "فاقدة للسمع والنطق",
+    "options": [
+      "لا ترى",
+      "فاقدة للسمع والنطق",
+      "لا تمشي",
+      "فاقدة للذاكرة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3061,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 61,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-062",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "بمن تزوجت زهرة؟",
+    "answer": "رياض",
+    "options": [
+      "رياض",
+      "معتز",
+      "بشير",
+      "سعيد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3062,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 62,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-063",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "ماذا حدث لابن أبو حاتم الرضيع في الجزء الأول؟",
+    "answer": "توفي",
+    "options": [
+      "اختفى",
+      "توفي",
+      "خُطف",
+      "سافر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3063,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 63,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-064",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "ما العمل الذي كان سمعو يرغب في الالتحاق به؟",
+    "answer": "الدرك والشرطة",
+    "options": [
+      "الطب",
+      "الدرك والشرطة",
+      "التجارة",
+      "الخياطة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3064,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 64,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-065",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من تسلم حراسة الحارة بعد مقتل أبو سمعو؟",
+    "answer": "أبو ماجد",
+    "options": [
+      "أبو ماجد",
+      "أبو بدر",
+      "أبو مرزوق",
+      "أبو ديبو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3065,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 65,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-066",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من طلب من أبو إبراهيم التنازل عن حقه حتى يُفرج عن الإدعشري؟",
+    "answer": "أبو صالح",
+    "options": [
+      "أبو صالح",
+      "أبو شهاب",
+      "أبو عصام",
+      "الشيخ عبدالعليم"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3066,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 66,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-067",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من حاول الإدعشري إلصاق تهمة السرقة به؟",
+    "answer": "أبو سمعو",
+    "options": [
+      "أبو سمعو",
+      "أبو بدر",
+      "أبو غالب",
+      "صطيف"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3067,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 67,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-068",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "لماذا خرّب خاطر عمل رياض في البداية؟",
+    "answer": "بسبب غيرته منه",
+    "options": [
+      "طمعًا في ماله",
+      "بسبب غيرته منه",
+      "بأمر الفرنسيين",
+      "بسبب أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3068,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 68,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-069",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من عرض على رياض الزواج من زهرة؟",
+    "answer": "أبو خاطر",
+    "options": [
+      "أبو خاطر",
+      "أبو عصام",
+      "أبو صالح",
+      "أبو شهاب"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3069,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 69,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-070",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "رغم اعتراض خاطر، ماذا حدث في النهاية؟",
+    "answer": "تزوج رياض من زهرة",
+    "options": [
+      "غادر رياض الحارة",
+      "تزوج رياض من زهرة",
+      "تزوجها معتز",
+      "فسخت الخطبة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3070,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 70,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-071",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "ما اسم أخ أبو إبراهيم الذي طمع في البيت؟",
+    "answer": "أبو نصوح",
+    "options": [
+      "أبو نصوح",
+      "أبو ساطور",
+      "أبو دياب",
+      "أبو الورد"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3071,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 71,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-072",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من زوجة أبو شهاب؟",
+    "answer": "شريفة",
+    "options": [
+      "شريفة",
+      "حميدة",
+      "خيرية",
+      "جميلة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3072,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 72,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-073",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "شريفة ابنة من؟",
+    "answer": "أبو حاتم",
+    "options": [
+      "أبو حاتم",
+      "أبو خاطر",
+      "أبو بشير",
+      "أبو صالح"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3073,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 73,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-074",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "ما اسم ابنة أبو حاتم التي تزوجت الحكيم حمزة؟",
+    "answer": "حميدة",
+    "options": [
+      "مطيعة",
+      "حميدة",
+      "افتكار",
+      "شريفة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3074,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 74,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-075",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من تزوجت مطيعة بنت أبو حاتم لاحقًا؟",
+    "answer": "عبده",
+    "options": [
+      "عبده",
+      "خاطر",
+      "رياض",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3075,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 75,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-076",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "أبو حازم هو ماذا بالنسبة لأبو حاتم؟",
+    "answer": "أخوه",
+    "options": [
+      "ابنه",
+      "أخوه",
+      "عمه",
+      "صهره"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3076,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 76,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-077",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من تولى القهوة بعد أبو حاتم في الأجزاء اللاحقة؟",
+    "answer": "أبو حازم",
+    "options": [
+      "أبو حازم",
+      "أبو غالب",
+      "أبو قاسم",
+      "أبو النار"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3077,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 77,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-078",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "قاعود هو ابن من سرًا؟",
+    "answer": "أبو ظافر",
+    "options": [
+      "أبو عصام",
+      "أبو ظافر",
+      "أبو النار",
+      "أبو جودت"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3078,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 78,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-079",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من تزوجت بهية؟",
+    "answer": "ظافر",
+    "options": [
+      "ظافر",
+      "قاعود",
+      "معتز",
+      "سمعو"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3079,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 79,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-080",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 400,
+    "type": "text",
+    "question": "من هي زوجة سعيد؟",
+    "answer": "بوران",
+    "options": [
+      "بوران",
+      "دلال",
+      "جميلة",
+      "خيرية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3080,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 80,
+      "source_level": "4 - صعب",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-081",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من كان ينشر الأفكار المتطرفة ويؤثر على سمعو في الجزء الثامن؟",
+    "answer": "فكري",
+    "options": [
+      "فكري",
+      "زهدي",
+      "النمس",
+      "أبو غالب"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3081,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 81,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-082",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من طلّق زوجته فوزية بالثلاثة؟",
+    "answer": "أبو بدر",
+    "options": [
+      "أبو بدر",
+      "أبو ظافر",
+      "أبو قاسم",
+      "أبو مرزوق"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3082,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 82,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-083",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من طُلب منه الزواج من فوزية كمحلل؟",
+    "answer": "أبو عصام",
+    "options": [
+      "أبو عصام",
+      "معتز",
+      "أبو النار",
+      "أبو حاتم"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3083,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 83,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-084",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "لماذا تركت خيرية منزل معتز في الجزء الثامن؟",
+    "answer": "تعلقه بسارة",
+    "options": [
+      "بسبب المال",
+      "تعلقه بسارة",
+      "بسبب السفر",
+      "بسبب فريال"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3084,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 84,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-085",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من ذهبت لخطبة فريال لأبو ظافر؟",
+    "answer": "أم زكي",
+    "options": [
+      "أم زكي",
+      "أم عصام",
+      "أم بشير",
+      "فوزية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3085,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 85,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-086",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "لماذا استأجر زهدي منزلًا في الجزء الثامن؟",
+    "answer": "للبحث عن آثار رومانية",
+    "options": [
+      "لفتح مدرسة",
+      "للبحث عن آثار رومانية",
+      "لفتح مخفر",
+      "لتخزين السلاح"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3086,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 86,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-087",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "ما الاسم الذي أُطلق على الرضيع الذي وُضع على باب أبو عصام في الجزء التاسع؟",
+    "answer": "شوكت",
+    "options": [
+      "عصام",
+      "شوكت",
+      "معتز",
+      "صالح"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3087,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 87,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-088",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من اتضح أنها أم الرضيع؟",
+    "answer": "رسمية",
+    "options": [
+      "رسمية",
+      "سارة",
+      "بهية",
+      "فايزة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3088,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 88,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-089",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "رسمية كانت زوجة من؟",
+    "answer": "أدهم",
+    "options": [
+      "أدهم",
+      "ظافر",
+      "سمعو",
+      "خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3089,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 89,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-090",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من قتل ظافر فعلًا؟",
+    "answer": "سمعو",
+    "options": [
+      "معتز",
+      "سمعو",
+      "عصام",
+      "أبو عصام"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3090,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 90,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-091",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من اتُهم بقتل ظافر بسبب استخدام خنجره؟",
+    "answer": "معتز",
+    "options": [
+      "عصام",
+      "معتز",
+      "بشير",
+      "خاطر"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3091,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 91,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-092",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من تولت الدفاع عن معتز بعد القبض عليه؟",
+    "answer": "جولي",
+    "options": [
+      "جولي",
+      "سارة",
+      "ناديا",
+      "خالدية"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3092,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 92,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-093",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "ماذا حدث لحارة الضبع في بداية الجزء العاشر؟",
+    "answer": "قصفت ودُمّرت",
+    "options": [
+      "غرقت",
+      "قصفت ودُمّرت",
+      "أحرقها أهلها",
+      "أُغلقت فقط"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3093,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 93,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-094",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "إلى أي حارة انتقل محور الأحداث بعد تدمير حارة الضبع؟",
+    "answer": "حارة الصالحية",
+    "options": [
+      "حارة الماوي",
+      "حارة الصالحية",
+      "حارة أبو النار",
+      "حارة اليهود"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3094,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 94,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-095",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من أصبح الشخصية القيادية البارزة في حارة الصالحية؟",
+    "answer": "أبو عزام",
+    "options": [
+      "أبو عزام",
+      "أبو عصام",
+      "أبو حاتم",
+      "أبو صالح"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3095,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 95,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-096",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من حاول محجوب قتله أكثر من مرة في الجزء الحادي عشر؟",
+    "answer": "شقيقته خيزران",
+    "options": [
+      "شقيقته خيزران",
+      "زوجته",
+      "أبو عزام",
+      "أبو جودت"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3096,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 96,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-097",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "في بداية الجزء الثاني عشر، من طعن يحيى بالخنجر؟",
+    "answer": "شكري",
+    "options": [
+      "شكري",
+      "أبو مصطفى",
+      "أبو سرور",
+      "أبو مشعل"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3097,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 97,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-098",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من توفي في الحلقة 13 من الجزء الثاني عشر؟",
+    "answer": "أبو الناتوف",
+    "options": [
+      "أبو الناتوف",
+      "أبو النار",
+      "أبو جودت",
+      "أبو مشعل"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3098,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 98,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-099",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "ما الحدث التاريخي الكبير الذي تنتهي عنده أحداث الجزء الثالث عشر؟",
+    "answer": "خروج الاحتلال الفرنسي من سوريا",
+    "options": [
+      "بداية الحرب العالمية الأولى",
+      "خروج الاحتلال الفرنسي من سوريا",
+      "دخول العثمانيين",
+      "احتلال دمشق لأول مرة"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3099,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 99,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  },
+  {
+    "id": "fc-bab-al-hara-100",
+    "game_id": "family-challenge",
+    "category_id": "fc-bab-al-hara",
+    "category": "باب الحارة",
+    "points": 500,
+    "type": "text",
+    "question": "من قتل أبو سرور في الحلقة الأخيرة من الجزء الثالث عشر؟",
+    "answer": "أبو عادل",
+    "options": [
+      "أبو النار",
+      "أبو عادل",
+      "أبو مشعل",
+      "أبو عزام"
+    ],
+    "media_type": "none",
+    "media_path": null,
+    "media_alt": "",
+    "sort_order": 3100,
+    "active": true,
+    "metadata": {
+      "source": "user_workbook",
+      "source_row": 100,
+      "source_level": "5 - خبير",
+      "bank_version": "0.10.0"
+    }
+  }
+]

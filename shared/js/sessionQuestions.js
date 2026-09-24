@@ -1,6 +1,7 @@
 (function () {
   const levels = [100, 200, 300, 400, 500];
-  const perLevel = 3;
+  const perLevel = 2;
+  const maxCategories = 5;
 
   function sample(pool, count, random) {
     const shuffled = [...pool];
@@ -21,6 +22,7 @@
   }
 
   function build(categories, selectedIds, random = Math.random) {
+    if (new Set(selectedIds).size > maxCategories) throw new RangeError('اختر خمسة تصنيفات كحد أقصى.');
     return categories.filter(c => selectedIds.includes(c.id) && isPlayable(c)).map(category => ({
       ...category,
       questions: poolsFor(category).flatMap(pool => {
@@ -37,10 +39,10 @@
           const ids = new Set(chosen.map(q => q.id));
           chosen.push(...sample(pool.filter(q => !ids.has(q.id)), perLevel - chosen.length, random));
         }
-        return chosen.map(q => ({ ...q, round: Number(q.points) <= 300 ? 1 : 2 }));
+        return chosen.map(q => ({ ...q, round: 1 }));
       })
     }));
   }
 
-  window.SessionQuestions = Object.freeze({ build, isPlayable, perLevel, levels });
+  window.SessionQuestions = Object.freeze({ build, isPlayable, perLevel, levels, maxCategories });
 })();

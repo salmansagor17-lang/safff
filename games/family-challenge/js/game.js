@@ -13,7 +13,7 @@ let gameConfig = {
 let teams = [];
 let currentTeamIndex = 0;
 let currentRound = 1;
-const totalRounds = 2;
+const totalRounds = 1;
 let currentQuestion = null;
 let currentQuestionCard = null;
 let answeredQuestionIds = [];
@@ -109,23 +109,38 @@ function normalizeFallbackQuestions(source) {
 function setRounds() {
   gameQuestions.forEach(category => {
     category.questions.forEach(question => {
-      question.round = Number(question.points) <= 300 ? 1 : 2;
+      question.round = 1;
     });
   });
+}
+
+function categoryImage(category) {
+  const image = document.createElement("img");
+  image.className = "category-cover";
+  image.src = `../../media/categories/${category.id}.svg`;
+  image.alt = "";
+  image.loading = "lazy";
+  image.addEventListener("error", () => {
+    if (!image.dataset.fallback) {
+      image.dataset.fallback = "true";
+      image.src = "../../media/categories/fc-general.svg";
+    }
+  });
+  return image;
 }
 
 function buildCategorySelector() {
   const selector = document.getElementById("categorySelector");
   selector.innerHTML = "";
 
-  gameQuestions.forEach(category => {
+  gameQuestions.forEach((category, index) => {
     const label = document.createElement("label");
     label.className = "category-select-card";
 
     const input = document.createElement("input");
     input.type = "checkbox";
     input.value = category.id;
-    input.checked = true;
+    input.checked = index < 5;
     input.addEventListener("change", updateSessionSize);
 
     const text = document.createElement("span");
@@ -136,7 +151,7 @@ function buildCategorySelector() {
     count.textContent = `${category.questions.length.toLocaleString("ar-SA")} سؤال`;
     text.append(name, count);
 
-    label.append(input, text);
+    label.append(input, categoryImage(category), text);
     selector.appendChild(label);
   });
   updateSessionSize();
@@ -144,7 +159,11 @@ function buildCategorySelector() {
 
 function updateSessionSize() {
   const count = document.querySelectorAll("#categorySelector input:checked").length;
-  document.getElementById("sessionSize").textContent = `${count} تصنيفات · ${count * 15} سؤالًا · جولتان`;
+  document.querySelectorAll("#categorySelector input").forEach(input => {
+    input.disabled = !input.checked && count >= 5;
+  });
+  startButton.disabled = count < 2 || count > 5;
+  document.getElementById("sessionSize").textContent = `${count} / 5 تصنيفات · ${count * 10} سؤالًا · جميع المستويات معًا`;
 }
 
 document.querySelectorAll(".timer-option").forEach(button => {
@@ -159,6 +178,11 @@ startButton.addEventListener("click", startNewGame);
 
 function startNewGame() {
   const selected = Array.from(document.querySelectorAll("#categorySelector input:checked"));
+
+  if (selected.length > 5) {
+    alert("اختر خمسة تصنيفات كحد أقصى.");
+    return;
+  }
 
   if (selected.length < 2) {
     alert("اختر تصنيفين على الأقل.");
@@ -195,7 +219,7 @@ function startNewGame() {
   currentTeamIndex = Math.floor(Math.random() * 2);
   gameEnded = false;
 
-  if (getCurrentRoundQuestions().length === 0) currentRound = 2;
+
 
   selectSpecialQuestions();
   openGameScreen();
@@ -282,7 +306,7 @@ function createGameBoard() {
   const selectedCategories = getSelectedCategories();
 
   categoriesContainer.style.gridTemplateColumns =
-    `repeat(${Math.max(1, Math.min(4, selectedCategories.length))}, minmax(150px,1fr))`;
+    `repeat(${Math.max(1, Math.min(5, selectedCategories.length))}, minmax(150px,1fr))`;
 
   selectedCategories.forEach(categoryData => {
     const category = document.createElement("div");
@@ -291,6 +315,7 @@ function createGameBoard() {
     const title = document.createElement("div");
     title.className = "category-title";
     title.textContent = categoryData.category;
+    category.appendChild(categoryImage(categoryData));
     category.appendChild(title);
 
     const list = document.createElement("div");
@@ -305,8 +330,8 @@ function createGameBoard() {
         const pointValue = document.createElement("strong");
         pointValue.textContent = question.points;
         const difficulty = document.createElement("span");
-        difficulty.textContent = `${getDifficultyLabel(question.points)} · ${(index % 3) + 1} / 3`;
-        card.setAttribute("aria-label", `${categoryData.category}، ${question.points} نقطة، السؤال ${(index % 3) + 1} من 3`);
+        difficulty.textContent = `${getDifficultyLabel(question.points)} · ${(index % 2) + 1} / 2`;
+        card.setAttribute("aria-label", `${categoryData.category}، ${question.points} نقطة، السؤال ${(index % 2) + 1} من 2`);
         card.append(pointValue, difficulty);
 
         if (answeredQuestionIds.includes(question.id)) card.classList.add("used");
@@ -520,37 +545,15 @@ function isRoundComplete() {
 }
 
 function handleRoundComplete() {
-  if (currentRound < totalRounds && getQuestionsForRound(currentRound + 1).length) {
-    document.getElementById("roundModal").classList.remove("hidden");
-  } else {
-    showWinner();
-  }
+  showWinner();
 }
-
-function getQuestionsForRound(round) {
-  const result = [];
-  getSelectedCategories().forEach(category => {
-    category.questions
-      .filter(question => question.round === round)
-      .forEach(question => result.push(question));
-  });
-  return result;
-}
-
-document.getElementById("nextRoundButton").addEventListener("click", () => {
-  document.getElementById("roundModal").classList.add("hidden");
-  currentRound += 1;
-  createGameBoard();
-  updateProgress();
-  updateCurrentTurn();
-});
 
 function updateCurrentTurn() {
   const team = teams[currentTeamIndex];
   if (!team) return;
 
   document.getElementById("currentTurn").textContent = `${team.avatar} ${team.name}`;
-  document.getElementById("roundInfo").textContent = `الجولة ${currentRound} / ${totalRounds}`;
+  document.getElementById("roundInfo").textContent = "كل المستويات · 100–500";
 }
 
 function updateProgress() {
@@ -620,7 +623,6 @@ function resetEphemeralSession() {
   document.getElementById("team1Input").value = "";
   document.getElementById("team2Input").value = "";
   document.getElementById("winnerModal").classList.add("hidden");
-  document.getElementById("roundModal").classList.add("hidden");
   questionModal.classList.add("hidden");
   scoreboard.classList.add("hidden");
   document.getElementById("gameInfo").classList.add("hidden");

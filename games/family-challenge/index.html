@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050816">
-  <title>تحدي العائلة</title>
+  <title>بيت سيدو | تحدي العائلة</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../../media/beit-sido.png">
+  <link rel="stylesheet" href="../../shared/theme.css">
+  <script src="../../shared/js/theme.js"></script>
 </head>
 <body>
+  <div class="theme-toolbar"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" aria-pressed="false">☀ الوضع النهاري</button></div>
 <div class="app">
   <header class="topbar">
     <a class="platform-link" href="../../index.html">الرئيسية ←</a>
 
     <div class="brand">
-      <span class="brand-kicker">FAMILY CHALLENGE</span>
+      <img class="brand-logo" src="../../media/beit-sido.png" alt="بيت سيدو">
       <h1>تحدي العائلة</h1>
 
 
       <div id="gameInfo" class="game-info hidden">
         <span>الدور <strong id="currentTurn">-</strong></span>
-        <span><strong id="roundInfo">الجولة 1 / 2</strong></span>
+        <span><strong id="roundInfo">كل المستويات · 100–500</strong></span>
         <span>التقدم <strong id="questionProgress">0 / 0</strong></span>
       </div>
     </div>
@@ -85,7 +89,7 @@
         </div>
 
         <div class="setup-section">
-          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر تصنيفين على الأقل. لكل تصنيف ٣ أسئلة في كل مستوى من 100 إلى 500 نقطة، بإجمالي ١٥ سؤالًا.</p></div></div>
+          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر من تصنيفين إلى خمسة. لكل تصنيف سؤالان في كل مستوى من 100 إلى 500 نقطة، بإجمالي ١٠ أسئلة. جميع المستويات متاحة من البداية، والفريق صاحب الدور يختار السؤال.</p></div></div>
 
           <div class="difficulty-legend" aria-label="مستويات الصعوبة">
             <span class="difficulty d100"><strong>100</strong><em>سهل جدًا</em></span>
@@ -142,16 +146,6 @@
         <button id="nobodyCorrect" class="wrong-btn" type="button">✕ لا أحد</button>
       </div>
     </div>
-  </div>
-</div>
-
-<div id="roundModal" class="modal hidden">
-  <div class="round-window">
-    <div class="round-icon">⚡</div>
-    <span class="modal-kicker">ROUND 02</span>
-    <h2>ندخل على الأسئلة الصعبة</h2>
-    <p>الجولة الثانية تحتوي مستويات 400 و500 نقطة.</p>
-    <button id="nextRoundButton" class="primary" type="button">ابدأ الجولة الثانية</button>
   </div>
 </div>
 
