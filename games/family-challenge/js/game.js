@@ -257,6 +257,7 @@ function selectSpecialQuestions() {
 }
 
 function openGameScreen() {
+  window.SetupFlow?.begin();
   setupScreen.classList.add("hidden");
   gameScreen.classList.remove("hidden");
   scoreboard.classList.remove("hidden");
@@ -306,7 +307,7 @@ function createGameBoard() {
   const selectedCategories = getSelectedCategories();
 
   categoriesContainer.style.gridTemplateColumns =
-    `repeat(${Math.max(1, Math.min(5, selectedCategories.length))}, minmax(150px,1fr))`;
+    `repeat(${Math.max(1, Math.min(5, selectedCategories.length))}, minmax(0,1fr))`;
 
   selectedCategories.forEach(categoryData => {
     const category = document.createElement("div");
@@ -607,6 +608,7 @@ document.getElementById("resetButton").addEventListener("click", () => {
 });
 
 function resetEphemeralSession() {
+  window.SetupFlow?.reset();
   stopTimer();
 
   teams = [];

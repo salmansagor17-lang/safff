@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="تحدي العائلة — لعبة جماعية عربية لفريقين بأسئلة متدرجة الصعوبة.">
   <meta name="theme-color" content="#050816">
-  <title>بيت سيدو | تحدي العائلة</title>
+  <title>بيت سيدو | اختاروا اللعبة</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="media/beit-sido.png">
   <link rel="stylesheet" href="shared/theme.css">
@@ -13,70 +13,17 @@
 </head>
 <body>
   <div class="theme-toolbar"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" aria-pressed="false">☀ الوضع النهاري</button></div>
-  <main class="landing-shell">
-    <section class="hero-card">
-      <div class="hero-copy">
-        <div class="eyebrow-row">
-          <span class="eyebrow">جمعتكم أحلى مع التحدي</span>
-        </div>
-
-        <h1>تحدي <span>العائلة</span></h1>
-        <p class="hero-lead">
-          مسابقة جماعية لفريقين بأسئلة نصية وصورية من 100 إلى 500 نقطة.
-          اختاروا تصنيفاتكم، اختبروا معلوماتكم، وتنافسوا على الفوز!
-        </p>
-
-        <div class="hero-stats" aria-label="إحصائيات اللعبة">
-          <div><strong id="questionBankCount">2200</strong><span>سؤال</span></div>
-          <div><strong id="categoryCount">12</strong><span>تصنيفًا</span></div>
-          <div><strong>5</strong><span>مستويات</span></div>
-          <div><strong>2</strong><span>فريقان</span></div>
-        </div>
-
-        <div class="hero-actions">
-          <a class="primary-cta" href="games/family-challenge/index.html">ابدأ التحدي <span>←</span></a>
-          <button class="secondary-cta" type="button" data-feedback-game="family-challenge">💬 أرسل ملاحظتك</button>
-        </div>
-
-
-      </div>
-
-      <div class="hero-visual">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="trophy-card">
-          <img class="hero-logo" src="media/beit-sido.png" alt="بيت سيدو">
-          <strong>100 → 500</strong>
-          <span>من السهل جدًا إلى الصعب جدًا</span>
-        </div>
-      </div>
+  <header class="lobby-header"><a class="lobby-brand" href="index.html"><img src="media/beit-sido.png" alt="بيت سيدو"><span>للجمعة الحلوة</span></a><span class="lobby-step">01 / اختاروا اللعبة</span></header>
+  <main class="lobby">
+    <section class="lobby-intro"><span class="eyebrow">حيّاكم في بيت سيدو</span><h1>جمعتكم…<br><span>تبدأ بلعبة.</span></h1><p>اختاروا التحدي، جهّزوا الفريقين، وخلّوا الباقي علينا.</p></section>
+    <section class="games-menu" aria-label="قائمة الألعاب">
+      <a class="game-tile" href="games/family-challenge/index.html#teams">
+        <div class="game-art" aria-hidden="true"><span class="art-label">تحدّي المعرفة</span><div class="mini-board"><b>100</b><b>200</b><b>300</b><b>400</b><b>500</b><b>؟</b></div><span class="art-star">✦</span></div>
+        <div class="game-tile-copy"><span class="available">جاهزة للّعب</span><h2>تحدي العائلة</h2><p>أسئلة، صور، وألغاز… فريقان وتحدٍّ واحد.</p><div class="game-facts"><span>فريقان</span><span><b id="categoryCount">12</b> تصنيفًا</span><span><b id="questionBankCount">2200</b> سؤال</span></div><span class="choose-game">اختاروا اللعبة <b>←</b></span></div>
+      </a>
+      <div class="future-games"><span aria-hidden="true">＋</span><h2>للجمعة أكثر من لعبة</h2><p>هنا مكان ألعابنا القادمة.<br>تحدي العائلة جاهز لكم الآن.</p></div>
     </section>
-
-    <section class="image-feature" aria-label="تحدي الصور">
-      <div class="image-feature-icon">🖼️</div>
-      <div>
-        <span class="image-feature-kicker">تعرّف على الصورة واكسب النقاط</span>
-        <h2>٤ تحديات بالصور… وتحدٍّ لفك الرموز!</h2>
-        <p>اختر صور الفواكه، الحيوانات، المعالم أو أعلام الدول. وجرب فك الرموز لمعرفة كلمات وعبارات مشهورة. سؤالان لكل مستوى في كل تصنيف.</p>
-      </div>
-      <div class="image-feature-stat"><strong>550</strong><span>سؤال صوري</span></div>
-    </section>
-
-    <section class="levels-section">
-      <div class="section-heading">
-        <span>مستويات الصعوبة</span>
-        <h2>كل رقم له معنى</h2>
-      </div>
-      <div class="levels-grid">
-        <article class="level-card level-100"><strong>100</strong><span>سهل جدًا</span><small>بداية سريعة للجميع</small></article>
-        <article class="level-card level-200"><strong>200</strong><span>سهل</span><small>معلومة معروفة</small></article>
-        <article class="level-card level-300"><strong>300</strong><span>متوسط</span><small>يحتاج تركيز</small></article>
-        <article class="level-card level-400"><strong>400</strong><span>صعب</span><small>لأصحاب المعرفة</small></article>
-        <article class="level-card level-500"><strong>500</strong><span>صعب جدًا</span><small>التحدي الحقيقي</small></article>
-      </div>
-    </section>
-
-
+    <footer class="lobby-footer"><span>بيت سيدو · وقت حلو مع بعض</span><button class="secondary-action" type="button" data-feedback-game="family-challenge">شاركنا رأيك</button></footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.0"></script>

@@ -1,4 +1,4 @@
-﻿# بيت سيدو — 0.10.0
+﻿# بيت سيدو — 0.11.0
 
 لعبة عربية لفريقين على شاشة مشتركة، بأسئلة نصية وصور وألغاز رموز.
 
@@ -23,7 +23,7 @@
 اختبارات المنطق باستخدام Node.js:
 
 ```powershell
-node --test scripts/test-content-store.cjs scripts/test-session-questions.cjs scripts/test-game-flow.cjs
+node --test scripts/test-content-store.cjs scripts/test-session-questions.cjs scripts/test-game-flow.cjs scripts/test-setup-flow.cjs
 ```
 
 ## البيانات

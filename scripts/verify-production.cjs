@@ -11,6 +11,9 @@ async function main() {
   assert.ok(home.includes('categoryCount') && game.includes('questionSymbols') && game.includes('sessionSize'));
   for (const html of [home, game]) assert.ok(html.includes('theme-toggle') && html.includes('beit-sido.png'));
   assert.ok(!game.includes('roundModal'));
+  assert.ok(home.includes('games-menu') && home.includes('#teams'));
+  for (const step of ['teams','settings','categories']) assert.ok(game.includes(`data-setup-panel="${step}"`));
+  assert.ok((await read('/games/family-challenge/js/setupFlow.js')).includes('popstate'));
   for (const html of [home, game]) {
     const text = html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, '');
     assert.doesNotMatch(text, /Supabase|نسخة تجريبية|بيانات اللعب مؤقتة/);

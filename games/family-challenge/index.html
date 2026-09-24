@@ -11,7 +11,7 @@
   <script src="../../shared/js/theme.js"></script>
 </head>
 <body>
-  <div class="theme-toolbar"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" aria-pressed="false">☀ الوضع النهاري</button></div>
+
 <div class="app">
   <header class="topbar">
     <a class="platform-link" href="../../index.html">الرئيسية ←</a>
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="top-actions">
+    <div class="top-actions"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري">☀</button>
       <button type="button" data-feedback-game="family-challenge">💬 رأيك</button>
       <button id="fullscreenButton" type="button" title="ملء الشاشة">⛶</button>
       <button id="resetButton" type="button" title="إعادة اللعبة">↻</button>
@@ -37,15 +37,18 @@
 
   <section id="scoreboard" class="scoreboard hidden"></section>
 
-  <main>
+  <nav id="setupSteps" class="steps" aria-label="خطوات تجهيز اللعبة">
+<a href="../../index.html">1 <span>اللعبة</span></a>
+<button type="button" data-step="teams">2 <span>الفرق</span></button>
+<button type="button" data-step="settings">3 <span>الإعدادات</span></button>
+<button type="button" data-step="categories">4 <span>التصنيفات</span></button>
+<span class="last-step">5 <span>اللعب</span></span>
+</nav>
+<main>
     <section id="setupScreen" class="setup-screen">
       <div class="setup-card">
-        <div class="setup-intro">
-          <span class="setup-badge">مواجهة الفريقين</span>
-          <h2>جهّز التحدي</h2>
-          <p>سمِّ الفريقين، اختر التصنيفات، واضبط القواعد. أسئلة عشوائية وتحديات متنوعة في كل لعبة.</p>
-        </div>
-
+        <section data-setup-panel="teams">
+        <div class="setup-intro"><span class="setup-badge">الخطوة 2 من 5</span><h2 tabindex="-1">مين يتحدى مين؟</h2><p>اختاروا أسماءكم ورموزكم… وخلّوا المنافسة تبدأ.</p></div>
         <div class="setup-section">
           <div class="section-title"><span>01</span><div><h3>الفرق</h3><p>اختر اسمًا ورمزًا لكل فريق.</p></div></div>
           <div class="team-inputs">
@@ -53,7 +56,7 @@
               <select id="team1Avatar" aria-label="رمز الفريق الأول">
                 <option>🦅</option><option>🐯</option><option>🦁</option><option>🐺</option><option>⚡</option><option>🔥</option><option>👑</option><option>🐉</option>
               </select>
-              <input id="team1Input" maxlength="30" autocomplete="off" placeholder="اسم الفريق الأول">
+              <input id="team1Input" maxlength="30" autocomplete="off" aria-label="اسم الفريق الأول" placeholder="اسم الفريق الأول">
             </div>
 
             <div class="versus">VS</div>
@@ -62,11 +65,15 @@
               <select id="team2Avatar" aria-label="رمز الفريق الثاني">
                 <option>🐯</option><option>🦅</option><option>🦁</option><option>🐺</option><option>⚡</option><option>🔥</option><option>👑</option><option>🐉</option>
               </select>
-              <input id="team2Input" maxlength="30" autocomplete="off" placeholder="اسم الفريق الثاني">
+              <input id="team2Input" maxlength="30" autocomplete="off" aria-label="اسم الفريق الثاني" placeholder="اسم الفريق الثاني">
             </div>
           </div>
         </div>
 
+        <div class="step-actions"><a class="secondary-action" href="../../index.html">رجوع للألعاب</a><button class="primary" type="button" data-step="settings">التالي: إعدادات اللعبة ←</button></div>
+        </section>
+        <section data-setup-panel="settings" hidden>
+        <div class="setup-intro"><span class="setup-badge">الخطوة 3 من 5</span><h2 tabindex="-1">على كيفكم</h2><p>اضبطوا الوقت وقواعد التحدي المناسبة لجمعتكم.</p></div>
         <div class="setup-split">
           <div class="setup-section compact-section">
             <div class="section-title"><span>02</span><div><h3>مدة السؤال</h3><p>اختر الوقت المناسب للعائلة.</p></div></div>
@@ -88,6 +95,10 @@
           </div>
         </div>
 
+        <div class="step-actions"><button class="secondary-action" type="button" data-step="teams">→ السابق</button><button class="primary" type="button" data-step="categories">التالي: التصنيفات ←</button></div>
+        </section>
+        <section data-setup-panel="categories" hidden>
+        <div class="setup-intro"><span class="setup-badge">الخطوة 4 من 5</span><h2 tabindex="-1">اختاروا ساحة التحدي</h2><p>من تصنيفين إلى خمسة. عشرة أسئلة في كل تصنيف.</p></div>
         <div class="setup-section">
           <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر من تصنيفين إلى خمسة. لكل تصنيف سؤالان في كل مستوى من 100 إلى 500 نقطة، بإجمالي ١٠ أسئلة. جميع المستويات متاحة من البداية، والفريق صاحب الدور يختار السؤال.</p></div></div>
 
@@ -103,12 +114,13 @@
         </div>
 
         <p id="sessionSize" class="session-size" aria-live="polite"></p>
-        <button id="startButton" class="primary start-button" type="button" disabled>جاري تحميل الأسئلة…</button>
+        <div class="step-actions"><button class="secondary-action" type="button" data-step="settings">→ السابق</button><button id="startButton" class="primary start-button" type="button" disabled>جاري تحميل الأسئلة…</button></div>
+        </section>
       </div>
     </section>
 
     <section id="gameScreen" class="game-screen hidden">
-      <div id="categories" class="categories"></div>
+      <p class="rotate-hint">↔ لفّوا الجوال بالعرض لتظهر التصنيفات جنب بعض.</p><div id="categories" class="categories"></div>
       <div class="board-legend">
         <span><b>100</b> سهل جدًا</span><span><b>200</b> سهل</span><span><b>300</b> متوسط</span><span><b>400</b> صعب</span><span><b>500</b> صعب جدًا</span>
       </div>
@@ -116,7 +128,7 @@
   </main>
 </div>
 
-<div id="questionModal" class="modal hidden">
+<div id="questionModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="questionText">
   <div class="question-window">
     <div class="question-head">
       <div class="question-meta">
@@ -172,6 +184,7 @@
 <script src="js/defaultQuestions.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/sound.js"></script>
+<script src="js/setupFlow.js"></script>
 <script src="js/game.js"></script>
 </body>
 </html>
