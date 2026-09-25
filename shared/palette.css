@@ -1,0 +1,71 @@
+/* Beit Sido: sea glass, warm gold, rose and lavender on the original navy. */
+:root {
+  --teal:#86d7cf; --rose:#e9acc0; --lavender:#c6b6ed; --sand:#e7c783;
+  --teal-soft:#203f42; --rose-soft:#44323f; --lavender-soft:#36344c; --sand-soft:#403c30;
+}
+html[data-theme="light"] {
+  --teal:#216b65; --rose:#954661; --lavender:#69549b; --sand:#866120;
+  --teal-soft:#e0f0eb; --rose-soft:#f7e6eb; --lavender-soft:#eeE8f7; --sand-soft:#f7edd6;
+}
+body {
+  background:radial-gradient(ellipse at 95% 0%,color-mix(in srgb,var(--teal) 9%,transparent),transparent 45%),
+    radial-gradient(ellipse at 0% 85%,color-mix(in srgb,var(--lavender) 7%,transparent),transparent 50%),var(--bg);
+  background-attachment:fixed;
+}
+.eyebrow,.setup-badge,.available {background:var(--teal-soft);color:var(--teal);padding:7px 13px;border-radius:30px}
+.lobby-intro h1 span {color:var(--teal)}
+.game-tile {border-color:color-mix(in srgb,var(--teal) 40%,var(--line))}
+.game-art {background:radial-gradient(ellipse at top right,#37685e,transparent 65%),linear-gradient(145deg,#193d55,#39374e)}
+.mini-board b {box-shadow:0 8px 0 #07172533}
+.mini-board b:nth-child(3n+1){background:#725841;color:#ffdfa0;border-color:#b49661}
+.mini-board b:nth-child(3n+2){background:#32655e;color:#c9f3e5;border-color:#74a49a}
+.mini-board b:nth-child(3n){background:#635077;color:#eadcfc;border-color:#a092bb}
+.future-games {border-style:solid;background:linear-gradient(135deg,var(--lavender-soft),var(--panel));border-color:color-mix(in srgb,var(--lavender) 40%,var(--line))}
+.future-games>span {color:var(--lavender)}
+.game-facts>span {background:var(--soft);padding:7px 10px;border-radius:8px;color:var(--text)}
+.lobby-header {border-bottom:1px solid var(--line)}
+.lobby-footer {border-top:1px solid var(--line);padding-top:22px}
+.primary,.primary-cta,.answer-btn {background:#24776f;box-shadow:0 4px 0 #103d3a50}
+.primary:hover,.answer-btn:hover {background:#2c887e}
+.setup-card {border-top:4px solid var(--teal)}
+.steps [aria-current] {background:var(--teal-soft);color:var(--teal);border-color:var(--teal)}
+.team-entry {border-radius:18px;padding:18px;border:1px solid var(--line)}
+.team-one {background:var(--teal-soft);border-color:color-mix(in srgb,var(--teal) 50%,var(--line))}
+.team-two {background:var(--rose-soft);border-color:color-mix(in srgb,var(--rose) 50%,var(--line))}
+.versus {color:var(--sand);font-weight:900}
+.compact-section {background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:20px}
+.timer-option.active {background:var(--lavender-soft);color:var(--lavender);border-color:var(--lavender)}
+.rule-card:has(input:checked) {background:var(--teal-soft);border-color:var(--teal)}
+.category-select-card {--category-accent:var(--teal);background:var(--panel);border-radius:17px;border-top:3px solid var(--category-accent);position:relative}
+.category-select-card:nth-child(4n+2),.category:nth-child(4n+2) {--category-accent:var(--sand)}
+.category-select-card:nth-child(4n+3),.category:nth-child(4n+3) {--category-accent:var(--lavender)}
+.category-select-card:nth-child(4n),.category:nth-child(4n) {--category-accent:var(--rose)}
+.category-select-card:has(input:checked) {border-color:var(--category-accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--category-accent) 32%,transparent);background:color-mix(in srgb,var(--category-accent) 10%,var(--panel))}
+.category-select-card input {accent-color:#24776f}
+.category-select-card:has(input:focus-visible) {outline:3px solid var(--category-accent);outline-offset:4px}
+.category-select-text {padding:13px 10px}
+.category-select-text strong {line-height:1.6}
+.category-select-text small {color:var(--muted)}
+.session-size {background:var(--sand-soft);color:var(--sand);padding:14px;border-radius:12px}
+.category {--category-accent:var(--teal);border-top:3px solid var(--category-accent)}
+.category-title {background:color-mix(in srgb,var(--category-accent) 10%,var(--panel))}
+.level-100,.d100 {--level-color:var(--teal);--level-bg:var(--teal-soft)}
+.level-200,.d200 {--level-color:#9ecbfa;--level-bg:#293f56}
+.level-300,.d300 {--level-color:var(--sand);--level-bg:var(--sand-soft)}
+.level-400,.d400 {--level-color:var(--rose);--level-bg:var(--rose-soft)}
+.level-500,.d500 {--level-color:var(--lavender);--level-bg:var(--lavender-soft)}
+html[data-theme="light"] .level-200,html[data-theme="light"] .d200 {--level-color:#2d639a;--level-bg:#e4eef9}
+.question-card,.difficulty {background:var(--level-bg);border-color:color-mix(in srgb,var(--level-color) 35%,var(--line))}
+.question-card strong,.question-card.level-400 strong,.question-card.level-500 strong,.difficulty strong {color:var(--level-color)}
+.question-card:hover {background:color-mix(in srgb,var(--level-color) 15%,var(--level-bg));border-color:var(--level-color)}
+.question-card.used {background:var(--panel2);opacity:.38}
+.team-panel:first-child {border-color:var(--teal);background:var(--teal-soft)}
+.team-panel:last-child {border-color:var(--rose);background:var(--rose-soft)}
+.team-panel.active {outline:2px solid var(--sand);outline-offset:2px;box-shadow:inset 4px 0 var(--sand)}
+.question-window,.winner-window {border-top:4px solid var(--sand)}
+.question-option:nth-child(4n+1) {background:var(--teal-soft)}
+.question-option:nth-child(4n+2) {background:var(--lavender-soft)}
+.question-option:nth-child(4n+3) {background:var(--sand-soft)}
+.question-option:nth-child(4n) {background:var(--rose-soft)}
+@media(max-width:700px){.team-entry{padding:12px}.compact-section{padding:15px}.game-facts{gap:6px}.game-facts>span{padding:5px 7px}.category-select-text{padding:10px 6px}}
+@media(max-height:600px) and (orientation:landscape){.team-entry{padding:10px}.compact-section{padding:12px}.category-select-text{padding:8px}.category{border-top-width:2px}}

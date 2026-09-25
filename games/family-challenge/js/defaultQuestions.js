@@ -4,11 +4,11 @@ const defaultQuestions = [
     "category": "معلومات عامة",
     "questions": [
       {
-        "id": "fc-general-100-05aa11786310",
+        "id": "fc-general-100-1887f8cb069e",
         "points": 100,
         "type": "text",
-        "question": "كم ضلعًا للمثلث؟",
-        "answer": "3 أضلاع",
+        "question": "كم دقيقة في الساعة؟",
+        "answer": "60 دقيقة",
         "options": [],
         "metadata": {
           "source": "curated",
@@ -22,11 +22,11 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-100-0b5559234a58",
+        "id": "fc-general-100-3ebc0abcb830",
         "points": 100,
         "type": "text",
-        "question": "ما العضو الذي نستخدمه للشم؟",
-        "answer": "الأنف",
+        "question": "كم شهرًا في السنة الميلادية؟",
+        "answer": "12 شهرًا",
         "options": [],
         "metadata": {
           "source": "curated",
@@ -40,11 +40,11 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-200-00cfee011750",
+        "id": "fc-general-200-a217acf9833c",
         "points": 200,
         "type": "text",
-        "question": "ما العضو المسؤول أساسًا عن التنفس؟",
-        "answer": "الرئتان",
+        "question": "كم بتًا في البايت الواحد؟",
+        "answer": "8 بتات",
         "options": [],
         "metadata": {
           "source": "curated",
@@ -58,11 +58,11 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-200-07395f420d26",
+        "id": "fc-general-200-d3d9517101fe",
         "points": 200,
         "type": "text",
-        "question": "كم درجة في الزاوية القائمة؟",
-        "answer": "90 درجة",
+        "question": "ما الجهاز الذي يعرض الصور والنصوص في الحاسوب؟",
+        "answer": "الشاشة",
         "options": [],
         "metadata": {
           "source": "curated",
@@ -76,11 +76,11 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-300-06de09cdccd5",
+        "id": "fc-general-300-a8c5949383c7",
         "points": 300,
         "type": "text",
-        "question": "ما اسم العلم الذي يدرس الزلازل؟",
-        "answer": "علم الزلازل (السيزمولوجيا)",
+        "question": "من كتب مسرحية روميو وجولييت؟",
+        "answer": "ويليام شكسبير",
         "options": [],
         "metadata": {
           "source": "curated",
@@ -94,16 +94,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-300-093a116e9845",
+        "id": "fc-general-new-03c3f71179a1",
         "points": 300,
         "type": "text",
-        "question": "ما اسم الجهاز الذي يحول الطاقة الكهربائية إلى حركة ميكانيكية؟",
-        "answer": "المحرك الكهربائي",
+        "question": "ما معنى اختصار WWW في عناوين الويب؟",
+        "answer": "الشبكة العنكبوتية العالمية",
         "options": [],
         "metadata": {
-          "source": "curated",
+          "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -112,16 +112,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-400-0085a814ccfe",
+        "id": "fc-general-new-2f15359697b9",
         "points": 400,
         "type": "text",
-        "question": "ما اسم الحمض الموجود في المعدة ويساعد على الهضم؟",
-        "answer": "حمض الهيدروكلوريك",
+        "question": "ما اسم الفن الذي يحرك دمى أو رسومات إطارًا بعد إطار لإنتاج فيلم؟",
+        "answer": "الرسوم المتحركة أو التحريك",
         "options": [],
         "metadata": {
-          "source": "curated",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -130,16 +130,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-400-0606295ce080",
+        "id": "fc-general-new-339a062da782",
         "points": 400,
         "type": "text",
-        "question": "ما اسم الجسيم ذو الشحنة السالبة في الذرة؟",
-        "answer": "الإلكترون",
+        "question": "ما الاسم العربي لفن الكتابة الجميلة بالحروف؟",
+        "answer": "الخط العربي",
         "options": [],
         "metadata": {
-          "source": "curated",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -148,16 +148,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-500-0749706ba1a7",
+        "id": "fc-general-new-0990eff58352",
         "points": 500,
         "type": "text",
-        "question": "ما مجموع الأعداد الصحيحة من 1 إلى 30؟",
-        "answer": "465",
+        "question": "من كتب رواية مئة عام من العزلة؟",
+        "answer": "غابرييل غارثيا ماركيث",
         "options": [],
         "metadata": {
-          "source": "generated-math",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -166,16 +166,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-general-500-0b169c194289",
+        "id": "fc-general-new-379253312901",
         "points": 500,
         "type": "text",
-        "question": "ما اسم البروتين الذي ينقل الأكسجين في خلايا الدم الحمراء؟",
-        "answer": "الهيموغلوبين",
+        "question": "ما اسم فن الخط الياباني التقليدي بالفرشاة والحبر؟",
+        "answer": "شودو",
         "options": [],
         "metadata": {
-          "source": "curated",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -208,16 +208,35 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-geography-100-1399d10f7558",
+        "id": "fc-geography-100-1bb0263a40a6",
         "points": 100,
         "type": "text",
-        "question": "ما رمز العملة المستخدم في المملكة العربية السعودية وفق معيار ISO؟",
-        "answer": "SAR",
+        "question": "في أي قارة أو منطقة جغرافية تقع تركيا؟",
+        "answer": "أوروبا وآسيا",
         "options": [],
         "metadata": {
           "source": "country-dataset",
           "difficulty": "very_easy",
           "bank_version": "v0.8.1-beta"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-200-b55b9c9cc931",
+        "points": 200,
+        "type": "text",
+        "question": "ما عكس كلمة شمال في الاتجاهات؟",
+        "answer": "جنوب",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
         },
         "media": {
           "type": "none",
@@ -244,16 +263,17 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-geography-200-0c7ab14018b1",
-        "points": 200,
+        "id": "fc-general-300-2a1b9c459b2d",
+        "points": 300,
         "type": "text",
-        "question": "ما رمز العملة المستخدم في كوريا الجنوبية وفق معيار ISO؟",
-        "answer": "KRW",
+        "question": "ما أكبر محيط في العالم؟",
+        "answer": "المحيط الهادئ",
         "options": [],
         "metadata": {
-          "source": "country-dataset",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
         },
         "media": {
           "type": "none",
@@ -267,24 +287,6 @@ const defaultQuestions = [
         "type": "text",
         "question": "ما الرمز الدولي الثنائي ISO لدولة سوريا؟",
         "answer": "SY",
-        "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-300-1ce56059d6cb",
-        "points": 300,
-        "type": "text",
-        "question": "ما مفتاح الاتصال الدولي لدولة المملكة المتحدة؟",
-        "answer": "+44",
         "options": [],
         "metadata": {
           "source": "country-dataset",
@@ -1417,181 +1419,181 @@ const defaultQuestions = [
   },
   {
     "id": "fc-islamic",
-    "category": "إسلاميات",
+    "category": "عبادات ومعارف إسلامية",
     "questions": [
       {
-        "id": "fc-islamic-100-093c1464f3ad",
+        "id": "fc-islamic-100-33efe6f60040",
         "points": 100,
         "type": "text",
-        "question": "كم عدد آيات سورة الزلزلة؟",
-        "answer": "8",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-100-0b1398e842e1",
-        "points": 100,
-        "type": "text",
-        "question": "ما ترتيب سورة الفاتحة في المصحف؟",
-        "answer": "1",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-0242ed6f3872",
-        "points": 200,
-        "type": "text",
-        "question": "كم عدد آيات سورة النصر؟",
-        "answer": "3",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-03be0265c914",
-        "points": 200,
-        "type": "text",
-        "question": "ما ترتيب سورة الأعلى في المصحف؟",
-        "answer": "87",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-300-06538ff02e39",
-        "points": 300,
-        "type": "text",
-        "question": "ما ترتيب سورة المطففين في المصحف؟",
-        "answer": "83",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-300-099aa7e095a9",
-        "points": 300,
-        "type": "text",
-        "question": "ما ترتيب سورة القصص في المصحف؟",
-        "answer": "28",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-03e667fcea11",
-        "points": 400,
-        "type": "text",
-        "question": "كم عدد آيات سورة الإنفطار؟",
-        "answer": "19",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-0a8695a9ec76",
-        "points": 400,
-        "type": "text",
-        "question": "كم عدد آيات سورة الطور؟",
-        "answer": "49",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-00532df29d12",
-        "points": 500,
-        "type": "text",
-        "question": "كم عدد آيات سورة المدثر؟",
-        "answer": "56",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-0480bfae9a61",
-        "points": 500,
-        "type": "text",
-        "question": "ما السورة التي وردت فيها البسملة مرتين؟",
-        "answer": "سورة النمل",
+        "question": "كم عدد الصلوات المفروضة في اليوم والليلة؟",
+        "answer": "خمس صلوات",
         "options": [],
         "metadata": {
           "source": "curated",
-          "difficulty": "very_hard",
+          "difficulty": "very_easy",
           "bank_version": "v0.8.1-beta"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-100-695677e8df21",
+        "points": 100,
+        "type": "text",
+        "question": "كم عدد أركان الإسلام؟",
+        "answer": "خمسة",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-0beac85c8bd3",
+        "points": 200,
+        "type": "text",
+        "question": "ما اسم الجبلين اللذين يسعى الحجاج والمعتمرون بينهما؟",
+        "answer": "الصفا والمروة",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-1e1d94be4b3c",
+        "points": 200,
+        "type": "text",
+        "question": "كم ركعة فرض صلاة العصر؟",
+        "answer": "أربع ركعات",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-33df488f3143",
+        "points": 300,
+        "type": "text",
+        "question": "ماذا يسمى اليوم الثامن من ذي الحجة؟",
+        "answer": "يوم التروية",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-3e07ba1f2951",
+        "points": 300,
+        "type": "text",
+        "question": "ما الصدقة التي تُخرج قبل صلاة عيد الفطر؟",
+        "answer": "زكاة الفطر",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-f528667320db",
+        "points": 400,
+        "type": "text",
+        "question": "كم عدد الأشهر الحرم؟",
+        "answer": "أربعة",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-123e0a64b1a6",
+        "points": 400,
+        "type": "text",
+        "question": "ما اسم الصلاة التي تُطلب بها السقيا من الله؟",
+        "answer": "صلاة الاستسقاء",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-18fb9c666db7",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم الركن الذي يُستلم في الطواف غير ركن الحجر الأسود؟",
+        "answer": "الركن اليماني",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-new-1baa27cc71d2",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم المال أو الأصل المحبوس الذي تُصرف منافعه في أوجه البر؟",
+        "answer": "الوقف",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1642,16 +1644,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-200-00cf7682c593",
+        "id": "fc-riddles-new-2665b703087b",
         "points": 200,
         "type": "text",
-        "question": "معك 50 قطعة حلوى وأعطيت صديقك 5. كم بقي معك؟",
-        "answer": "45",
+        "question": "أطرق الخشب برأسي المعدنية فيدخل فيه المسمار، ما أنا؟",
+        "answer": "المطرقة",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1660,16 +1662,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-200-016d421e7314",
+        "id": "fc-riddles-new-27d7065fcd1e",
         "points": 200,
         "type": "text",
-        "question": "معك 42 قطعة حلوى وأعطيت صديقك 4. كم بقي معك؟",
-        "answer": "38",
+        "question": "ألتف حول خصرك وأمنع ثوبك من السقوط، ولي مشبك. ما أنا؟",
+        "answer": "الحزام",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1678,16 +1680,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-300-07e4334f1621",
+        "id": "fc-riddles-new-08353c86797d",
         "points": 300,
         "type": "text",
-        "question": "ما العدد التالي في النمط: 18، 21، 24، 27، ؟",
-        "answer": "30",
+        "question": "أُرفع في الميناء كي تسير السفينة وأُلقى لتثبت. ما أنا؟",
+        "answer": "المرساة",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1696,16 +1698,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-300-08336c148319",
+        "id": "fc-riddles-new-0e1fb9b4c2eb",
         "points": 300,
         "type": "text",
-        "question": "ما العدد التالي في النمط: 27، 29، 31، 33، ؟",
-        "answer": "35",
+        "question": "أرافق الرسام بشعري وأشرب الألوان ولا أملك فمًا. ما أنا؟",
+        "answer": "فرشاة الرسم",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1714,16 +1716,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-400-02e054e94882",
+        "id": "fc-riddles-new-0187d81130c3",
         "points": 400,
         "type": "text",
-        "question": "لدى 24 أطفال، أخذ كل واحد 5 كرات، وبقيت 1 كرات. كم كرة كانت موجودة أصلًا؟",
-        "answer": "121",
+        "question": "سائق يسير بعكس اتجاه شارع ولم يخالف لأنه لم يكن يقود شيئًا. كيف؟",
+        "answer": "كان يمشي على قدميه",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1732,16 +1734,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-400-036fef740053",
+        "id": "fc-riddles-new-0704bc809365",
         "points": 400,
         "type": "text",
-        "question": "لدى 35 أطفال، أخذ كل واحد 4 كرات، وبقيت 0 كرات. كم كرة كانت موجودة أصلًا؟",
-        "answer": "140",
+        "question": "أمنع الضوء وأتحرك على سكة أمام الزجاج. ما أنا؟",
+        "answer": "الستارة",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1750,16 +1752,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-500-041cd6e1ebb9",
+        "id": "fc-riddles-new-0cf6159fccab",
         "points": 500,
         "type": "text",
-        "question": "فكرتُ في عدد، ضربته في 6 ثم أضفت 4 فصار 142. ما العدد الذي فكرت فيه؟",
-        "answer": "23",
+        "question": "ما الذي يمتلئ بالهواء ويقل حجمه حين يخرج الهواء من فوهته؟",
+        "answer": "البالون",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1768,16 +1770,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-riddles-500-08dcd644674c",
+        "id": "fc-riddles-new-1cb139256074",
         "points": 500,
         "type": "text",
-        "question": "فكرتُ في عدد، ضربته في 6 ثم أضفت 7 فصار 325. ما العدد الذي فكرت فيه؟",
-        "answer": "53",
+        "question": "حبلان يحترق كل منهما في ساعة لكن الاحتراق غير منتظم. كيف تقيس 45 دقيقة بإشعالهما؟",
+        "answer": "أشعل الأول من طرفيه والثاني من طرف واحد؛ عند انتهاء الأول أشعل الطرف الآخر للثاني",
         "options": [],
         "metadata": {
-          "source": "generated-logic",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1828,16 +1830,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-200-00f9fc5e8b8a",
+        "id": "fc-sports-new-2facf27fe993",
         "points": 200,
         "type": "text",
-        "question": "في كرة السلة: الثلاثيات 47، الثنائيات 3، والرميات الحرة 1. كم نقطة سُجلت؟",
-        "answer": "148",
+        "question": "ما الرياضة التي يُستخدم فيها القوس والسهام؟",
+        "answer": "الرماية بالقوس",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1846,16 +1848,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-200-0339ea1e5261",
+        "id": "fc-sports-new-33399f48499b",
         "points": 200,
         "type": "text",
-        "question": "في كرة السلة: الثلاثيات 4، الثنائيات 5، والرميات الحرة 3. كم نقطة سُجلت؟",
-        "answer": "25",
+        "question": "ما الرياضة التي تقفز فيها الخيل فوق حواجز؟",
+        "answer": "قفز الحواجز للفروسية",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1864,16 +1866,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-300-010a49270c80",
+        "id": "fc-sports-new-03cac85ee898",
         "points": 300,
         "type": "text",
-        "question": "في دوري كرة القدم: عدد الانتصارات 45 وعدد التعادلات 0. بنظام 3 نقاط للفوز ونقطة للتعادل، كم نقطة جُمعت؟",
-        "answer": "135",
+        "question": "ما الرياضة التي تُلعب بكرة بيضاوية ويُسمى أحد أنواعها يونيون؟",
+        "answer": "الرغبي",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1882,16 +1884,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-300-0312e41e96ce",
+        "id": "fc-sports-new-296997fc83ad",
         "points": 300,
         "type": "text",
-        "question": "في دوري كرة القدم: عدد الانتصارات 12 وعدد التعادلات 3. بنظام 3 نقاط للفوز ونقطة للتعادل، كم نقطة جُمعت؟",
-        "answer": "39",
+        "question": "أي قطعة شطرنج تتحرك أفقيًا وعموديًا فقط؟",
+        "answer": "الرخ أو القلعة",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1900,16 +1902,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-400-00b65ca78bd1",
+        "id": "fc-sports-new-07808cff2f3d",
         "points": 400,
         "type": "text",
-        "question": "عدّاء أكمل 15 لفات على مضمار طوله 400 متر. ما المسافة الكلية التي قطعها بالمتر؟",
-        "answer": "6000",
+        "question": "ما اسم الضربة في الغولف التي تدخل الكرة من أول محاولة من نقطة البداية؟",
+        "answer": "هول إن ون",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1918,16 +1920,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-400-0df22921df70",
+        "id": "fc-sports-new-45bda59608eb",
         "points": 400,
         "type": "text",
-        "question": "عدّاء أكمل 41 لفات على مضمار طوله 400 متر. ما المسافة الكلية التي قطعها بالمتر؟",
-        "answer": "16400",
+        "question": "ما الفن القتالي الأولمبي الذي نشأ في كوريا؟",
+        "answer": "التايكوندو",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1936,16 +1938,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-500-0481e4ff8c74",
+        "id": "fc-sports-new-2fb59d84c336",
         "points": 500,
         "type": "text",
-        "question": "لاعب كرة سلة سجل 5 ثلاثيات و6 ثنائيات و4 رميات حرة في مباراتين بالمعدل نفسه. كم نقطة سجل في المباراتين؟",
-        "answer": "62",
+        "question": "ما الرياضة التي ترتبط بكأس رايدر؟",
+        "answer": "الغولف",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1954,16 +1956,16 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-sports-500-0848d0a1d6a0",
+        "id": "fc-sports-new-3633b1829db4",
         "points": 500,
         "type": "text",
-        "question": "لاعب كرة سلة سجل 7 ثلاثيات و4 ثنائيات و2 رميات حرة في مباراتين بالمعدل نفسه. كم نقطة سجل في المباراتين؟",
-        "answer": "62",
+        "question": "ما الاسم الذي يطلق على وضع في الشطرنج لا يكون فيه الملك مهددًا لكن اللاعب لا يملك حركة قانونية؟",
+        "answer": "البات، وينتهي بالتعادل",
         "options": [],
         "metadata": {
-          "source": "generated-sports",
+          "source": "curated-topic-expansion",
           "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
+          "bank_version": "0.12.0"
         },
         "media": {
           "type": "none",
@@ -1977,28 +1979,6 @@ const defaultQuestions = [
     "id": "fc-image-flags",
     "category": "أعلام الدول 🏳️",
     "questions": [
-      {
-        "id": "fc-flags-sa",
-        "points": 100,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "السعودية",
-        "options": [],
-        "metadata": {
-          "subject_slug": "sa",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/sa.svg",
-          "alt": "علم دولة — ما اسمها؟"
-        }
-      },
       {
         "id": "fc-flags-ae",
         "points": 100,
@@ -2022,14 +2002,36 @@ const defaultQuestions = [
         }
       },
       {
-        "id": "fc-flags-us",
+        "id": "fc-flags-bh",
+        "points": 100,
+        "type": "text",
+        "question": "لأي دولة هذا العلم؟",
+        "answer": "البحرين",
+        "options": [],
+        "metadata": {
+          "subject_slug": "bh",
+          "subject_type": "flag",
+          "source": "flag-icons",
+          "license": "MIT",
+          "bank_version": "0.9.0",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "asset_version": "7.3.2"
+        },
+        "media": {
+          "type": "image",
+          "path": "site:media/flags/bh.svg",
+          "alt": "علم دولة — ما اسمها؟"
+        }
+      },
+      {
+        "id": "fc-flags-br",
         "points": 200,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "الولايات المتحدة الأمريكية",
+        "answer": "البرازيل",
         "options": [],
         "metadata": {
-          "subject_slug": "us",
+          "subject_slug": "br",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2039,19 +2041,19 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/us.svg",
+          "path": "site:media/flags/br.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
       {
-        "id": "fc-flags-gb",
+        "id": "fc-flags-ca",
         "points": 200,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "المملكة المتحدة",
+        "answer": "كندا",
         "options": [],
         "metadata": {
-          "subject_slug": "gb",
+          "subject_slug": "ca",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2061,19 +2063,19 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/gb.svg",
+          "path": "site:media/flags/ca.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
       {
-        "id": "fc-flags-tr",
+        "id": "fc-flags-ar",
         "points": 300,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "تركيا",
+        "answer": "الأرجنتين",
         "options": [],
         "metadata": {
-          "subject_slug": "tr",
+          "subject_slug": "ar",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2083,19 +2085,19 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/tr.svg",
+          "path": "site:media/flags/ar.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
       {
-        "id": "fc-flags-kr",
+        "id": "fc-flags-au",
         "points": 300,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "كوريا الجنوبية",
+        "answer": "أستراليا",
         "options": [],
         "metadata": {
-          "subject_slug": "kr",
+          "subject_slug": "au",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2105,19 +2107,19 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/kr.svg",
+          "path": "site:media/flags/au.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
       {
-        "id": "fc-flags-mx",
+        "id": "fc-flags-fi",
         "points": 400,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "المكسيك",
+        "answer": "فنلندا",
         "options": [],
         "metadata": {
-          "subject_slug": "mx",
+          "subject_slug": "fi",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2127,19 +2129,19 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/mx.svg",
+          "path": "site:media/flags/fi.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
       {
-        "id": "fc-flags-za",
+        "id": "fc-flags-id",
         "points": 400,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "جنوب أفريقيا",
+        "answer": "إندونيسيا",
         "options": [],
         "metadata": {
-          "subject_slug": "za",
+          "subject_slug": "id",
           "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
@@ -2149,29 +2151,7 @@ const defaultQuestions = [
         },
         "media": {
           "type": "image",
-          "path": "site:media/flags/za.svg",
-          "alt": "علم دولة — ما اسمها؟"
-        }
-      },
-      {
-        "id": "fc-flags-np",
-        "points": 500,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "نيبال",
-        "options": [],
-        "metadata": {
-          "subject_slug": "np",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/np.svg",
+          "path": "site:media/flags/id.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       },
@@ -2194,6 +2174,28 @@ const defaultQuestions = [
         "media": {
           "type": "image",
           "path": "site:media/flags/bt.svg",
+          "alt": "علم دولة — ما اسمها؟"
+        }
+      },
+      {
+        "id": "fc-flags-kg",
+        "points": 500,
+        "type": "text",
+        "question": "لأي دولة هذا العلم؟",
+        "answer": "قيرغيزستان",
+        "options": [],
+        "metadata": {
+          "subject_slug": "kg",
+          "subject_type": "flag",
+          "source": "flag-icons",
+          "license": "MIT",
+          "bank_version": "0.9.0",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "asset_version": "7.3.2"
+        },
+        "media": {
+          "type": "image",
+          "path": "site:media/flags/kg.svg",
           "alt": "علم دولة — ما اسمها؟"
         }
       }
@@ -2632,6 +2634,1643 @@ const defaultQuestions = [
           "source_row": 82,
           "source_level": "5 - خبير",
           "bank_version": "0.10.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-makeup",
+    "category": "ميكاب",
+    "questions": [
+      {
+        "id": "fc-makeup-002",
+        "points": 100,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Studio Radiance Serum-Powered Foundation»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0",
+          "source_id": 2,
+          "product": "Studio Radiance Serum-Powered Foundation",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 100,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-004",
+        "points": 100,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Mineralize Skinfinish Natural»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0",
+          "source_id": 4,
+          "product": "Mineralize Skinfinish Natural",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 100,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-001",
+        "points": 200,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Studio Fix Fluid SPF 15»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "source_id": 1,
+          "product": "Studio Fix Fluid SPF 15",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 200,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-011",
+        "points": 200,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Light Reflecting Foundation»؟",
+        "answer": "NARS",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "source_id": 11,
+          "product": "Light Reflecting Foundation",
+          "source_url": "https://www.narscosmetics.com/",
+          "original_level": 200,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-003",
+        "points": 300,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Pro Longwear Concealer»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "source_id": 3,
+          "product": "Pro Longwear Concealer",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 300,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-005",
+        "points": 300,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Glow Play Blush»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "source_id": 5,
+          "product": "Glow Play Blush",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 300,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-009",
+        "points": 400,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Extended Play Gigablack Lash»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "source_id": 9,
+          "product": "Extended Play Gigablack Lash",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 400,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-014",
+        "points": 400,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Orgasm Blush»؟",
+        "answer": "NARS",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "source_id": 14,
+          "product": "Orgasm Blush",
+          "source_url": "https://www.narscosmetics.com/",
+          "original_level": 400,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-007",
+        "points": 500,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Retro Matte Lipstick»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0",
+          "source_id": 7,
+          "product": "Retro Matte Lipstick",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 500,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-makeup-008",
+        "points": 500,
+        "type": "text",
+        "question": "ما ماركة منتج الميكاب «Lip Pencil» و«Studio Fix Fluid SPF 15»؟",
+        "answer": "MAC",
+        "options": [],
+        "metadata": {
+          "source": "user_makeup_archive",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0",
+          "source_id": 8,
+          "product": "Lip Pencil",
+          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
+          "original_level": 500,
+          "format": "product-name"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-disney",
+    "category": "ديزني",
+    "questions": [
+      {
+        "id": "fc-disney-001",
+        "points": 100,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم لعبة راعي البقر التي يقود بها وودي ألعاب آندي؟",
+        "answer": "وودي (Woody)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0",
+          "source_id": "D100-001",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-002",
+        "points": 100,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم لعبة رائد الفضاء التي تصل إلى غرفة آندي؟",
+        "answer": "باز يطير (Buzz Lightyear)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0",
+          "source_id": "D100-002",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-051",
+        "points": 200,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم جار آندي الذي يستمتع بتفكيك وتعذيب الألعاب؟",
+        "answer": "سيد فيليبس (Sid Phillips)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "source_id": "D200-001",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-052",
+        "points": 200,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما العبارة الشهيرة التي يرددها باز عند الاستعداد للطيران؟",
+        "answer": "إلى اللانهاية وما بعدها",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "source_id": "D200-002",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-101",
+        "points": 300,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): إلى أي مطعم تذهب عائلة آندي ويصل إليه وودي وباز؟",
+        "answer": "بيتزا بلانيت (Pizza Planet)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "source_id": "D300-001",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 300
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-102",
+        "points": 300,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما الذي يجعل باز يدرك أنه لعبة وليس حارس فضاء حقيقيًا؟",
+        "answer": "مشاهدة إعلان تلفزيوني للعبة باز يطير",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "source_id": "D300-002",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 300
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-151",
+        "points": 400,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): كيف ينجح وودي في إخافة سيد ومنعه من إيذاء الألعاب؟",
+        "answer": "يجعل ألعاب سيد تتحرك أمامه وتواجهه",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "source_id": "D400-001",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 400
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-152",
+        "points": 400,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم الراعية الخزفية التي تربطها علاقة ودية بوودي؟",
+        "answer": "بو بيب (Bo Peep)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "source_id": "D400-002",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 400
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-201",
+        "points": 500,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم قائد جنود الألعاب الخضراء في غرفة آندي؟",
+        "answer": "الرقيب سارج (Sarge)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0",
+          "source_id": "D500-001",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 500
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-disney-202",
+        "points": 500,
+        "type": "text",
+        "question": "في فيلم «حكاية لعبة» (1995): ما اسم كلب سيد الذي يطارد وودي وباز؟",
+        "answer": "سكود (Scud)",
+        "options": [],
+        "metadata": {
+          "source": "user_disney_workbook",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0",
+          "source_id": "D500-002",
+          "film": "حكاية لعبة",
+          "year": 1995,
+          "original_level": 500
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-math",
+    "category": "رياضيات",
+    "questions": [
+      {
+        "id": "fc-general-100-05aa11786310",
+        "points": 100,
+        "type": "text",
+        "question": "كم ضلعًا للمثلث؟",
+        "answer": "3 أضلاع",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-100-133dbe7eecef",
+        "points": 100,
+        "type": "text",
+        "question": "كم يساوي 13 + 8؟",
+        "answer": "21",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-200-07395f420d26",
+        "points": 200,
+        "type": "text",
+        "question": "كم درجة في الزاوية القائمة؟",
+        "answer": "90 درجة",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-200-11300529544f",
+        "points": 200,
+        "type": "text",
+        "question": "كم يساوي 8 × 11؟",
+        "answer": "88",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-300-10cb4467d464",
+        "points": 300,
+        "type": "text",
+        "question": "كم يساوي 50% من 72؟",
+        "answer": "36.0000000000000000",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-300-162dd2a1411a",
+        "points": 300,
+        "type": "text",
+        "question": "كم يساوي 10% من 80؟",
+        "answer": "8.0000000000000000",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-400-0bb9e270cf74",
+        "points": 400,
+        "type": "text",
+        "question": "ما اسم المقياس اللوغاريتمي الشائع لقياس الحموضة والقلوية؟",
+        "answer": "مقياس pH",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-400-13dd2c0d2364",
+        "points": 400,
+        "type": "text",
+        "question": "إذا كان 4س + 8 = 104، فما قيمة س؟",
+        "answer": "24",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-500-0749706ba1a7",
+        "points": 500,
+        "type": "text",
+        "question": "ما مجموع الأعداد الصحيحة من 1 إلى 30؟",
+        "answer": "465",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-500-0b48b6aac9c5",
+        "points": 500,
+        "type": "text",
+        "question": "ما مجموع الأعداد الصحيحة من 1 إلى 27؟",
+        "answer": "378",
+        "options": [],
+        "metadata": {
+          "source": "generated-math",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-science",
+    "category": "علوم وطبيعة",
+    "questions": [
+      {
+        "id": "fc-general-100-0b5559234a58",
+        "points": 100,
+        "type": "text",
+        "question": "ما العضو الذي نستخدمه للشم؟",
+        "answer": "الأنف",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-100-47e5210456de",
+        "points": 100,
+        "type": "text",
+        "question": "ما المعدن السائل الشهير في درجة حرارة الغرفة؟",
+        "answer": "الزئبق",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-200-00cfee011750",
+        "points": 200,
+        "type": "text",
+        "question": "ما العضو المسؤول أساسًا عن التنفس؟",
+        "answer": "الرئتان",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-200-18f14dcd69cf",
+        "points": 200,
+        "type": "text",
+        "question": "ما اسم العملية التي تصنع بها النباتات غذاءها باستخدام الضوء؟",
+        "answer": "البناء الضوئي",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-300-06de09cdccd5",
+        "points": 300,
+        "type": "text",
+        "question": "ما اسم العلم الذي يدرس الزلازل؟",
+        "answer": "علم الزلازل (السيزمولوجيا)",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-300-093a116e9845",
+        "points": 300,
+        "type": "text",
+        "question": "ما اسم الجهاز الذي يحول الطاقة الكهربائية إلى حركة ميكانيكية؟",
+        "answer": "المحرك الكهربائي",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-400-0085a814ccfe",
+        "points": 400,
+        "type": "text",
+        "question": "ما اسم الحمض الموجود في المعدة ويساعد على الهضم؟",
+        "answer": "حمض الهيدروكلوريك",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-400-0606295ce080",
+        "points": 400,
+        "type": "text",
+        "question": "ما اسم الجسيم ذو الشحنة السالبة في الذرة؟",
+        "answer": "الإلكترون",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-500-0b169c194289",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم البروتين الذي ينقل الأكسجين في خلايا الدم الحمراء؟",
+        "answer": "الهيموغلوبين",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-general-500-0b7ff9aaea8c",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم العملية التي تتحول فيها نواة ثقيلة إلى نواتين أخف؟",
+        "answer": "الانشطار النووي",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-general"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-quran",
+    "category": "القرآن الكريم",
+    "questions": [
+      {
+        "id": "fc-islamic-100-093c1464f3ad",
+        "points": 100,
+        "type": "text",
+        "question": "كم عدد آيات سورة الزلزلة؟",
+        "answer": "8",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-100-0b1398e842e1",
+        "points": 100,
+        "type": "text",
+        "question": "ما ترتيب سورة الفاتحة في المصحف؟",
+        "answer": "1",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-200-0242ed6f3872",
+        "points": 200,
+        "type": "text",
+        "question": "كم عدد آيات سورة النصر؟",
+        "answer": "3",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-200-03be0265c914",
+        "points": 200,
+        "type": "text",
+        "question": "ما ترتيب سورة الأعلى في المصحف؟",
+        "answer": "87",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-300-06538ff02e39",
+        "points": 300,
+        "type": "text",
+        "question": "ما ترتيب سورة المطففين في المصحف؟",
+        "answer": "83",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-300-099aa7e095a9",
+        "points": 300,
+        "type": "text",
+        "question": "ما ترتيب سورة القصص في المصحف؟",
+        "answer": "28",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-03e667fcea11",
+        "points": 400,
+        "type": "text",
+        "question": "كم عدد آيات سورة الإنفطار؟",
+        "answer": "19",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-0a8695a9ec76",
+        "points": 400,
+        "type": "text",
+        "question": "كم عدد آيات سورة الطور؟",
+        "answer": "49",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-500-00532df29d12",
+        "points": 500,
+        "type": "text",
+        "question": "كم عدد آيات سورة المدثر؟",
+        "answer": "56",
+        "options": [],
+        "metadata": {
+          "source": "quran-metadata",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-500-0480bfae9a61",
+        "points": 500,
+        "type": "text",
+        "question": "ما السورة التي وردت فيها البسملة مرتين؟",
+        "answer": "سورة النمل",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-seerah",
+    "category": "السيرة النبوية",
+    "questions": [
+      {
+        "id": "fc-seerah-new-320ff14d73c3",
+        "points": 100,
+        "type": "text",
+        "question": "من صاحب النبي ﷺ في رحلة الهجرة؟",
+        "answer": "أبو بكر الصديق رضي الله عنه",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-seerah-new-40251c3d521a",
+        "points": 100,
+        "type": "text",
+        "question": "في أي مدينة وُلد النبي محمد ﷺ؟",
+        "answer": "مكة المكرمة",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-200-13be909407ac",
+        "points": 200,
+        "type": "text",
+        "question": "من أول الخلفاء الراشدين؟",
+        "answer": "أبو بكر الصديق رضي الله عنه",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-200-3d223cf5f648",
+        "points": 200,
+        "type": "text",
+        "question": "من أول زوجات النبي محمد ﷺ؟",
+        "answer": "خديجة بنت خويلد رضي الله عنها",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-seerah-new-198180ca36d3",
+        "points": 300,
+        "type": "text",
+        "question": "في أي سنة هجرية كان صلح الحديبية؟",
+        "answer": "السنة السادسة للهجرة",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-seerah-new-23faf7fbf724",
+        "points": 300,
+        "type": "text",
+        "question": "ما الاسم الآخر لغزوة الخندق؟",
+        "answer": "غزوة الأحزاب",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-a3d920a5f645",
+        "points": 400,
+        "type": "text",
+        "question": "ما أول مسجد بناه النبي ﷺ بعد الهجرة؟",
+        "answer": "مسجد قباء",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-bf737c9f29fd",
+        "points": 400,
+        "type": "text",
+        "question": "إلى أي مدينة هاجر النبي محمد ﷺ من مكة؟",
+        "answer": "المدينة المنورة",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-500-8dc515d00aff",
+        "points": 500,
+        "type": "text",
+        "question": "ما الغزوة التي وقعت في رمضان من السنة الثانية للهجرة؟",
+        "answer": "غزوة بدر",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-seerah-new-4f8eb8ca3bb9",
+        "points": 500,
+        "type": "text",
+        "question": "من تولى القيادة في مؤتة بعد استشهاد القادة الثلاثة؟",
+        "answer": "خالد بن الوليد رضي الله عنه",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_hard",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-quran-stories",
+    "category": "قصص القرآن",
+    "questions": [
+      {
+        "id": "fc-quran-stories-new-16d0c48d3b90",
+        "points": 100,
+        "type": "text",
+        "question": "من أم عيسى عليه السلام المذكورة في القرآن؟",
+        "answer": "مريم عليها السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-1dd345c0b6b6",
+        "points": 100,
+        "type": "text",
+        "question": "ما الطائر الذي نقل لسليمان خبر سبأ؟",
+        "answer": "الهدهد",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "very_easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-200-c54fc1236707",
+        "points": 200,
+        "type": "text",
+        "question": "من النبي الذي صنع السفينة بأمر الله؟",
+        "answer": "نوح عليه السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-1b167f8628d7",
+        "points": 200,
+        "type": "text",
+        "question": "من النبي الذي ابتُلي بالضر فدعا ربه فشفاه؟",
+        "answer": "أيوب عليه السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-1b3423c54997",
+        "points": 300,
+        "type": "text",
+        "question": "من المرأة التي قالت عن موسى الرضيع: قرة عين لي ولك؟",
+        "answer": "امرأة فرعون",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-317e3ef4a46d",
+        "points": 300,
+        "type": "text",
+        "question": "ما الشيء الذي جاء به إخوة يوسف وعليه دم كذب؟",
+        "answer": "قميص يوسف",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-400-818358023580",
+        "points": 400,
+        "type": "text",
+        "question": "من النبي الذي ابتلعه الحوت؟",
+        "answer": "يونس عليه السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-0dbe347c822e",
+        "points": 400,
+        "type": "text",
+        "question": "من القومان اللذان بُني الردم لمنع إفسادهما؟",
+        "answer": "يأجوج ومأجوج",
+        "options": [],
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-500-282cea11e730",
+        "points": 500,
+        "type": "text",
+        "question": "من النبي الذي أُرسل إلى قوم عاد؟",
+        "answer": "هود عليه السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-islamic-500-b4d233c072a1",
+        "points": 500,
+        "type": "text",
+        "question": "من النبيان اللذان رفعا قواعد الكعبة؟",
+        "answer": "إبراهيم وإسماعيل عليهما السلام",
+        "options": [],
+        "metadata": {
+          "source": "curated",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-islamic"
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-currencies",
+    "category": "عملات العالم",
+    "questions": [
+      {
+        "id": "fc-geography-100-1399d10f7558",
+        "points": 100,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في المملكة العربية السعودية وفق معيار ISO؟",
+        "answer": "SAR",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-100-2ad65add10eb",
+        "points": 100,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في الجزائر وفق معيار ISO؟",
+        "answer": "DZD",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "very_easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-100-2d1e1b2793b6",
+        "points": 200,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في عُمان وفق معيار ISO؟",
+        "answer": "OMR",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-100-4467248ff7af",
+        "points": 200,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في ليبيا وفق معيار ISO؟",
+        "answer": "LYD",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 100
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-200-54aef1a10d94",
+        "points": 300,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في الولايات المتحدة وفق معيار ISO؟",
+        "answer": "USD",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-200-7f79f8101c7d",
+        "points": 300,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في باكستان وفق معيار ISO؟",
+        "answer": "PKR",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-200-0c7ab14018b1",
+        "points": 400,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في كوريا الجنوبية وفق معيار ISO؟",
+        "answer": "KRW",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-200-b4700e36f4a6",
+        "points": 400,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في ماليزيا وفق معيار ISO؟",
+        "answer": "MYR",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 200
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-300-2273d6375fa9",
+        "points": 500,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في سويسرا وفق معيار ISO؟",
+        "answer": "CHF",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 300
+        },
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        }
+      },
+      {
+        "id": "fc-geography-300-415684489f2b",
+        "points": 500,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في النرويج وفق معيار ISO؟",
+        "answer": "NOK",
+        "options": [],
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "very_hard",
+          "bank_version": "v0.8.1-beta",
+          "previous_category_id": "fc-geography",
+          "original_level": 300
         },
         "media": {
           "type": "none",

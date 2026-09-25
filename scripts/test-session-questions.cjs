@@ -26,9 +26,9 @@ test('Bab Al Hara preserves 100 questions, four options and 20 questions per lev
   for (const c of categories) assert.ok(fs.existsSync(path.join(root, 'media/categories', c.id + '.svg')));
 });
 
-test('all 12 categories provide exactly 2 unique questions per level on one board', () => {
+test('all categories provide exactly 2 unique questions per level on one board', () => {
   for (let run = 0; run < 20; run++) {
-    const result = api.build(categories, categories.slice(run % 8, run % 8 + 5).map(c => c.id));
+    const result = api.build(categories, categories.slice(run % (categories.length - 4), run % (categories.length - 4) + 5).map(c => c.id));
     assert.equal(result.length, 5);
     assert.equal(result.flatMap(c => c.questions).length, 50);
     for (const category of result) {
@@ -60,7 +60,8 @@ test('incomplete categories and duplicated question IDs cannot fill a session', 
 });
 test('miniature fallback supports the same 2-per-level rule', () => {
   vm.runInNewContext(fs.readFileSync(path.join(root, 'games/family-challenge/js/defaultQuestions.js'), 'utf8') + '\nwindow.mini = defaultQuestions;', ctx);
-  assert.equal(ctx.window.mini.length, 12);
+  assert.equal(ctx.window.mini.length, categories.length);
+  assert.deepEqual(new Set(ctx.window.mini.map(c => c.id)), new Set(categories.map(c => c.id)));
   assert.ok(ctx.window.mini.every(api.isPlayable));
 });
 test('new content has 50 valid local flags and 50 unique symbol puzzles', () => {

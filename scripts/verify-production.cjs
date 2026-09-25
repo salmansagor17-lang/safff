@@ -1,6 +1,11 @@
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
+const fs = require('node:fs');
+const path = require('node:path');
+const expected = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/question-bank-v0.9.0.json'),'utf8'));
+const expectedCategories = new Set(expected.map(q => q.category_id));
 const base = process.argv[2] || 'https://family-challenge-lemon.vercel.app';
+const localServer = /^http:\/\/(localhost|127\.0\.0\.1):/.test(base);
 
 async function main() {
   const read = async file => {
@@ -27,8 +32,14 @@ async function main() {
   for (const file of ['/js/config.js','/shared/js/supabaseClient.js','/shared/js/contentStore.js','/shared/js/sessionQuestions.js']) vm.runInContext(await read(file), ctx);
   const payload = await ctx.window.PlatformContent.loadGame('family-challenge');
   const questions = payload.categories.flatMap(c => c.questions);
-  assert.equal(payload.categories.length, 12); assert.equal(questions.length, 2200);
-  assert.equal(new Set(questions.map(q => q.id)).size, 2200);
+  assert.equal(payload.categories.length, expectedCategories.size); assert.equal(questions.length, expected.length);
+  assert.equal(new Set(questions.map(q => q.id)).size, expected.length);
+  const actualById = new Map(payload.categories.flatMap(c => c.questions.map(q => [q.id,{...q,category_id:c.id}])));
+  for (const q of expected) {
+    const actual = actualById.get(q.id);
+    assert.ok(actual, q.id);
+    for (const field of ['category_id','question','answer','points']) assert.equal(actual[field],q[field],`${q.id}/${field}`);
+  }
   assert.equal(questions.filter(q => q.media.type === 'image').length, 550);
   assert.equal(questions.filter(q => q.metadata.symbols).length, 50);
   assert.ok(payload.categories.every(ctx.window.SessionQuestions.isPlayable));
@@ -55,12 +66,13 @@ async function main() {
     }));
   }
   const local = JSON.parse(await read('/data/question-bank-v0.9.0.json'));
-  assert.equal(local.length, 2200);
+  assert.equal(local.length, expected.length);
+  assert.deepEqual(local, expected);
   assert.deepEqual(new Set(local.map(q => q.id)), new Set(questions.map(q => q.id)));
-  for (const file of ['/docs/PLATFORM-METHODOLOGY.ar.md','/scripts/visual-expansion.sql','/.local-backups/before-visual-expansion.json']) {
+  for (const file of localServer ? [] : ['/docs/PLATFORM-METHODOLOGY.ar.md','/scripts/visual-expansion.sql','/.local-backups/before-visual-expansion.json']) {
     const r = await fetch(base + file); assert.equal(r.status, 404, 'Admin file should not be deployed: ' + file);
   }
   console.log(JSON.stringify({ status: 'PASS', base, categories: payload.categories.map(c => ({ name: c.category, count: c.questions.length })),
-    total: questions.length, images: 550, symbols: 50, sessionQuestions: 50, mediaUrlsChecked: images.length, localBank: 'matched', adminFiles: '404' }, null, 2));
+    total: questions.length, images: 550, symbols: 50, sessionQuestions: 50, mediaUrlsChecked: images.length, localBank: 'matched', adminFiles: localServer ? 'deployment-only check' : '404' }, null, 2));
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });

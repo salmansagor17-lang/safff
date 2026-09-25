@@ -18,7 +18,8 @@
       questionBankCount.textContent = rows.length.toLocaleString("ar-SA");
       categoryCount.textContent = new Set(rows.map(row => row.category_id)).size.toLocaleString("ar-SA");
     } catch {
-      questionBankCount.textContent = "2200";
+      questionBankCount.textContent = "—";
+      categoryCount.textContent = "—";
     }
 
   }
