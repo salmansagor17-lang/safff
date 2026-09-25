@@ -1,4 +1,4 @@
-# بيت سيدو — v0.15.1
+# بيت سيدو | Beat Seedo — v0.16.0
 
 منصة ألعاب عائلية عربية. اللعبة الحالية هي **تحدي العائلة** وتعمل كواجهة Vanilla HTML/CSS/JavaScript مرتبطة مباشرة بـSupabase.
 
@@ -62,10 +62,11 @@
 
 ## Design System
 
-- العناوين: **Alexandria**.
-- النصوص: **IBM Plex Sans Arabic**.
-- أربعة ألوان جديدة: **Coral / Mint / Sky / Plum**.
-- الملفات: `shared/styles/tokens.css`, `components.css`, `palette.css`.
+- العربية: **Cairo**.
+- الإنجليزية والعناصر اللاتينية: **Poppins**.
+- الهوية الرسمية: Indigo / Cyan / Amber / Pink / Green على خلفية `#0F172A`.
+- واجهة Home/Game Hub، إعدادات، سؤال، كشف إجابة، ونتائج بهوية موحدة.
+- الملفات: `shared/styles/tokens.css`, `components.css`, `palette.css`, `beat-seedo.css`.
 
 ## مزامنة المحتوى
 
@@ -88,10 +89,13 @@ node --test scripts/tests/*.cjs
 
 ## Vercel والتحقق بعد النشر
 
-- المستودع: https://github.com/salmansagor17-lang/safff
-- مشروع Vercel: `salman-4992/family-challenge`.
-- النشر تلقائي عند رفع التغييرات إلى فرع `main`؛ احتفظ بمجلد `.git` عند العمل على هذه النسخة.
-- بعد حفظ التغييرات في commit، استخدم `git push origin main` ثم نفّذ فحص الإنتاج أدناه بعد اكتمال النشر.
+لفحص ملفات النسخة المحلية مع اتصال حقيقي ببيانات Supabase قبل النشر:
+
+```bash
+node --use-system-ca scripts/ops/verify-production.cjs --local
+```
+
+أداة التحقق تقارن إصدار الموقع مع `js/config.js` المحلي، وتفشل إذا كانت النسخة المنشورة أقدم.
 
 المشروع Static Web App وجاهز لـVercel عبر `vercel.json`. رابط الإنتاج المسجل في أداة التحقق هو:
 

@@ -5,12 +5,22 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '../..');
 const expected = JSON.parse(fs.readFileSync(path.join(root,'data/generated/question-bank.json'),'utf8'));
 const expectedCategories = new Set(expected.filter(q=>q.active).map(q => q.category_id));
-const base = process.argv[2] || 'https://family-challenge-lemon.vercel.app';
+const localConfig = { window: {} };
+vm.runInNewContext(fs.readFileSync(path.join(root, 'js/config.js'), 'utf8'), localConfig);
+const expectedVersion = localConfig.window.APP_CONFIG.version;
+const useLocalFiles = process.argv.includes('--local');
+const base = (process.argv.slice(2).find(arg => arg !== '--local') || 'https://family-challenge-lemon.vercel.app').replace(/\/+$/, '');
 const fetchWithTimeout = globalThis.fetch;
 const fetch = (url, options = {}) => fetchWithTimeout(url, { ...options, signal: AbortSignal.timeout(30000) });
 
 async function main() {
-  const read = async file => { const r = await fetch(base + file); assert.equal(r.status, 200, file); return r.text(); };
+  const read = async file => {
+    if (useLocalFiles) return fs.readFileSync(path.join(root, file), 'utf8');
+    const r = await fetch(base + file); assert.equal(r.status, 200, file); return r.text();
+  };
+  const deployedConfig = { window: {} };
+  vm.runInNewContext(await read('/js/config.js'), deployedConfig);
+  assert.equal(deployedConfig.window.APP_CONFIG.version, expectedVersion, 'Deployed version must match local js/config.js');
   const home = await read('/index.html');
   const game = await read('/games/family-challenge/index.html');
   assert.ok(home.includes('categoryCount') && game.includes('questionSymbols') && game.includes('answerMedia'));
@@ -20,7 +30,9 @@ async function main() {
     assert.ok(html.includes('shared/styles/tokens.css') || html.includes('../../shared/styles/tokens.css'));
   }
   assert.ok(!game.includes('roundModal'));
-  assert.ok(home.includes('games-menu') && home.includes('#teams'));
+  assert.ok(home.includes('id="games"') && home.includes('games/family-challenge/index.html#teams'));
+  assert.ok(home.includes('id="homeCategoryGrid"'));
+  assert.ok((await read('/shared/styles/beat-seedo.css')).trim().length > 0);
   for (const step of ['teams','settings','categories']) assert.ok(game.includes(`data-setup-panel="${step}"`));
   assert.ok((await read('/games/family-challenge/js/setupFlow.js')).includes('popstate'));
 
@@ -41,14 +53,15 @@ async function main() {
   for (const file of ['/js/config.js','/shared/js/supabaseClient.js','/shared/js/contentStore.js','/shared/js/sessionQuestions.js']) vm.runInContext(await read(file), ctx);
   const payload = await ctx.window.PlatformContent.loadGame('family-challenge');
   assert.equal(payload.categories.length, expectedCategories.size);
+  assert.equal(payload.categories.reduce((n,c)=>n+c.questions.length,0), expected.filter(q=>q.active).length);
   const disney = payload.categories.find(c=>c.id==='fc-disney');
   assert.ok(disney && disney.questions.length===250);
   assert.ok(disney.questions.every(q=>q.media.type==='none'));
   assert.ok(disney.questions.every(q=>q.answerMedia?.provider==='wikipedia-search'));
-  assert.equal(ctx.window.APP_CONFIG.version, '0.15.1');
+  assert.equal(ctx.window.APP_CONFIG.version, expectedVersion, 'Deployed version must match local js/config.js');
   assert.ok(payload.sessionSettings?.timerOptions?.includes(0));
-  // Normalize the array created in the VM to this realm before strict comparison.
-  assert.deepEqual(Array.from(payload.sessionSettings?.questionsPerLevelOptions || []), [1,2,3,4]);
-  console.log(JSON.stringify({ok:true,base,categories:payload.categories.length,questions:payload.categories.reduce((n,c)=>n+c.questions.length,0),version:ctx.window.APP_CONFIG.version},null,2));
+  assert.ok(Array.isArray(payload.sessionSettings?.questionsPerLevelOptions));
+  assert.deepEqual(Array.from(payload.sessionSettings.questionsPerLevelOptions), [1,2,3,4]);
+  console.log(JSON.stringify({ok:true,source:useLocalFiles ? 'local files + live Supabase' : 'deployment + live Supabase',base,categories:payload.categories.length,questions:payload.categories.reduce((n,c)=>n+c.questions.length,0),version:ctx.window.APP_CONFIG.version},null,2));
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.16.0 — 2026-09-26
+
+- Rebuilt the visual identity around **Beat Seedo | بيت سيدو** using the official premium dark palette.
+- Added Cairo + Poppins typography and a centralized brand skin in `shared/styles/beat-seedo.css`.
+- Rebuilt the home screen into a real product landing/game hub with live Supabase category cards and live content counts.
+- Restyled setup, category selection, game board, question/reveal modal, scoreboard, and winner screen for TV-first family play.
+- Added an in-question progress bar linked to the real session state.
+- Kept existing game logic, Supabase content architecture, Disney reveal media, makeup safeguards, and Vercel static deployment model intact.
+
 ## 0.15.1 — 2026-09-25
 
 - Session settings now load from Supabase `game_session_settings`.

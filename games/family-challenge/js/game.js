@@ -743,7 +743,13 @@ function updateCurrentTurn() {
 function updateProgress() {
   const roundQuestions = getCurrentRoundQuestions();
   const answered = roundQuestions.filter(question => answeredQuestionIds.includes(question.id)).length;
-  document.getElementById("questionProgress").textContent = `${answered} / ${roundQuestions.length}`;
+  const total = roundQuestions.length;
+  document.getElementById("questionProgress").textContent = `${answered} / ${total}`;
+
+  const inline = document.getElementById("questionProgressInline");
+  const bar = document.getElementById("questionProgressBar");
+  if (inline) inline.textContent = `${answered} / ${total}`;
+  if (bar) bar.style.width = total ? `${Math.min(100, Math.round((answered / total) * 100))}%` : "0%";
 }
 
 function showWinner() {

@@ -3,30 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="تحدي العائلة — لعبة جماعية عربية لفريقين بأسئلة متدرجة الصعوبة.">
-  <meta name="theme-color" content="#101c27">
-  <title>بيت سيدو | اختاروا اللعبة</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="بيت سيدو | Beat Seedo — منصة ألعاب عائلية عربية للتحديات والأسئلة والمرح على شاشة واحدة.">
+  <meta name="theme-color" content="#0F172A">
+  <title>بيت سيدو | Beat Seedo</title>
   <link rel="icon" href="media/beit-sido.png">
   <link rel="stylesheet" href="shared/styles/tokens.css">
   <link rel="stylesheet" href="shared/styles/components.css">
   <link rel="stylesheet" href="shared/styles/palette.css">
+  <link rel="stylesheet" href="shared/styles/beat-seedo.css">
+  <link rel="stylesheet" href="style.css">
   <script src="shared/js/theme.js"></script>
 </head>
-<body>
-  <div class="theme-toolbar"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري" aria-pressed="false">☀ الوضع النهاري</button></div>
-  <header class="lobby-header"><a class="lobby-brand" href="index.html"><img src="media/beit-sido.png" alt="بيت سيدو"><span>للجمعة الحلوة</span></a><span class="lobby-step">01 / اختاروا اللعبة</span></header>
-  <main class="lobby">
-    <section class="lobby-intro"><span class="eyebrow">حيّاكم في بيت سيدو</span><h1>جمعتكم…<br><span>تبدأ بلعبة.</span></h1><p>اختاروا التحدي، جهّزوا الفريقين، وخلّوا الباقي علينا.</p></section>
-    <section class="games-menu" aria-label="قائمة الألعاب">
-      <a class="game-tile" href="games/family-challenge/index.html#teams">
-        <div class="game-art" aria-hidden="true"><span class="art-label">تحدّي المعرفة</span><div class="mini-board"><b>100</b><b>300</b><b>500</b><b>100</b><b>300</b><b>500</b></div><span class="art-star">✦</span></div>
-        <div class="game-tile-copy"><span class="available">جاهزة للّعب</span><h2>تحدي العائلة</h2><p>أسئلة، صور، وألغاز… فريقان وتحدٍّ واحد.</p><div class="game-facts"><span>فريقان</span><span><b id="categoryCount">20</b> تصنيفًا</span><span><b id="questionBankCount">3086</b> سؤال</span></div><span class="choose-game">اختاروا اللعبة <b>←</b></span></div>
-      </a>
-      <div class="future-games"><span aria-hidden="true">＋</span><h2>للجمعة أكثر من لعبة</h2><p>هنا مكان ألعابنا القادمة.<br>تحدي العائلة جاهز لكم الآن.</p></div>
+<body class="home-page">
+  <div class="home-grid-pattern" aria-hidden="true"></div>
+  <header class="lobby-nav">
+    <a class="nav-brand" href="#top" aria-label="بيت سيدو الرئيسية">
+      <img src="media/beit-sido.png" alt="بيت سيدو">
+      <span><b>بيت سيدو</b><small class="font-latin">Beat Seedo</small></span>
+    </a>
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#games">الألعاب</a>
+      <a href="#categories">التصنيفات</a>
+      <a href="#about">عن بيت سيدو</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="language-pill">AR</span>
+      <button class="theme-toggle" data-compact="true" type="button" aria-label="تبديل الوضع الليلي والنهاري" aria-pressed="false">☀</button>
+      <a class="nav-play primary" href="games/family-challenge/index.html#teams">العب الآن <span>←</span></a>
+    </div>
+  </header>
+
+  <main id="top" class="home-shell">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <span class="brand-pill">🏠 ألعاب البيت صارت أحلى</span>
+        <h1>ألعاب تجمعنا..<br><span>لحظات ما تنسى.</span></h1>
+        <p>منصة ألعاب عائلية عربية مصممة للشاشة الكبيرة. فريقان، تصنيفات متنوعة، تحديات سريعة، وضحك أكثر في كل جمعة.</p>
+        <div class="hero-actions">
+          <a class="primary-cta" href="games/family-challenge/index.html#teams">🎮 ابدأ تحدي العائلة</a>
+          <a class="hero-secondary" href="#categories">استكشف التصنيفات ↓</a>
+        </div>
+        <div class="hero-stats" aria-label="إحصائيات المنصة">
+          <div><strong id="questionBankCount">—</strong><span>سؤال</span></div>
+          <div><strong id="categoryCount">—</strong><span>تصنيف</span></div>
+          <div><strong>TV</strong><span>جاهزة للشاشة</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="معاينة تجربة اللعبة">
+        <div class="hero-orbit orbit-one" aria-hidden="true">✦</div>
+        <div class="hero-orbit orbit-two" aria-hidden="true">⚡</div>
+        <div class="tv-frame">
+          <div class="tv-toolbar"><span></span><span></span><span></span><b>بيت سيدو</b></div>
+          <div class="tv-score-row"><div><small>الفريق الأول</small><strong>900</strong></div><span>VS</span><div><small>الفريق الثاني</small><strong>700</strong></div></div>
+          <div class="tv-question-card">
+            <span>معلومات عامة · 300</span>
+            <h3>أي فريق يعرف الإجابة أسرع؟</h3>
+            <div class="tv-options"><i>أ</i><i>ب</i><i>ج</i><i>د</i></div>
+          </div>
+          <div class="tv-progress"><span></span></div>
+        </div>
+        <div class="floating-badge badge-crown">👑 <b>تحدّي</b></div>
+        <div class="floating-badge badge-family">🏡 <b>لمة</b></div>
+      </div>
     </section>
-    <footer class="lobby-footer"><span>بيت سيدو · وقت حلو مع بعض</span><button class="secondary-action" type="button" data-feedback-game="family-challenge">شاركنا رأيك</button></footer>
+
+    <section id="games" class="section-block games-block">
+      <div class="section-heading">
+        <div><span class="eyebrow">اختاروا لعبتكم</span><h2>ابدأوا المنافسة من هنا</h2><p>تجربة سريعة وواضحة، مصممة للعائلة ولشاشة التلفزيون.</p></div>
+        <span class="section-number">01</span>
+      </div>
+
+      <div class="game-showcase">
+        <a class="featured-game-card" href="games/family-challenge/index.html#teams">
+          <div class="featured-game-art">
+            <img src="media/beit-sido.png" alt="" aria-hidden="true">
+            <span class="game-status">● جاهزة للعب</span>
+            <div class="points-stack"><b>100</b><b>300</b><b>500</b></div>
+          </div>
+          <div class="featured-game-copy">
+            <span class="game-type">QUIZ · TEAMS · FAMILY</span>
+            <h3>تحدي العائلة</h3>
+            <p>اختاروا التصنيفات، جهّزوا الفريقين، وافتحوا أسئلة من 100 إلى 500 نقطة.</p>
+            <div class="feature-tags"><span>👥 فريقان</span><span>⏱ مؤقت أو بدون</span><span>🎯 3 مستويات</span></div>
+            <strong class="game-cta">ابدأ اللعبة الآن <span>←</span></strong>
+          </div>
+        </a>
+
+        <div class="coming-grid">
+          <article class="mode-card mode-pink"><span>🎭</span><small>قريبًا</small><h3>مين يعرفني؟</h3><p>لعبة اجتماعية للعائلة والأصدقاء.</p></article>
+          <article class="mode-card mode-cyan"><span>⚡</span><small>قريبًا</small><h3>تحديات سريعة</h3><p>جولات قصيرة وضحك سريع.</p></article>
+          <article class="mode-card mode-amber"><span>🌱</span><small>قريبًا</small><h3>حيوان جماد نبات</h3><p>الكلاسيكية بطريقة شاشة واحدة.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section-block categories-block">
+      <div class="section-heading">
+        <div><span class="eyebrow">بنك الأسئلة</span><h2>كل جمعة لها تصنيف</h2><p>التصنيفات أدناه تُقرأ من بنك اللعبة المرتبط بـSupabase.</p></div>
+        <span class="section-number">02</span>
+      </div>
+      <div id="homeCategoryGrid" class="home-category-grid" aria-live="polite">
+        <div class="category-loading">جاري تحميل التصنيفات…</div>
+      </div>
+      <div class="categories-action"><a class="secondary-action" href="games/family-challenge/index.html#categories">اختيار التصنيفات واللعب ←</a></div>
+    </section>
+
+    <section id="about" class="section-block experience-block">
+      <div class="experience-copy">
+        <span class="eyebrow">مصممة للّمة</span>
+        <h2>جهاز واحد. شاشة واحدة.<br>والكل داخل اللعبة.</h2>
+        <p>افتح بيت سيدو من اللابتوب أو التابلت، وصّل الشاشة، وخلي شخص واحد يدير اللعبة بينما الكل يشارك.</p>
+        <div class="experience-list"><span>✓ عربي أولًا وRTL كامل</span><span>✓ أزرار ونصوص واضحة من بعيد</span><span>✓ مؤقت أو بدون وقت</span><span>✓ صور وأسئلة وكشف إجابات ممتع</span></div>
+      </div>
+      <div class="experience-visual" aria-hidden="true">
+        <div class="sofa-card"><span>👨‍👩‍👧‍👦</span><b>Family Night</b><small>Beat Seedo</small></div>
+        <div class="controller-shape">🎮</div>
+      </div>
+    </section>
   </main>
+
+  <footer class="home-footer">
+    <a class="footer-brand" href="#top"><img src="media/beit-sido.png" alt="بيت سيدو"><span><b>بيت سيدو</b><small class="font-latin">Beat Seedo</small></span></a>
+    <p>ألعاب تجمعنا.. لحظات ما تنسى.</p>
+    <button class="secondary-action" type="button" data-feedback-game="family-challenge">💬 شاركنا رأيك</button>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.0"></script>
   <script src="js/config.js"></script>

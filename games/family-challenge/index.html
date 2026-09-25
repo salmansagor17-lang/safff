@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101c27">
+  <meta name="theme-color" content="#0F172A">
   <title>بيت سيدو | تحدي العائلة</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="../../media/beit-sido.png">
   <link rel="stylesheet" href="../../shared/styles/tokens.css">
   <link rel="stylesheet" href="../../shared/styles/components.css">
   <link rel="stylesheet" href="../../shared/styles/palette.css">
+  <link rel="stylesheet" href="../../shared/styles/beat-seedo.css">
   <script src="../../shared/js/theme.js"></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
 
     <div class="brand">
       <img class="brand-logo" src="../../media/beit-sido.png" alt="بيت سيدو">
-      <h1>تحدي العائلة</h1>
+      <div class="game-brand-copy"><small class="font-latin">BEAT SEEDO</small><h1>تحدي العائلة</h1></div>
 
 
       <div id="gameInfo" class="game-info hidden">
@@ -30,7 +31,7 @@
       </div>
     </div>
 
-    <div class="top-actions"><button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي والنهاري">☀</button>
+    <div class="top-actions"><button class="theme-toggle" data-compact="true" type="button" aria-label="تبديل الوضع الليلي والنهاري">☀</button>
       <button type="button" data-feedback-game="family-challenge">💬 رأيك</button>
       <button id="fullscreenButton" type="button" title="ملء الشاشة">⛶</button>
       <button id="resetButton" type="button" title="إعادة اللعبة">↻</button>
@@ -150,6 +151,10 @@
 
     <div id="specialQuestion" class="special hidden">⚡ سؤال مضاعف ×2</div>
     <div id="playingTeam" class="playing-team"></div>
+    <div class="question-progress-shell" aria-label="تقدم الجولة">
+      <div class="question-progress-copy"><span>تقدم الجولة</span><strong id="questionProgressInline">0 / 0</strong></div>
+      <div class="question-progress-track"><div id="questionProgressBar" class="question-progress-fill"></div></div>
+    </div>
 
     <div id="questionMedia" class="question-media hidden"></div>
     <h2 id="questionText" class="question-text"></h2>
@@ -174,8 +179,9 @@
 
 <div id="winnerModal" class="modal hidden">
   <div class="winner-window">
+    <img class="winner-brand-mark" src="../../media/beit-sido.png" alt="بيت سيدو">
     <div class="trophy">🏆</div>
-    <span class="modal-kicker">FINAL RESULT</span>
+    <span class="modal-kicker">BEAT SEEDO · FINAL RESULT</span>
     <h2>انتهى التحدي</h2>
     <h1 id="winnerName"></h1>
     <div id="finalScores" class="final-scores"></div>
