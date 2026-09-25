@@ -6,6 +6,8 @@ const expected = JSON.parse(fs.readFileSync(path.join(__dirname,'../data/questio
 const expectedCategories = new Set(expected.map(q => q.category_id));
 const base = process.argv[2] || 'https://family-challenge-lemon.vercel.app';
 const localServer = /^http:\/\/(localhost|127\.0\.0\.1):/.test(base);
+const fetchWithTimeout = globalThis.fetch;
+const fetch = (url, options = {}) => fetchWithTimeout(url, { ...options, signal: AbortSignal.timeout(30000) });
 
 async function main() {
   const read = async file => {
@@ -31,6 +33,8 @@ async function main() {
   vm.runInContext(await sdk.text(), ctx); ctx.window.supabase = ctx.supabase;
   for (const file of ['/js/config.js','/shared/js/supabaseClient.js','/shared/js/contentStore.js','/shared/js/sessionQuestions.js']) vm.runInContext(await read(file), ctx);
   const payload = await ctx.window.PlatformContent.loadGame('family-challenge');
+  assert.deepEqual(JSON.parse(JSON.stringify(payload.game.settings.difficultyPoints)), [100,300,500]);
+  assert.equal(payload.game.settings.sessionQuestionsPerCategory, 6);
   const questions = payload.categories.flatMap(c => c.questions);
   assert.equal(payload.categories.length, expectedCategories.size); assert.equal(questions.length, expected.length);
   assert.equal(new Set(questions.map(q => q.id)).size, expected.length);
@@ -59,11 +63,13 @@ async function main() {
   assert.equal(session.flatMap(c => c.questions).length, 30);
   for (const category of session) for (const points of [100,300,500]) assert.equal(category.questions.filter(q => q.points === points).length, 2);
   const images = [...new Map(questions.filter(q => q.media.type === 'image').map(q => [q.media.path, q])).values()];
-  for (let i = 0; i < images.length; i += 8) {
-    await Promise.all(images.slice(i,i+8).map(async q => {
+  console.log(`Content matched; checking ${images.length} image URLs.`);
+  for (let i = 0; i < images.length; i += 20) {
+    await Promise.all(images.slice(i,i+20).map(async q => {
       const r = await fetch(ctx.window.PlatformContent.getPublicMediaUrl(q.media.path), { method: 'HEAD' });
       assert.equal(r.status, 200, q.id); assert.match(r.headers.get('content-type'), /^image\//, q.id);
     }));
+    if (i % 100 === 0) console.log(`Images checked: ${Math.min(i+20, images.length)}/${images.length}`);
   }
   const local = JSON.parse(await read('/data/question-bank-v0.9.0.json'));
   assert.equal(local.length, expected.length);
