@@ -5,13 +5,16 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const rows = JSON.parse(fs.readFileSync(path.join(root,'data/question-bank-v0.9.0.json'),'utf8'));
 const audit = JSON.parse(fs.readFileSync(path.join(root,'data/content-audit.json'),'utf8'));
-test('current makeup has 500 obscured images and Prison Break has 300 questions', () => {
+test('current makeup has 500 clear-image records and Prison Break has 300 questions', () => {
   const makeup = rows.filter(q => q.category_id === 'fc-makeup');
   assert.equal(makeup.length,500);
   for (const q of makeup) {
     assert.equal(q.media_type,'image');
     assert.ok(q.media_path && q.question && q.answer);
-    assert.equal(q.metadata.brand_obscured,true);
+    assert.ok(q.media_path.startsWith('makeup-v4/') || q.media_path.startsWith('makeup-obscured/'));
+    assert.ok(['brand-shape-v4','brand-shape-v3'].includes(q.metadata.format));
+    assert.equal(q.metadata.image_quality,'original_clear');
+    assert.equal(typeof q.metadata.brand_obscured,'boolean');
   }
   assert.equal(rows.filter(q => q.category_id === 'fc-prison-break').length,300);
   assert.equal(rows.filter(q => q.category_id === 'fc-disney').length,250);

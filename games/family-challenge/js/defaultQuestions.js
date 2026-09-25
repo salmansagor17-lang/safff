@@ -1742,19 +1742,23 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/001.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-v4/001.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "MAC",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "easy",
-          "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-001-img-1.webp",
-          "source_question_id": "fc-makeup-001-img-1"
+          "source_question_id": "fc-makeup-001-img-1",
+          "original_media_path": "makeup/fc-makeup-001/01-60dfc4a3.png",
+          "processed_source_path": "makeup/fc-makeup-001/01-60dfc4a3.png"
         }
       },
       {
@@ -1766,19 +1770,23 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/002.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-v4/002.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "MAC",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "easy",
-          "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-001-img-2.webp",
-          "source_question_id": "fc-makeup-001-img-2"
+          "source_question_id": "fc-makeup-001-img-2",
+          "original_media_path": "makeup/fc-makeup-001/02-caf7622b.webp",
+          "processed_source_path": "makeup/fc-makeup-001/01-60dfc4a3.png"
         }
       },
       {
@@ -1790,19 +1798,23 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/201.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-v4/201.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "Too Faced",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "medium",
-          "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-101-img-1.webp",
-          "source_question_id": "fc-makeup-101-img-1"
+          "source_question_id": "fc-makeup-101-img-1",
+          "original_media_path": "makeup/fc-makeup-101/01-0eba9a8b.jpg",
+          "processed_source_path": "makeup/fc-makeup-101/01-0eba9a8b.jpg"
         }
       },
       {
@@ -1814,19 +1826,23 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/202.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-v4/202.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "Too Faced",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "medium",
-          "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-101-img-2.webp",
-          "source_question_id": "fc-makeup-101-img-2"
+          "source_question_id": "fc-makeup-101-img-2",
+          "original_media_path": "makeup/fc-makeup-101/02-30073dfb.jpg",
+          "processed_source_path": "makeup/fc-makeup-101/02-30073dfb.jpg"
         }
       },
       {
@@ -1838,19 +1854,21 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/451.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-obscured/fc-makeup-251-img-1.webp",
+          "alt": "صورة واضحة لمنتج ميكاب لمعرفة اسم البراند"
         },
         "metadata": {
           "brand": "Kosas",
           "format": "brand-shape-v3",
           "difficulty": "hard",
           "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "none",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-251-img-1.webp",
-          "source_question_id": "fc-makeup-251-img-1"
+          "source_question_id": "fc-makeup-251-img-1",
+          "original_media_path": "makeup/fc-makeup-251/01-c3f6efa4.jpg"
         }
       },
       {
@@ -1862,19 +1880,21 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-v3/452.png",
-          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+          "path": "makeup-obscured/fc-makeup-252-img-1.webp",
+          "alt": "صورة واضحة لمنتج ميكاب لمعرفة اسم البراند"
         },
         "metadata": {
           "brand": "Kosas",
           "format": "brand-shape-v3",
           "difficulty": "hard",
           "bank_version": "0.13.0-makeup-rebuild",
-          "brand_obscured": true,
-          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "image_quality": "original_clear",
+          "brand_obscured": false,
+          "obscuring_method": "none",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-252-img-1.webp",
-          "source_question_id": "fc-makeup-252-img-1"
+          "source_question_id": "fc-makeup-252-img-1",
+          "original_media_path": "makeup/fc-makeup-252/01-02dd8d45.jpg"
         }
       }
     ]
