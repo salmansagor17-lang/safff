@@ -1,0 +1,25 @@
+.hidden,[hidden]{display:none!important}
+.muted{color:var(--muted)}
+
+input,select,textarea{min-width:0;max-width:100%;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-md);padding:12px 14px}
+input[type=checkbox]{accent-color:var(--mint);width:20px;height:20px}
+
+.primary,.answer-btn,.primary-cta{display:inline-flex;justify-content:center;align-items:center;gap:12px;background:linear-gradient(135deg,#287a72,#316f9b);color:#fff;border:1px solid transparent;border-radius:var(--radius-md);min-height:48px;padding:13px 24px;font-weight:700;box-shadow:0 4px 0 #0b2e3550}
+.primary:hover,.answer-btn:hover,.primary-cta:hover{filter:brightness(1.08)}
+.secondary-action,.theme-toggle,.platform-link,.top-actions button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text)}
+
+.theme-toolbar{position:absolute;top:24px;left:4vw;z-index:2}
+.eyebrow,.setup-badge,.available{display:inline-block;color:var(--teal);font-size:var(--fs-xs);font-weight:700;letter-spacing:.02em;background:var(--teal-soft);padding:7px 13px;border-radius:999px}
+.category-cover{display:block;width:100%;object-fit:contain;background:#172c3b}
+.brand-logo{width:64px;height:64px;object-fit:contain}
+.brand h1{font-size:var(--fs-lg)}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px}
+.brand .game-info{margin-inline-start:12px}
+.game-info{display:flex;gap:12px;font-size:var(--fs-xs);color:var(--muted)}
+.game-info strong{color:var(--text)}
+.game-info span{white-space:nowrap}
+
+.text-xs{font-size:var(--fs-xs)}.text-sm{font-size:var(--fs-sm)}.text-md{font-size:var(--fs-md)}.text-lg{font-size:var(--fs-lg)}.text-xl{font-size:var(--fs-xl)}
+.font-display{font-family:var(--font-display)}.font-body{font-family:var(--font-body)}
+
+@media(prefers-reduced-motion:no-preference){button,a{transition:background .15s,border-color .15s,transform .15s,filter .15s}}

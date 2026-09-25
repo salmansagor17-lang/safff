@@ -1,6 +1,6 @@
 """Original vector illustrations shipped with the site; no remote image dependency."""
 from pathlib import Path
-root = Path(__file__).resolve().parents[1] / 'media/categories'
+root = Path(__file__).resolve().parents[2] / 'media/categories'
 root.mkdir(parents=True, exist_ok=True)
 art = {
 'general': ('#14366b', '#70c9ff', '<path d="M115 72q55-22 85 5 35-27 85-5v110q-50-20-85 3-35-23-85-3z" fill="#fff2ce"/><path d="M200 78v106M130 96l48 6m-48 18 48 6m-48 18 48 6m44-48 48-6m-48 30 48-6m-48 30 48-6"/>'),

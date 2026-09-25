@@ -11,7 +11,7 @@
     console.error("Supabase load failed:", error);
 
     try {
-      const response = await fetch("data/question-bank-v0.9.0.json", { cache: "no-store" });
+      const response = await fetch("data/generated/question-bank.json", { cache: "no-store" });
       if (!response.ok) throw new Error("Question bank unavailable");
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Invalid question bank");

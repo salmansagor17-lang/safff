@@ -1,7 +1,7 @@
 (function () {
   const levels = [100, 300, 500];
-  const perLevel = 2;
-  const maxCategories = 5;
+  const defaultPerLevel = 2;
+  const defaultMaxCategories = 5;
 
   function sample(pool, count, random) {
     const shuffled = [...pool];
@@ -17,32 +17,69 @@
     return levels.map(points => unique.filter(q => Number(q.points) === points));
   }
 
-  function isPlayable(category) {
-    return poolsFor(category).every(pool => pool.length >= perLevel);
+  function normalizePositiveInteger(value, fallback) {
+    const number = Number(value);
+    return Number.isInteger(number) && number > 0 ? number : fallback;
   }
 
-  function build(categories, selectedIds, random = Math.random) {
-    if (new Set(selectedIds).size > maxCategories) throw new RangeError('اختر خمسة تصنيفات كحد أقصى.');
-    return categories.filter(c => selectedIds.includes(c.id) && isPlayable(c)).map(category => ({
-      ...category,
-      questions: poolsFor(category).flatMap(pool => {
-        // Prefer different pictured subjects when the bank has multiple photos of each.
-        const groups = new Map();
-        for (const q of pool) {
-          const key = q.metadata?.subject_slug || q.id;
-          if (!groups.has(key)) groups.set(key, []);
-          groups.get(key).push(q);
-        }
-        const distinct = [...groups.values()].map(group => sample(group, 1, random)[0]);
-        const chosen = sample(distinct, Math.min(perLevel, distinct.length), random);
-        if (chosen.length < perLevel) {
-          const ids = new Set(chosen.map(q => q.id));
-          chosen.push(...sample(pool.filter(q => !ids.has(q.id)), perLevel - chosen.length, random));
-        }
-        return chosen.map(q => ({ ...q, round: 1 }));
-      })
-    }));
+  function isPlayable(category, perLevel = defaultPerLevel, arrayCallbackSource) {
+    // Array.prototype.every passes (item, index, array). Ignore that index so
+    // older callers using categories.every(isPlayable) keep the default rule.
+    const requested = Array.isArray(arrayCallbackSource) ? defaultPerLevel : perLevel;
+    const required = normalizePositiveInteger(requested, defaultPerLevel);
+    return poolsFor(category).every(pool => pool.length >= required);
   }
 
-  window.SessionQuestions = Object.freeze({ build, isPlayable, perLevel, levels, maxCategories });
+  function build(categories, selectedIds, options = {}, random = Math.random) {
+    // Backwards compatibility with the old build(categories, ids, random) signature.
+    if (typeof options === "function") {
+      random = options;
+      options = {};
+    }
+
+    const perLevel = normalizePositiveInteger(options.perLevel, defaultPerLevel);
+    const maxCategories = normalizePositiveInteger(options.maxCategories, defaultMaxCategories);
+
+    if (new Set(selectedIds).size > maxCategories) {
+      const label = maxCategories === 5 ? "خمسة" : String(maxCategories);
+      throw new RangeError(`اختر ${label} تصنيفات كحد أقصى.`);
+    }
+
+    return categories
+      .filter(category => selectedIds.includes(category.id) && isPlayable(category, perLevel))
+      .map(category => ({
+        ...category,
+        questions: poolsFor(category).flatMap(pool => {
+          // Prefer different pictured subjects when the bank has multiple photos of each.
+          const groups = new Map();
+          for (const q of pool) {
+            const key = q.metadata?.subject_slug || q.id;
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(q);
+          }
+
+          const distinct = [...groups.values()].map(group => sample(group, 1, random)[0]);
+          const chosen = sample(distinct, Math.min(perLevel, distinct.length), random);
+
+          if (chosen.length < perLevel) {
+            const ids = new Set(chosen.map(q => q.id));
+            chosen.push(...sample(pool.filter(q => !ids.has(q.id)), perLevel - chosen.length, random));
+          }
+
+          return chosen.map(q => ({ ...q, round: 1 }));
+        })
+      }));
+  }
+
+  window.SessionQuestions = Object.freeze({
+    build,
+    isPlayable,
+    poolsFor,
+    levels,
+    defaultPerLevel,
+    defaultMaxCategories,
+    // Kept for older code/tests that read these properties.
+    perLevel: defaultPerLevel,
+    maxCategories: defaultMaxCategories
+  });
 })();

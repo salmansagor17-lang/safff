@@ -16,7 +16,7 @@ function setup(hash = '#teams') {
       querySelector: () => ({ focus() {} }),
       querySelectorAll: selector => selector === '[data-setup-panel]' ? panels : buttons },
     window: { scrollTo() {}, addEventListener(name,fn) { events[name]=fn; } } };
-  vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../games/family-challenge/js/setupFlow.js'),'utf8'),context);
+  vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../../games/family-challenge/js/setupFlow.js'),'utf8'),context);
   return { panels,buttons,navigation,location,events,api:context.window.SetupFlow };
 }
 test('only one setup screen appears; next and browser back retain progression', () => {

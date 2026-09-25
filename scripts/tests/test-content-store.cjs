@@ -4,7 +4,7 @@ const path = require("node:path");
 const vm = require("node:vm");
 const { test } = require("node:test");
 
-const source = fs.readFileSync(path.join(__dirname, "../shared/js/contentStore.js"), "utf8");
+const source = fs.readFileSync(path.join(__dirname, "../../shared/js/contentStore.js"), "utf8");
 
 function fixture(size, cap = 1000, failAt = Infinity) {
   const rows = Array.from({ length: size }, (_, i) => ({

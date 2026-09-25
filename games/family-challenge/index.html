@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#050816">
+  <meta name="theme-color" content="#101c27">
   <title>بيت سيدو | تحدي العائلة</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="../../media/beit-sido.png">
-  <link rel="stylesheet" href="../../shared/theme.css">
-  <link rel="stylesheet" href="../../shared/palette.css">
+  <link rel="stylesheet" href="../../shared/styles/tokens.css">
+  <link rel="stylesheet" href="../../shared/styles/components.css">
+  <link rel="stylesheet" href="../../shared/styles/palette.css">
   <script src="../../shared/js/theme.js"></script>
 </head>
 <body>
@@ -78,12 +79,7 @@
         <div class="setup-split">
           <div class="setup-section compact-section">
             <div class="section-title"><span>02</span><div><h3>مدة السؤال</h3><p>اختر الوقت المناسب للعائلة.</p></div></div>
-            <div class="timer-options">
-              <button class="timer-option" data-time="15" type="button">15 <small>ث</small></button>
-              <button class="timer-option active" data-time="30" type="button">30 <small>ث</small></button>
-              <button class="timer-option" data-time="45" type="button">45 <small>ث</small></button>
-              <button class="timer-option" data-time="60" type="button">60 <small>ث</small></button>
-            </div>
+            <div id="timerOptions" class="timer-options" aria-label="مدة السؤال"></div>
           </div>
 
           <div class="setup-section compact-section">
@@ -94,14 +90,29 @@
               <label class="rule-card"><input id="soundEnabled" type="checkbox" checked><div><strong>الأصوات</strong><span>مؤثرات اللعبة</span></div></label>
             </div>
           </div>
+          <div class="setup-section compact-section question-count-section">
+            <div class="section-title"><span>04</span><div><h3>عدد الأسئلة</h3><p>حدد كثافة الجولة. الإعدادان متزامنان تلقائيًا.</p></div></div>
+            <div class="question-count-controls">
+              <label class="setting-field">
+                <span>من كل مستوى</span>
+                <select id="questionsPerLevelSelect" aria-label="عدد الأسئلة من كل مستوى"></select>
+                <small>لكل مستوى: 100 و300 و500</small>
+              </label>
+              <label class="setting-field">
+                <span>من كل تصنيف</span>
+                <select id="questionsPerCategorySelect" aria-label="عدد الأسئلة من كل تصنيف"></select>
+                <small>الإجمالي داخل التصنيف الواحد</small>
+              </label>
+            </div>
+          </div>
         </div>
 
         <div class="step-actions"><button class="secondary-action" type="button" data-step="teams">→ السابق</button><button class="primary" type="button" data-step="categories">التالي: التصنيفات ←</button></div>
         </section>
         <section data-setup-panel="categories" hidden>
-        <div class="setup-intro"><span class="setup-badge">الخطوة 4 من 5</span><h2 tabindex="-1">اختاروا ساحة التحدي</h2><p>من تصنيفين إلى خمسة. ستة أسئلة في كل تصنيف.</p></div>
+        <div class="setup-intro"><span class="setup-badge">الخطوة 4 من 5</span><h2 tabindex="-1">اختاروا ساحة التحدي</h2><p>اختاروا التصنيفات، وعدد الأسئلة يطابق إعداداتكم السابقة.</p></div>
         <div class="setup-section">
-          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر من تصنيفين إلى خمسة. لكل تصنيف سؤالان في كل مستوى: 100 و300 و500 نقطة، بإجمالي ٦ أسئلة. جميع المستويات متاحة من البداية، والفريق صاحب الدور يختار السؤال.</p></div></div>
+          <div class="section-title"><span>04</span><div><h3>التصنيفات والصعوبة</h3><p>اختر التصنيفات التي تريدها. اللعبة تسحب عدد الأسئلة الذي اخترته من كل مستوى 100 و300 و500، والفريق صاحب الدور يختار السؤال.</p></div></div>
 
           <div class="difficulty-legend" aria-label="مستويات الصعوبة">
             <span class="difficulty d100"><strong>100</strong><em>سهل</em></span>
@@ -151,6 +162,7 @@
     <div id="answerArea" class="answer-area hidden">
       <span class="muted">الإجابة الصحيحة</span>
       <h3 id="answerText"></h3>
+      <div id="answerMedia" class="answer-media hidden" aria-live="polite"></div>
       <div class="result-buttons">
         <button id="currentTeamCorrect" class="correct-btn" type="button"></button>
         <button id="otherTeamCorrect" class="steal-btn" type="button"></button>

@@ -4,9 +4,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const { test } = require('node:test');
-const root = path.resolve(__dirname, '..');
+const root = path.resolve(__dirname, '../..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
-const bank = JSON.parse(read('data/question-bank-v0.9.0.json'));
+const bank = JSON.parse(read('data/generated/question-bank.json'));
 
 class Element {
   constructor(tag = 'div') {
@@ -19,6 +19,7 @@ class Element {
   set innerHTML(value) { this.children = []; }
   append(...elements) { this.children.push(...elements); }
   appendChild(element) { this.append(element); }
+  replaceChildren(...elements) { this.children = [...elements]; }
   addEventListener(name, fn) { this.listeners[name] = fn; }
   setAttribute(name, value) { this[name] = value; }
 }
@@ -28,7 +29,7 @@ async function setup(mode) {
   const get = id => { if (!elements.has(id)) elements.set(id, new Element()); return elements.get(id); };
   const walk = el => el.children.flatMap(child => [child, ...walk(child)]);
   const categories = [...new Set(bank.map(q => q.category_id))].map(id => ({ id, category: bank.find(q => q.category_id === id).category,
-    questions: bank.filter(q => q.category_id === id).map(q => ({ ...q, media: { type: q.media_type, path: q.media_path, alt: q.media_alt } })) }));
+    questions: bank.filter(q => q.category_id === id).map(q => ({ ...q, media: { type: q.media_type, path: q.media_path, alt: q.media_alt }, answerMedia: q.answer_media || null })) }));
   const context = { console, URL, setTimeout, clearTimeout, alert: message => { throw new Error(message); }, confirm: () => true,
     document: { getElementById: get, createElement: tag => new Element(tag),
       querySelectorAll: selector => selector.startsWith('#categorySelector input')
@@ -37,7 +38,8 @@ async function setup(mode) {
     startTimer: () => {}, stopTimer: () => {}, playCorrectSound: () => {}, playWrongSound: () => {}, playTimeoutSound: () => {},
     window: { addEventListener: () => {}, PlatformContent: {
       loadGame: async () => { if (mode !== 'online') throw new Error('Simulated network failure'); return { categories }; },
-      getPublicMediaUrl: p => p.startsWith('site:') ? '/' + p.slice(5) : 'https://example.test/' + p
+      getPublicMediaUrl: p => p.startsWith('site:') ? '/' + p.slice(5) : 'https://example.test/' + p,
+      resolveAnswerMedia: async media => media ? { url: 'https://upload.wikimedia.org/mock-answer.jpg', sourceUrl: 'https://en.wikipedia.org/wiki/Mock', alt: media.alt || 'answer' } : null
     } } };
   vm.createContext(context);
   for (const file of ['shared/js/sessionQuestions.js','games/family-challenge/js/defaultQuestions.js','games/family-challenge/js/game.js']) vm.runInContext(read(file), context);
@@ -89,4 +91,20 @@ test('five selected by default, sixth disabled; all 30 cards and levels visible'
   }
   inputs[5].checked = true;
   assert.throws(() => get('startButton').listeners.click(), /خمسة/);
+});
+
+
+test('Disney answer image stays hidden until answer reveal', async () => {
+  const { context, get } = await setup('online');
+  const disney = vm.runInContext(`gameQuestions.find(c => c.id === "fc-disney")`, context);
+  assert.ok(disney);
+  const q = disney.questions.find(item => item.answerMedia);
+  assert.ok(q?.answerMedia);
+  context.testQuestion = q; context.testCard = new Element('button');
+  vm.runInContext('teams=[{name:"A",avatar:"A",score:0},{name:"B",avatar:"B",score:0}]; currentTeamIndex=0; openQuestion(testQuestion,testCard,"Disney")', context);
+  assert.equal(get('answerMedia').classList.contains('hidden'), true);
+  await vm.runInContext('revealAnswer()', context);
+  assert.equal(get('answerArea').classList.contains('hidden'), false);
+  assert.equal(get('answerMedia').classList.contains('hidden'), false);
+  assert.ok(get('answerMedia').children.some(el => el.tag === 'img'));
 });

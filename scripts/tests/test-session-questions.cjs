@@ -3,11 +3,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const { test } = require('node:test');
-const root = path.resolve(__dirname, '..');
+const root = path.resolve(__dirname, '../..');
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'shared/js/sessionQuestions.js'), 'utf8'), ctx);
 const api = ctx.window.SessionQuestions;
-const rows = JSON.parse(fs.readFileSync(path.join(root, 'data/question-bank-v0.9.0.json'), 'utf8'));
+const rows = JSON.parse(fs.readFileSync(path.join(root, 'data/generated/question-bank.json'), 'utf8'));
 const categories = [...new Set(rows.map(q => q.category_id))].map(id => ({ id, questions: rows.filter(q => q.category_id === id) }));
 
 test('rejects more than five categories and accepts exactly five', () => {

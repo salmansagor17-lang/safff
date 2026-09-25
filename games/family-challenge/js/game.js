@@ -2,8 +2,16 @@ const GAME_ID = "family-challenge";
 
 let gameQuestions = [];
 let sessionCategories = [];
+let difficultyLabels = new Map([[100, "سهل"], [300, "متوسط"], [500, "صعب"]]);
 let gameConfig = {
   timerSeconds: 30,
+  timerOptions: [0, 15, 30, 45, 60],
+  questionsPerLevel: 2,
+  questionsPerLevelOptions: [1, 2, 3, 4],
+  questionsPerCategory: 6,
+  questionsPerCategoryOptions: [3, 6, 9, 12],
+  minCategories: 2,
+  maxCategories: 5,
   deductWrong: true,
   allowSteal: true,
   soundEnabled: true,
@@ -33,9 +41,11 @@ bootstrap();
 async function bootstrap() {
   try {
     const payload = await window.PlatformContent.loadGame(GAME_ID);
+    applyRemoteSettings(payload.sessionSettings, payload.difficultyLevels);
     gameQuestions = payload.categories.filter(category => category.questions.length);
   } catch (error) {
     console.error("Supabase content load failed:", error);
+    applyRemoteSettings(null, []);
 
     try {
       gameQuestions = await loadLocalQuestionBank();
@@ -43,19 +53,19 @@ async function bootstrap() {
       console.error("Local question bank load failed:", localError);
       gameQuestions = normalizeFallbackQuestions(defaultQuestions);
     }
-
   }
 
-  gameQuestions = gameQuestions.filter(window.SessionQuestions.isPlayable);
+  initializeSettingsControls();
+  gameQuestions = gameQuestions.filter(category => window.SessionQuestions.isPlayable(category, 1));
   setRounds();
   buildCategorySelector();
-  startButton.disabled = gameQuestions.length < 2;
-  startButton.textContent = gameQuestions.length < 2 ? "لا توجد أسئلة كافية" : "ابدأ التحدي";
+  startButton.disabled = gameQuestions.length < gameConfig.minCategories;
+  startButton.textContent = gameQuestions.length < gameConfig.minCategories ? "لا توجد أسئلة كافية" : "ابدأ التحدي";
 }
 
 
 async function loadLocalQuestionBank() {
-  const response = await fetch("../../data/question-bank-v0.9.0.json", { cache: "no-store" });
+  const response = await fetch("../../data/generated/question-bank.json", { cache: "no-store" });
   if (!response.ok) throw new Error(`Local bank HTTP ${response.status}`);
 
   const rows = await response.json();
@@ -79,6 +89,7 @@ async function loadLocalQuestionBank() {
 
     grouped.get(categoryId).questions.push({
       id: row.id,
+      categoryId,
       points: Number(row.points),
       type: row.type || "text",
       question: row.question,
@@ -89,6 +100,7 @@ async function loadLocalQuestionBank() {
         path: row.media_path || null,
         alt: row.media_alt || ""
       },
+      answerMedia: row.answer_media || row.answerMedia || null,
       metadata: row.metadata || {}
     });
   });
@@ -105,7 +117,8 @@ function normalizeFallbackQuestions(source) {
     questions: (category.questions || []).map((question, questionIndex) => ({
       id: question.id || `fallback-${categoryIndex + 1}-${questionIndex + 1}`,
       ...question,
-      media: question.media || { type: "none", path: null, alt: "" }
+      media: question.media || { type: "none", path: null, alt: "" },
+      answerMedia: question.answerMedia || question.answer_media || null
     }))
   }));
 }
@@ -116,6 +129,109 @@ function setRounds() {
       question.round = 1;
     });
   });
+}
+
+function applyRemoteSettings(sessionSettings, levels) {
+  const remote = sessionSettings || {};
+  gameConfig.timerSeconds = Number(remote.defaultTimerSeconds ?? 30);
+  gameConfig.timerOptions = normalizeNumberOptions(remote.timerOptions, [0, 15, 30, 45, 60], true);
+  gameConfig.questionsPerLevel = Number(remote.defaultQuestionsPerLevel ?? 2);
+  gameConfig.questionsPerLevelOptions = normalizeNumberOptions(remote.questionsPerLevelOptions, [1, 2, 3, 4]);
+  gameConfig.questionsPerCategory = Number(remote.defaultQuestionsPerCategory ?? (gameConfig.questionsPerLevel * window.SessionQuestions.levels.length));
+  gameConfig.questionsPerCategoryOptions = normalizeNumberOptions(remote.questionsPerCategoryOptions, [3, 6, 9, 12]);
+  gameConfig.minCategories = Math.max(1, Number(remote.minCategories ?? 2));
+  gameConfig.maxCategories = Math.max(gameConfig.minCategories, Number(remote.maxCategories ?? 5));
+
+  if (Array.isArray(levels) && levels.length) {
+    difficultyLabels = new Map(levels.map(level => [Number(level.points), level.labelAr || String(level.points)]));
+  }
+
+  synchronizeQuestionCounts("level");
+}
+
+function normalizeNumberOptions(values, fallback, allowZero = false) {
+  const source = Array.isArray(values) && values.length ? values : fallback;
+  return [...new Set(source.map(Number).filter(value => Number.isFinite(value) && (allowZero ? value >= 0 : value > 0)))].sort((a, b) => a - b);
+}
+
+function initializeSettingsControls() {
+  renderTimerOptions();
+  renderQuestionCountOptions();
+}
+
+function renderTimerOptions() {
+  const container = document.getElementById("timerOptions");
+  if (!container) return;
+  container.replaceChildren();
+
+  gameConfig.timerOptions.forEach(seconds => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "timer-option";
+    button.dataset.time = String(seconds);
+    button.classList.toggle("active", Number(seconds) === Number(gameConfig.timerSeconds));
+    button.innerHTML = seconds === 0 ? "<strong>∞</strong><small>بدون وقت</small>" : `${seconds} <small>ث</small>`;
+    button.addEventListener("click", () => {
+      container.querySelectorAll(".timer-option").forEach(item => item.classList.remove("active"));
+      button.classList.add("active");
+      gameConfig.timerSeconds = Number(seconds);
+    });
+    container.appendChild(button);
+  });
+}
+
+function renderQuestionCountOptions() {
+  const levelSelect = document.getElementById("questionsPerLevelSelect");
+  const categorySelect = document.getElementById("questionsPerCategorySelect");
+  if (!levelSelect || !categorySelect) return;
+
+  levelSelect.replaceChildren();
+  gameConfig.questionsPerLevelOptions.forEach(count => {
+    const option = document.createElement("option");
+    option.value = String(count);
+    option.textContent = `${count} سؤال${count === 1 ? "" : ""}`;
+    levelSelect.appendChild(option);
+  });
+
+  categorySelect.replaceChildren();
+  gameConfig.questionsPerCategoryOptions.forEach(count => {
+    const option = document.createElement("option");
+    option.value = String(count);
+    option.textContent = `${count} أسئلة`;
+    categorySelect.appendChild(option);
+  });
+
+  levelSelect.value = String(gameConfig.questionsPerLevel);
+  categorySelect.value = String(gameConfig.questionsPerCategory);
+
+  levelSelect.addEventListener("change", () => {
+    gameConfig.questionsPerLevel = Number(levelSelect.value);
+    synchronizeQuestionCounts("level");
+    categorySelect.value = String(gameConfig.questionsPerCategory);
+    updateSessionSize();
+  });
+
+  categorySelect.addEventListener("change", () => {
+    gameConfig.questionsPerCategory = Number(categorySelect.value);
+    synchronizeQuestionCounts("category");
+    levelSelect.value = String(gameConfig.questionsPerLevel);
+    updateSessionSize();
+  });
+}
+
+function synchronizeQuestionCounts(source) {
+  const levelCount = window.SessionQuestions.levels.length;
+  if (source === "category") {
+    const derived = Math.max(1, Math.round(gameConfig.questionsPerCategory / levelCount));
+    const closest = gameConfig.questionsPerLevelOptions.reduce((best, value) =>
+      Math.abs(value - derived) < Math.abs(best - derived) ? value : best,
+      gameConfig.questionsPerLevelOptions[0] || 1
+    );
+    gameConfig.questionsPerLevel = closest;
+    gameConfig.questionsPerCategory = closest * levelCount;
+  } else {
+    gameConfig.questionsPerCategory = gameConfig.questionsPerLevel * levelCount;
+  }
 }
 
 function categoryImage(category) {
@@ -144,7 +260,7 @@ function buildCategorySelector() {
     const input = document.createElement("input");
     input.type = "checkbox";
     input.value = category.id;
-    input.checked = index < 5;
+    input.checked = index < gameConfig.maxCategories;
     input.addEventListener("change", updateSessionSize);
 
     const text = document.createElement("span");
@@ -164,32 +280,25 @@ function buildCategorySelector() {
 function updateSessionSize() {
   const count = document.querySelectorAll("#categorySelector input:checked").length;
   document.querySelectorAll("#categorySelector input").forEach(input => {
-    input.disabled = !input.checked && count >= 5;
+    input.disabled = !input.checked && count >= gameConfig.maxCategories;
   });
-  startButton.disabled = count < 2 || count > 5;
-  document.getElementById("sessionSize").textContent = `${count} / 5 تصنيفات · ${count * window.SessionQuestions.levels.length * window.SessionQuestions.perLevel} سؤالًا · جميع المستويات معًا`;
+  startButton.disabled = count < gameConfig.minCategories || count > gameConfig.maxCategories;
+  document.getElementById("sessionSize").textContent = `${count} / ${gameConfig.maxCategories} تصنيفات · ${gameConfig.questionsPerLevel} من كل مستوى · ${gameConfig.questionsPerCategory} من كل تصنيف · ${count * gameConfig.questionsPerCategory} سؤالًا إجمالًا`;
 }
-
-document.querySelectorAll(".timer-option").forEach(button => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".timer-option").forEach(item => item.classList.remove("active"));
-    button.classList.add("active");
-    gameConfig.timerSeconds = Number(button.dataset.time);
-  });
-});
 
 startButton.addEventListener("click", startNewGame);
 
 function startNewGame() {
   const selected = Array.from(document.querySelectorAll("#categorySelector input:checked"));
 
-  if (selected.length > 5) {
-    alert("اختر خمسة تصنيفات كحد أقصى.");
+  if (selected.length > gameConfig.maxCategories) {
+    const maxLabel = gameConfig.maxCategories === 5 ? "خمسة" : String(gameConfig.maxCategories);
+    alert(`اختر ${maxLabel} تصنيفات كحد أقصى.`);
     return;
   }
 
-  if (selected.length < 2) {
-    alert("اختر تصنيفين على الأقل.");
+  if (selected.length < gameConfig.minCategories) {
+    alert(`اختر ${gameConfig.minCategories} تصنيفات على الأقل.`);
     return;
   }
 
@@ -235,7 +344,10 @@ function cleanTeamName(value, fallback) {
 }
 
 function buildSessionCategories(selectedIds) {
-  return window.SessionQuestions.build(gameQuestions, selectedIds);
+  return window.SessionQuestions.build(gameQuestions, selectedIds, {
+    perLevel: gameConfig.questionsPerLevel,
+    maxCategories: gameConfig.maxCategories
+  });
 }
 
 function getSelectedCategories() {
@@ -326,17 +438,20 @@ function createGameBoard() {
     const list = document.createElement("div");
     list.className = "questions";
 
+    const levelCounters = new Map();
     categoryData.questions
       .filter(question => question.round === currentRound)
-      .forEach((question, index) => {
+      .forEach(question => {
         const card = document.createElement("button");
         card.type = "button";
         card.className = `question-card level-${question.points}`;
         const pointValue = document.createElement("strong");
         pointValue.textContent = question.points;
+        const currentLevelIndex = (levelCounters.get(Number(question.points)) || 0) + 1;
+        levelCounters.set(Number(question.points), currentLevelIndex);
         const difficulty = document.createElement("span");
-        difficulty.textContent = `${getDifficultyLabel(question.points)} · ${(index % 2) + 1} / 2`;
-        card.setAttribute("aria-label", `${categoryData.category}، ${question.points} نقطة، السؤال ${(index % 2) + 1} من 2`);
+        difficulty.textContent = `${getDifficultyLabel(question.points)} · ${currentLevelIndex} / ${gameConfig.questionsPerLevel}`;
+        card.setAttribute("aria-label", `${categoryData.category}، ${question.points} نقطة، السؤال ${currentLevelIndex} من ${gameConfig.questionsPerLevel}`);
         card.append(pointValue, difficulty);
 
         if (answeredQuestionIds.includes(question.id)) card.classList.add("used");
@@ -356,8 +471,7 @@ function createGameBoard() {
 }
 
 function getDifficultyLabel(points) {
-  const labels = { 100: "سهل", 300: "متوسط", 500: "صعب" };
-  return labels[Number(points)] || "";
+  return difficultyLabels.get(Number(points)) || "";
 }
 
 function openQuestion(question, card, categoryName) {
@@ -385,6 +499,7 @@ function openQuestion(question, card, categoryName) {
 
   renderQuestionMedia(question);
   renderQuestionOptions(question);
+  resetAnswerMedia();
 
   document.getElementById("answerArea").classList.add("hidden");
   document.getElementById("showAnswerButton").classList.remove("hidden");
@@ -411,7 +526,21 @@ function renderQuestionMedia(question) {
     image.alt = media.alt || "صورة السؤال";
     image.loading = "eager";
     image.decoding = "async";
-    container.appendChild(image);
+
+    if (question.categoryId === "fc-makeup" || String(question.id || "").startsWith("fc-makeup")) {
+      const shell = document.createElement("div");
+      shell.className = "makeup-image-shell";
+      shell.appendChild(image);
+      for (let index = 0; index < 7; index++) {
+        const mask = document.createElement("span");
+        mask.className = `makeup-text-mask mask-${index + 1}`;
+        mask.setAttribute("aria-hidden", "true");
+        shell.appendChild(mask);
+      }
+      container.appendChild(shell);
+    } else {
+      container.appendChild(image);
+    }
 
     const sourceUrl = question.metadata?.source_url;
     if (sourceUrl) {
@@ -478,10 +607,60 @@ function renderQuestionOptions(question) {
 
 document.getElementById("showAnswerButton").addEventListener("click", revealAnswer);
 
-function revealAnswer() {
+async function revealAnswer() {
   stopTimer();
   document.getElementById("showAnswerButton").classList.add("hidden");
   document.getElementById("answerArea").classList.remove("hidden");
+  await renderAnswerMedia(currentQuestion);
+}
+
+function resetAnswerMedia() {
+  const container = document.getElementById("answerMedia");
+  if (!container) return;
+  container.replaceChildren();
+  container.classList.add("hidden");
+  container.classList.remove("loading");
+}
+
+async function renderAnswerMedia(question) {
+  const container = document.getElementById("answerMedia");
+  resetAnswerMedia();
+  if (!container || !question?.answerMedia) return;
+
+  container.classList.remove("hidden");
+  container.classList.add("loading");
+  const status = document.createElement("span");
+  status.className = "answer-media-status";
+  status.textContent = "جاري تحميل صورة الإجابة…";
+  container.appendChild(status);
+
+  const resolved = await window.PlatformContent.resolveAnswerMedia(question.answerMedia);
+  if (currentQuestion?.id !== question.id) return;
+  container.replaceChildren();
+  container.classList.remove("loading");
+  if (!resolved?.url) {
+    container.classList.add("hidden");
+    return;
+  }
+
+  const image = document.createElement("img");
+  image.src = resolved.url;
+  image.alt = resolved.alt || "صورة مرتبطة بالإجابة";
+  image.loading = "eager";
+  image.decoding = "async";
+  image.referrerPolicy = "no-referrer";
+  image.addEventListener("error", () => container.classList.add("hidden"));
+  container.appendChild(image);
+
+  if (resolved.sourceUrl) {
+    const source = document.createElement("a");
+    source.className = "answer-media-source";
+    source.href = resolved.sourceUrl;
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+    source.textContent = "مصدر الصورة: Wikipedia";
+    container.appendChild(source);
+  }
 }
 
 function getOtherTeamIndex() {

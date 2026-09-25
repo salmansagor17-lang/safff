@@ -1,57 +1,110 @@
-# بيت سيدو — 0.14.1
+# بيت سيدو — v0.15.1
 
-لعبة عربية لفريقين على شاشة مشتركة، بأسئلة نصية وصور وألغاز رموز.
+منصة ألعاب عائلية عربية. اللعبة الحالية هي **تحدي العائلة** وتعمل كواجهة Vanilla HTML/CSS/JavaScript مرتبطة مباشرة بـSupabase.
 
-- الموقع: https://family-challenge-lemon.vercel.app
+## هيكل المشروع
+
+```text
+.
+├── index.html                     # الصفحة الرئيسية
+├── style.css                      # تنسيق الصفحة الرئيسية فقط
+├── js/
+│   ├── config.js                  # إصدار التطبيق وربط Supabase
+│   └── platform.js                # بيانات الصفحة الرئيسية
+├── games/family-challenge/
+│   ├── index.html                 # واجهة اللعبة
+│   ├── style.css                  # تنسيق اللعبة
+│   └── js/                        # منطق اللعبة والإعداد والمؤقت والصوت
+├── shared/
+│   ├── js/                        # Supabase/content/theme/feedback/session
+│   └── styles/                    # Design System: tokens/components/palette
+├── data/generated/                # Snapshot محلي مولّد من Supabase
+├── media/                         # أصول محلية ثابتة فقط
+├── scripts/
+│   ├── content/                   # مزامنة المحتوى
+│   ├── tests/                     # اختبارات Node
+│   ├── ops/                       # تحقق ما بعد النشر
+│   └── maintenance/               # أدوات صيانة اختيارية
+├── supabase/                      # توثيق Schema التطبيق
+└── docs/
+    ├── architecture/              # هندسة المشروع وقاعدة البيانات
+    └── releases/                  # تقارير الإصدارات
+```
+
+## مصدر الحقيقة
+
+- **الكود والتصميم:** ملفات المشروع / Git.
+- **المحتوى الحي:** Supabase (`game_questions`, `question_answers`, `question_media`).
+- **الصور الأساسية:** Supabase Storage `game-media`.
+- **صور إجابات ديزني:** تُجلب عند كشف الإجابة فقط عبر Wikipedia/MediaWiki، ولا تُخزّن داخل المشروع.
+- **Fallback:** `data/generated/question-bank.json` ثم `defaultQuestions.js`.
+
+## قاعدة البيانات
+
+الجداول الرئيسية:
+- `games`
+- `game_categories`
+- `game_questions`
+- `game_difficulty_levels`
+- `game_session_settings`
+- `question_answers` — إجابات منظمة متعددة اللغات.
+- `question_media` — يفصل وسائط السؤال عن وسائط الإجابة.
+- `feedback`
+
+يوجد **20 View آمنًا** للتصنيفات (`vw_questions_*`) بدل إنشاء 20 جدولًا مكررًا. التفاصيل: [DATABASE-STRUCTURE.ar.md](docs/architecture/DATABASE-STRUCTURE.ar.md).
+
+## إعدادات الجلسة
+
+الإعدادات الحية تُقرأ من `game_session_settings` في Supabase:
+- الوقت: بدون وقت، 15، 30، 45، 60 ثانية.
+- الأسئلة من كل مستوى: 1–4.
+- الأسئلة من كل تصنيف: 3 / 6 / 9 / 12، ومتزامنة مع اختيار عدد الأسئلة من كل مستوى.
+
+## Design System
+
+- العناوين: **Alexandria**.
+- النصوص: **IBM Plex Sans Arabic**.
+- أربعة ألوان جديدة: **Coral / Mint / Sky / Plum**.
+- الملفات: `shared/styles/tokens.css`, `components.css`, `palette.css`.
+
+## مزامنة المحتوى
+
+```bash
+node --use-system-ca scripts/content/sync-content.cjs
+```
+
+ينتج:
+- `data/generated/question-bank.json`
+- `data/generated/question-answers.json`
+- `data/generated/answer-media.json`
+- `data/generated/content-audit.json`
+- `games/family-challenge/js/defaultQuestions.js`
+
+## الاختبارات
+
+```bash
+node --test scripts/tests/*.cjs
+```
+
+## Vercel والتحقق بعد النشر
+
 - المستودع: https://github.com/salmansagor17-lang/safff
-- النشر: Vercel / salman-4992/family-challenge، تلقائيًا من main.
-- المحتوى: Supabase؛ 3286 سؤال في 20 تصنيفًا نشطًا.
-- الجلسة: سؤالان لكل مستوى، و6 أسئلة لكل تصنيف. من تصنيفين إلى خمسة، ومستويات 100 و300 و500 معًا.
-- الصور: فواكه، حيوانات، معالم وأعلام؛ 1050 سؤال صور. ألغاز الرموز: 50 لغزًا.
+- مشروع Vercel: `salman-4992/family-challenge`.
+- النشر تلقائي عند رفع التغييرات إلى فرع `main`؛ احتفظ بمجلد `.git` عند العمل على هذه النسخة.
+- بعد حفظ التغييرات في commit، استخدم `git push origin main` ثم نفّذ فحص الإنتاج أدناه بعد اكتمال النشر.
 
-## مرجع المالك
+المشروع Static Web App وجاهز لـVercel عبر `vercel.json`. رابط الإنتاج المسجل في أداة التحقق هو:
 
-- [المنهجية الكاملة بالعربية](docs/PLATFORM-METHODOLOGY.ar.md)
-- [التقرير التنفيذي للإصدار](docs/EXECUTIVE-REPORT-0.9.0.ar.md)
-
-ملفات الإدارة مستبعدة من النشر بواسطة .vercelignore.
-
-## التشغيل والاختبار
-
-افتح هذا المجلد في VS Code وشغّل index.html باستخدام Live Server. التطبيق HTML/CSS/JavaScript ولا يحتاج تثبيت حزم npm للتشغيل.
-
-اختبارات المنطق باستخدام Node.js:
-
-```powershell
-node --test scripts/test-content-store.cjs scripts/test-session-questions.cjs scripts/test-game-flow.cjs scripts/test-setup-flow.cjs scripts/test-topic-expansion.cjs
+```text
+https://family-challenge-lemon.vercel.app
 ```
 
-## البيانات
+بعد نشر النسخة على مشروع Vercel نفسه:
 
-إعداد Supabase العام في js/config.js. تحميل الأسئلة على دفعات في shared/js/contentStore.js والسحب في shared/js/sessionQuestions.js.
-
-البنك الاحتياطي الكامل: data/question-bank-v0.9.0.json. نسخة 0.8.1 القديمة مرجع تاريخي لا تستخدمه اللعبة الجديدة. تعديل Supabase لا يحدث البنك المحلي تلقائيًا.
-
-الأعلام ملفات SVG من [flag-icons](https://github.com/lipis/flag-icons) إصدار 7.3.2، وترخيصها في media/flags/LICENSE.txt. الصور الأصلية في Supabase Storage وتحافظ على مصادرها وتراخيصها.
-
-## تحديث المحتوى والرجوع
-
-scripts/visual-expansion.sql معاملة تحديث محتوى 0.9.0، وscripts/rollback-visual-expansion.sql لعكسها بعد مراجعة الأثر. SQL لا ينفذ تلقائيًا عند النشر. سكربت التجهيز مخصص لهذه التوسعة، وليس أداة مزامنة عامة.
-
-أسماء الفرق والنقاط مؤقتة في ذاكرة الصفحة. المفتاح العام مخصص للواجهة والحماية الفعلية عبر RLS. لا ترفع ملفات البيئة أو مفاتيح الإدارة؛ .local-backups مستبعدة من Git والنشر.
-
-أضيف باب الحارة بـ100 سؤال، وصور جميع التصنيفات وشعار بيت سيدو، وزر الليل والنهار.
-
-تحديث 0.14.0: مزامنة Supabase بتاريخ 2026-09-25، واعتماد ثلاث درجات للصعوبة، و500 سؤال ميكاب مصور، وإضافة 300 سؤال Prison Break وغلافه من Storage. تصنيف القرآن السابق غير موجود في البنك الحالي؛ حافظنا على محتوى المصدر كما هو. التفاصيل في [تقرير الربط](docs/INTEGRATION-REPORT-0.14.0.ar.md).
-
-لتحديث النسخ المحلية من Supabase دون الكتابة إلى قاعدة البيانات:
-
-```powershell
-node --use-system-ca scripts/sync-content.cjs
-node --test scripts/test-content-store.cjs scripts/test-session-questions.cjs scripts/test-game-flow.cjs scripts/test-setup-flow.cjs scripts/test-topic-expansion.cjs
-node --use-system-ca scripts/verify-production.cjs
+```bash
+node --use-system-ca scripts/ops/verify-production.cjs https://family-challenge-lemon.vercel.app
 ```
 
-سكربت المزامنة يحفظ نسخة رجوع في `.local-backups` ويحدث البنك الكامل والمصغر وإحصائيات التصنيفات. بعد مراجعة التغييرات ورفعها إلى GitHub، انتظر نشر Vercel ثم شغّل فحص الإنتاج. إصدار Node.js المستخدم: 24. التطبيق ثابت، ويقرأ الإعداد العام من `js/config.js`؛ لا يحتاج متغيرات بيئة على Vercel.
+## ملاحظات أمنية
 
-تحديث 0.14.1: مزامنة صور الميكاب الـ500 إلى مسارات المصدر الحالية وأوصافها وبياناتها الجديدة. [تقرير التحقق الجديد](docs/INTEGRATION-REPORT-0.14.1.ar.md).
+واجهة المتصفح تستخدم **Supabase Publishable Key فقط**. لا تضع `service_role` أو Database Password داخل ملفات المشروع. جميع جداول `public` المستخدمة من العميل محمية بـRLS.

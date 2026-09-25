@@ -1,5 +1,41 @@
 [
   {
+    "id": "fc-bab-al-hara",
+    "title": "باب الحارة",
+    "image_path": null,
+    "image_alt": "",
+    "count": 100,
+    "levels": {
+      "100": 40,
+      "300": 20,
+      "500": 40
+    }
+  },
+  {
+    "id": "fc-currencies",
+    "title": "عملات العالم",
+    "image_path": null,
+    "image_alt": "",
+    "count": 50,
+    "levels": {
+      "100": 20,
+      "300": 10,
+      "500": 20
+    }
+  },
+  {
+    "id": "fc-disney",
+    "title": "ديزني",
+    "image_path": null,
+    "image_alt": "",
+    "count": 250,
+    "levels": {
+      "100": 101,
+      "300": 50,
+      "500": 99
+    }
+  },
+  {
     "id": "fc-general",
     "title": "معلومات عامة",
     "image_path": null,
@@ -36,6 +72,30 @@
     }
   },
   {
+    "id": "fc-image-animals",
+    "title": "صور الحيوانات 🐾",
+    "image_path": null,
+    "image_alt": "",
+    "count": 245,
+    "levels": {
+      "100": 95,
+      "300": 50,
+      "500": 100
+    }
+  },
+  {
+    "id": "fc-image-flags",
+    "title": "أعلام الدول 🏳️",
+    "image_path": null,
+    "image_alt": "",
+    "count": 50,
+    "levels": {
+      "100": 20,
+      "300": 10,
+      "500": 20
+    }
+  },
+  {
     "id": "fc-image-fruits",
     "title": "صور الفواكه 🍎",
     "image_path": null,
@@ -60,18 +120,6 @@
     }
   },
   {
-    "id": "fc-image-animals",
-    "title": "صور الحيوانات 🐾",
-    "image_path": null,
-    "image_alt": "",
-    "count": 245,
-    "levels": {
-      "100": 95,
-      "300": 50,
-      "500": 100
-    }
-  },
-  {
     "id": "fc-islamic",
     "title": "عبادات ومعارف إسلامية",
     "image_path": null,
@@ -84,87 +132,15 @@
     }
   },
   {
-    "id": "fc-riddles",
-    "title": "ألغاز",
-    "image_path": null,
-    "image_alt": "",
-    "count": 89,
-    "levels": {
-      "100": 59,
-      "300": 10,
-      "500": 20
-    }
-  },
-  {
-    "id": "fc-sports",
-    "title": "رياضة",
-    "image_path": null,
-    "image_alt": "",
-    "count": 90,
-    "levels": {
-      "100": 60,
-      "300": 10,
-      "500": 20
-    }
-  },
-  {
-    "id": "fc-image-flags",
-    "title": "أعلام الدول 🏳️",
-    "image_path": null,
-    "image_alt": "",
-    "count": 50,
-    "levels": {
-      "100": 20,
-      "300": 10,
-      "500": 20
-    }
-  },
-  {
-    "id": "fc-symbols",
-    "title": "فك الرموز 🧩",
-    "image_path": null,
-    "image_alt": "",
-    "count": 50,
-    "levels": {
-      "100": 20,
-      "300": 10,
-      "500": 20
-    }
-  },
-  {
-    "id": "fc-bab-al-hara",
-    "title": "باب الحارة",
-    "image_path": null,
-    "image_alt": "",
-    "count": 100,
-    "levels": {
-      "100": 40,
-      "300": 20,
-      "500": 40
-    }
-  },
-  {
     "id": "fc-makeup",
     "title": "ميكاب بالصور 💄",
     "image_path": null,
     "image_alt": "",
-    "count": 500,
+    "count": 300,
     "levels": {
-      "100": 300,
-      "300": 155,
-      "500": 45
-    }
-  },
-  {
-    "id": "fc-disney",
-    "title": "ديزني",
-    "image_path": null,
-    "image_alt": "",
-    "count": 250,
-    "levels": {
-      "100": 101,
-      "300": 50,
-      "500": 99
+      "100": 180,
+      "300": 90,
+      "500": 30
     }
   },
   {
@@ -177,6 +153,42 @@
       "100": 157,
       "300": 131,
       "500": 259
+    }
+  },
+  {
+    "id": "fc-prison-break",
+    "title": "Prison Break",
+    "image_path": "categories/fc-prison-break.jpg",
+    "image_alt": "Prison Break promotional poster",
+    "count": 300,
+    "levels": {
+      "100": 120,
+      "300": 60,
+      "500": 120
+    }
+  },
+  {
+    "id": "fc-quran-stories",
+    "title": "قصص من القرآن",
+    "image_path": null,
+    "image_alt": "",
+    "count": 54,
+    "levels": {
+      "100": 21,
+      "300": 10,
+      "500": 23
+    }
+  },
+  {
+    "id": "fc-riddles",
+    "title": "ألغاز",
+    "image_path": null,
+    "image_alt": "",
+    "count": 89,
+    "levels": {
+      "100": 59,
+      "300": 10,
+      "500": 20
     }
   },
   {
@@ -204,20 +216,20 @@
     }
   },
   {
-    "id": "fc-quran-stories",
-    "title": "قصص من القرآن",
+    "id": "fc-sports",
+    "title": "رياضة",
     "image_path": null,
     "image_alt": "",
-    "count": 54,
+    "count": 90,
     "levels": {
-      "100": 21,
+      "100": 60,
       "300": 10,
-      "500": 23
+      "500": 20
     }
   },
   {
-    "id": "fc-currencies",
-    "title": "عملات العالم",
+    "id": "fc-symbols",
+    "title": "فك الرموز 🧩",
     "image_path": null,
     "image_alt": "",
     "count": 50,
@@ -225,18 +237,6 @@
       "100": 20,
       "300": 10,
       "500": 20
-    }
-  },
-  {
-    "id": "fc-prison-break",
-    "title": "Prison Break",
-    "image_path": "categories/fc-prison-break.jpg",
-    "image_alt": "Prison Break promotional poster",
-    "count": 300,
-    "levels": {
-      "100": 120,
-      "300": 60,
-      "500": 120
     }
   }
 ]

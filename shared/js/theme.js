@@ -9,7 +9,7 @@
       button.textContent = light ? '☾ الوضع الليلي' : '☀ الوضع النهاري';
       button.setAttribute('aria-pressed', String(light));
     });
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f6f4ee' : '#111f2c');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f5f3ed' : '#101c27');
   }
   document.addEventListener('DOMContentLoaded', () => {
     render();

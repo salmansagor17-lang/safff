@@ -1,3 +1,22 @@
+# Changelog
+
+## 0.15.1 — 2026-09-25
+
+- Session settings now load from Supabase `game_session_settings`.
+- Added 1–4 questions per level, synchronized to 3/6/9/12 questions per category.
+- Added a no-timer (`∞`) answer mode.
+- Added an extra makeup-only text-concealment layer while keeping product images large and sharp.
+- Added regression tests for dynamic session sizing, no-timer mode, and makeup masking.
+
+
+## 0.15.0 — 2026-09-25
+- Reorganized project files into generated data, content/tests/ops/maintenance scripts, architecture/release docs.
+- Added `question_answers`, `question_media`, 20 category views, and `vw_content_overview` in Supabase.
+- Fruits and animals now use Arabic + English answers in live and fallback content.
+- Disney questions are text-only; answer images are resolved from Wikipedia only after answer reveal.
+- Introduced centralized typography and a four-color Coral/Mint/Sky/Plum design system.
+- Added Disney answer-media flow test.
+
 ## 0.14.1 — 2026-09-25
 
 مزامنة صور الميكاب الـ500 إلى مسارات المصدر الحالية مع الأوصاف والبيانات الوصفية الجديدة في البنك الكامل والمصغر. الأعداد والدرجات وقواعد اللعب ثابتة. تحديث اختبار المحتوى ليتحقق من النسخة الجديدة.
@@ -35,3 +54,9 @@
 - لا حسابات مستخدمين ولا تخزين لأسماء الفرق أو النتائج.
 - Feedback مجهول فقط.
 - إضافة إعدادات `vercel.json` للنشر كـStatic Web App.
+
+## 0.14.2
+- Curated makeup category to 300 active Supabase questions across 35 brands.
+- Increased question image display size and explicitly removed full-image CSS blur.
+- Synced local fallback/audit/mini fallback to the same 300 makeup questions.
+- Added Supabase public schema snapshot and removed local Vercel session secrets from distributable package.

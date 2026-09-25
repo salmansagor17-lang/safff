@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;
+  --font-display:"Alexandria","IBM Plex Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;
+
+  --fs-xs:clamp(.72rem,.68rem + .12vw,.8rem);
+  --fs-sm:clamp(.82rem,.77rem + .18vw,.94rem);
+  --fs-md:clamp(.98rem,.91rem + .22vw,1.08rem);
+  --fs-lg:clamp(1.1rem,1rem + .35vw,1.28rem);
+  --fs-xl:clamp(1.35rem,1.18rem + .6vw,1.72rem);
+  --fs-2xl:clamp(1.75rem,1.35rem + 1.4vw,2.55rem);
+  --fs-3xl:clamp(2.2rem,1.55rem + 2.5vw,3.7rem);
+
+  --bg:#101c27;
+  --panel:#182b39;
+  --panel2:#203746;
+  --line:#38515f;
+  --text:#f0f5f5;
+  --muted:#abc0c8;
+  --soft:#223e50;
+  --shadow:0 18px 55px #04101a2e;
+
+  --blue:#4b8fca;
+  --gold:#dfbc68;
+  --teal:#70c7c1;
+  --rose:#e6a8bd;
+  --lavender:#baa7e1;
+  --sand:#e4c47f;
+
+  /* Four new platform colors — 0.15.0 */
+  --coral:#f29a8a;
+  --mint:#78c9ae;
+  --sky:#79afe3;
+  --plum:#b597d6;
+  --accent:var(--mint);
+
+  --teal-soft:#203f42;
+  --rose-soft:#44323f;
+  --lavender-soft:#36344c;
+  --sand-soft:#403c30;
+  --coral-soft:#47352f;
+  --mint-soft:#254039;
+  --sky-soft:#273b4d;
+  --plum-soft:#3c3349;
+
+  --radius-sm:10px;
+  --radius-md:14px;
+  --radius-lg:20px;
+  --radius-xl:26px;
+}
+
+html[data-theme="light"] {
+  color-scheme:light;
+  --bg:#f5f3ed;
+  --panel:#fffefa;
+  --panel2:#edf0eb;
+  --line:#cad5d5;
+  --text:#18384c;
+  --muted:#5c7079;
+  --soft:#e2eeee;
+  --shadow:0 18px 55px #1639500b;
+
+  --blue:#2d6d9f;
+  --gold:#8d681d;
+  --teal:#25756f;
+  --rose:#98516a;
+  --lavender:#6c5999;
+  --sand:#8a6721;
+  --coral:#a94f43;
+  --mint:#2e7764;
+  --sky:#356f9f;
+  --plum:#6f5592;
+
+  --teal-soft:#e3f2ef;
+  --rose-soft:#f7e8ed;
+  --lavender-soft:#eee9f7;
+  --sand-soft:#f7eed8;
+  --coral-soft:#fae8e3;
+  --mint-soft:#e3f2ec;
+  --sky-soft:#e5eff8;
+  --plum-soft:#eee8f5;
+}
+
+*{box-sizing:border-box}
+html{font-family:var(--font-body);background:var(--bg);color:var(--text);color-scheme:dark;text-rendering:optimizeLegibility}
+body{margin:0;min-height:100dvh;background:var(--bg);color:var(--text);font-size:var(--fs-md);line-height:1.72}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);line-height:1.35;letter-spacing:-.015em}
+h1,h2,h3,p{margin:0}
+button,input,select,textarea{font:inherit}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+button:disabled{cursor:default;opacity:.5}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
+::selection{background:color-mix(in srgb,var(--mint) 35%,transparent);color:var(--text)}
