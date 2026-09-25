@@ -47,7 +47,8 @@ async function main() {
   assert.ok(disney.questions.every(q=>q.answerMedia?.provider==='wikipedia-search'));
   assert.equal(ctx.window.APP_CONFIG.version, '0.15.1');
   assert.ok(payload.sessionSettings?.timerOptions?.includes(0));
-  assert.deepEqual(payload.sessionSettings?.questionsPerLevelOptions, [1,2,3,4]);
+  // Normalize the array created in the VM to this realm before strict comparison.
+  assert.deepEqual(Array.from(payload.sessionSettings?.questionsPerLevelOptions || []), [1,2,3,4]);
   console.log(JSON.stringify({ok:true,base,categories:payload.categories.length,questions:payload.categories.reduce((n,c)=>n+c.questions.length,0),version:ctx.window.APP_CONFIG.version},null,2));
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});
