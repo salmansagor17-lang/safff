@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
+const { isDeepStrictEqual } = require('node:util');
 const root = path.resolve(__dirname, '..');
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'js/config.js'), 'utf8'), ctx);
@@ -43,6 +44,10 @@ async function main() {
     return {id:c.id, title:c.title, image_path:c.image_path, image_alt:c.image_alt, count:pool.length, levels:Object.fromEntries(ctx.window.SessionQuestions.levels.map(p => [p, pool.filter(q => q.points === p).length]))};
   });
   const mini = audit.map(c => ({id:c.id, category:c.title, imagePath:c.image_path, imageAlt:c.image_alt, questions:ctx.window.SessionQuestions.levels.flatMap(p => rows.filter(q => q.category_id === c.id && q.points === p).slice(0,2)).map(q => ({id:q.id, points:q.points, type:q.type, question:q.question, answer:q.answer, options:q.options, media:{type:q.media_type,path:q.media_path,alt:q.media_alt},metadata:q.metadata}))}));
+  // A stable count alone does not catch edits to existing rows during export.
+  const [confirmedCategories, confirmedQuestions] = await Promise.all([read('game_categories'), read('game_questions')]);
+  assert.ok(isDeepStrictEqual(confirmedCategories, categories), 'Categories changed during export; retry after updates finish');
+  assert.ok(isDeepStrictEqual(confirmedQuestions, questions), 'Questions changed during export; retry after updates finish');
   const outputs = {'data/question-bank-v0.9.0.json': JSON.stringify(rows,null,2)+'\n', 'data/content-audit.json':JSON.stringify(audit,null,2)+'\n', 'games/family-challenge/js/defaultQuestions.js':'const defaultQuestions = '+JSON.stringify(mini,null,2)+';\n'};
   const backup = path.join(root,'.local-backups','content-sync-'+Date.now());
   fs.mkdirSync(backup,{recursive:true});
