@@ -38,27 +38,27 @@ async function main() {
   for (const q of expected) {
     const actual = actualById.get(q.id);
     assert.ok(actual, q.id);
-    for (const field of ['category_id','question','answer','points']) assert.equal(actual[field],q[field],`${q.id}/${field}`);
+    for (const field of ['category_id','question','answer','points','type']) assert.equal(actual[field],q[field],`${q.id}/${field}`);
   }
-  assert.equal(questions.filter(q => q.media.type === 'image').length, 550);
+  for (const q of expected) { const actual = actualById.get(q.id); assert.equal(actual.media.type, q.media_type, q.id); assert.equal(actual.media.path, q.media_path, q.id); assert.deepEqual(JSON.parse(JSON.stringify(actual.options)), q.options, q.id); assert.deepEqual(JSON.parse(JSON.stringify(actual.metadata)), q.metadata, q.id); }
+  assert.equal(questions.filter(q => q.media.type === 'image').length, expected.filter(q => q.media_type === 'image').length);
   assert.equal(questions.filter(q => q.metadata.symbols).length, 50);
   assert.ok(payload.categories.every(ctx.window.SessionQuestions.isPlayable));
   const bab = payload.categories.find(c => c.id === 'fc-bab-al-hara');
   assert.equal(bab.questions.length, 100);
-  for (const points of [100,200,300,400,500]) assert.equal(bab.questions.filter(q => q.points === points).length, 20);
+  for (const points of [100,300,500]) assert.equal(bab.questions.filter(q => q.points === points).length, points === 300 ? 20 : 40);
   for (const category of payload.categories) {
-    const response = await fetch(base + '/media/categories/' + category.id + '.svg');
+    const response = await fetch(category.imagePath ? ctx.window.PlatformContent.getPublicMediaUrl(category.imagePath) : base + '/media/categories/' + category.id + '.svg');
     assert.equal(response.status, 200);
-    assert.match(response.headers.get('content-type'), /image\/svg/);
+    assert.match(response.headers.get('content-type'), /^image\//);
   }
   const logo = await fetch(base + '/media/beit-sido.png');
   assert.equal(logo.status, 200);
   assert.match(logo.headers.get('content-type'), /image\/png/);
   const session = ctx.window.SessionQuestions.build(payload.categories, payload.categories.slice(0,5).map(c => c.id));
-  assert.equal(session.flatMap(c => c.questions).length, 50);
-  for (const category of session) for (const points of [100,200,300,400,500]) assert.equal(category.questions.filter(q => q.points === points).length, 2);
-  const images = questions.filter(q => q.media.path?.startsWith('site:'));
-  for (const c of payload.categories.filter(c => ['fc-image-fruits','fc-image-animals','fc-image-landmarks'].includes(c.id))) images.push(...c.questions.slice(0,3));
+  assert.equal(session.flatMap(c => c.questions).length, 30);
+  for (const category of session) for (const points of [100,300,500]) assert.equal(category.questions.filter(q => q.points === points).length, 2);
+  const images = [...new Map(questions.filter(q => q.media.type === 'image').map(q => [q.media.path, q])).values()];
   for (let i = 0; i < images.length; i += 8) {
     await Promise.all(images.slice(i,i+8).map(async q => {
       const r = await fetch(ctx.window.PlatformContent.getPublicMediaUrl(q.media.path), { method: 'HEAD' });
@@ -73,6 +73,6 @@ async function main() {
     const r = await fetch(base + file); assert.equal(r.status, 404, 'Admin file should not be deployed: ' + file);
   }
   console.log(JSON.stringify({ status: 'PASS', base, categories: payload.categories.map(c => ({ name: c.category, count: c.questions.length })),
-    total: questions.length, images: 550, symbols: 50, sessionQuestions: 50, mediaUrlsChecked: images.length, localBank: 'matched', adminFiles: localServer ? 'deployment-only check' : '404' }, null, 2));
+    total: questions.length, images: questions.filter(q => q.media.type === "image").length, symbols: 50, sessionQuestions: 30, mediaUrlsChecked: images.length, localBank: 'matched', adminFiles: localServer ? 'deployment-only check' : '404' }, null, 2));
 }
 main().catch(e => { console.error(e); process.exitCode = 1; });

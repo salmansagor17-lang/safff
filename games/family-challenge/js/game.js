@@ -71,6 +71,8 @@ async function loadLocalQuestionBank() {
       grouped.set(categoryId, {
         id: categoryId,
         category: row.category || categoryId,
+        imagePath: row.category_image_path || null,
+        imageAlt: row.category_image_alt || "",
         questions: []
       });
     }
@@ -98,6 +100,8 @@ function normalizeFallbackQuestions(source) {
   return (source || []).map((category, categoryIndex) => ({
     id: category.id || `fallback-category-${categoryIndex + 1}`,
     category: category.category,
+    imagePath: category.imagePath || null,
+    imageAlt: category.imageAlt || "",
     questions: (category.questions || []).map((question, questionIndex) => ({
       id: question.id || `fallback-${categoryIndex + 1}-${questionIndex + 1}`,
       ...question,
@@ -117,8 +121,8 @@ function setRounds() {
 function categoryImage(category) {
   const image = document.createElement("img");
   image.className = "category-cover";
-  image.src = `../../media/categories/${category.id}.svg`;
-  image.alt = "";
+  image.src = category.imagePath ? window.PlatformContent.getPublicMediaUrl(category.imagePath) : `../../media/categories/${category.id}.svg`;
+  image.alt = category.imageAlt || "";
   image.loading = "lazy";
   image.addEventListener("error", () => {
     if (!image.dataset.fallback) {
@@ -163,7 +167,7 @@ function updateSessionSize() {
     input.disabled = !input.checked && count >= 5;
   });
   startButton.disabled = count < 2 || count > 5;
-  document.getElementById("sessionSize").textContent = `${count} / 5 تصنيفات · ${count * 10} سؤالًا · جميع المستويات معًا`;
+  document.getElementById("sessionSize").textContent = `${count} / 5 تصنيفات · ${count * window.SessionQuestions.levels.length * window.SessionQuestions.perLevel} سؤالًا · جميع المستويات معًا`;
 }
 
 document.querySelectorAll(".timer-option").forEach(button => {
@@ -352,7 +356,7 @@ function createGameBoard() {
 }
 
 function getDifficultyLabel(points) {
-  const labels = { 100: "سهل جدًا", 200: "سهل", 300: "متوسط", 400: "صعب", 500: "صعب جدًا" };
+  const labels = { 100: "سهل", 300: "متوسط", 500: "صعب" };
   return labels[Number(points)] || "";
 }
 

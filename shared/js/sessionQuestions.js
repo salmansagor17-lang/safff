@@ -1,5 +1,5 @@
 (function () {
-  const levels = [100, 200, 300, 400, 500];
+  const levels = [100, 300, 500];
   const perLevel = 2;
   const maxCategories = 5;
 

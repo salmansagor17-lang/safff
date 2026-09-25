@@ -45,17 +45,17 @@ async function setup(mode) {
   return { context, get, walk };
 }
 
-for (const mode of ['online','local','mini']) test(`complete 20-question flags/symbols game using ${mode} content`, async () => {
+for (const mode of ['online','local','mini']) test(`complete 12-question flags/symbols game using ${mode} content`, async () => {
   const { context, get, walk } = await setup(mode);
   assert.equal(get('startButton').disabled, false);
   for (const input of walk(get('categorySelector')).filter(el => el.tag === 'input')) input.checked = ['fc-image-flags','fc-symbols'].includes(input.value);
   get('startButton').listeners.click();
-  assert.equal(vm.runInContext('sessionCategories.flatMap(c => c.questions).length', context), 20);
-  assert.equal(vm.runInContext('getCurrentRoundQuestions().length', context), 20);
+  assert.equal(vm.runInContext('sessionCategories.flatMap(c => c.questions).length', context), 12);
+  assert.equal(vm.runInContext('getCurrentRoundQuestions().length', context), 12);
   let symbolSeen = false, flagSeen = false;
   for (const round of [1]) {
     const questions = vm.runInContext('getCurrentRoundQuestions()', context);
-    assert.equal(questions.length, 20);
+    assert.equal(questions.length, 12);
     for (const q of questions) {
       context.testQuestion = q; context.testCard = new Element('button');
       vm.runInContext('openQuestion(testQuestion, testCard, "Test")', context);
@@ -72,7 +72,7 @@ for (const mode of ['online','local','mini']) test(`complete 20-question flags/s
   assert.equal(vm.runInContext('sessionCategories.length', context), 0);
 });
 
-test('five selected by default, sixth disabled; all 50 cards and levels visible', async () => {
+test('five selected by default, sixth disabled; all 30 cards and levels visible', async () => {
   const { context, get, walk } = await setup('online');
   const inputs = walk(get('categorySelector')).filter(el => el.tag === 'input');
   assert.equal(inputs.filter(el => el.checked).length, 5);
@@ -83,8 +83,8 @@ test('five selected by default, sixth disabled; all 50 cards and levels visible'
   inputs[0].checked = true;
   get('startButton').listeners.click();
   const cards = walk(get('categories')).filter(el => el.tag === 'button');
-  assert.equal(cards.length, 50);
-  for (const points of [100,200,300,400,500]) {
+  assert.equal(cards.length, 30);
+  for (const points of [100,300,500]) {
     assert.equal(cards.filter(card => card.children[0].textContent === points).length, 10);
   }
   inputs[5].checked = true;

@@ -15,31 +15,31 @@ test('rejects more than five categories and accepts exactly five', () => {
   assert.equal(api.build(categories, categories.slice(0,5).map(c => c.id)).length, 5);
 });
 
-test('Bab Al Hara preserves 100 questions, four options and 20 questions per level', () => {
+test('Bab Al Hara preserves 100 questions, four options and 40/20/40 questions across three levels', () => {
   const imported = rows.filter(q => q.category_id === 'fc-bab-al-hara');
   assert.equal(imported.length, 100);
-  for (const points of api.levels) assert.equal(imported.filter(q => q.points === points).length, 20);
+  for (const points of api.levels) assert.equal(imported.filter(q => q.points === points).length, points === 300 ? 20 : 40);
   for (const q of imported) {
     assert.equal(q.options.length, 4);
     assert.ok(q.options.includes(q.answer));
   }
-  for (const c of categories) assert.ok(fs.existsSync(path.join(root, 'media/categories', c.id + '.svg')));
+  for (const c of categories) assert.ok(rows.find(q => q.category_id === c.id).category_image_path || fs.existsSync(path.join(root, 'media/categories', c.id + '.svg')));
 });
 
 test('all categories provide exactly 2 unique questions per level on one board', () => {
   for (let run = 0; run < 20; run++) {
     const result = api.build(categories, categories.slice(run % (categories.length - 4), run % (categories.length - 4) + 5).map(c => c.id));
     assert.equal(result.length, 5);
-    assert.equal(result.flatMap(c => c.questions).length, 50);
+    assert.equal(result.flatMap(c => c.questions).length, 30);
     for (const category of result) {
-      assert.equal(category.questions.length, 10);
-      assert.equal(new Set(category.questions.map(q => q.id)).size, 10);
+      assert.equal(category.questions.length, 6);
+      assert.equal(new Set(category.questions.map(q => q.id)).size, 6);
       for (const points of api.levels) {
         const selected = category.questions.filter(q => q.points === points);
         assert.equal(selected.length, 2);
         if (selected[0].metadata?.subject_slug) assert.equal(new Set(selected.map(q => q.metadata.subject_slug)).size, 2);
       }
-      assert.equal(category.questions.filter(q => q.round === 1).length, 10);
+      assert.equal(category.questions.filter(q => q.round === 1).length, 6);
       assert.equal(category.questions.filter(q => q.round === 2).length, 0);
     }
   }
@@ -48,7 +48,7 @@ test('sampling respects selected categories and does not mutate the bank', () =>
   const before = JSON.stringify(categories);
   const result = api.build(categories, ['fc-symbols', 'fc-image-flags'], () => 0);
   assert.equal(result.length, 2);
-  assert.equal(result.flatMap(c => c.questions).length, 20);
+  assert.equal(result.flatMap(c => c.questions).length, 12);
   assert.equal(JSON.stringify(categories), before);
 });
 test('incomplete categories and duplicated question IDs cannot fill a session', () => {

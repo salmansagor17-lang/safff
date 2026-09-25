@@ -2,77 +2,45 @@ const defaultQuestions = [
   {
     "id": "fc-general",
     "category": "معلومات عامة",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-general-100-1887f8cb069e",
+        "id": "fc-general-new-f8798eabce0f",
         "points": 100,
         "type": "text",
-        "question": "كم دقيقة في الساعة؟",
-        "answer": "60 دقيقة",
+        "question": "ما وسيلة النقل التي تسير على قضبان؟",
+        "answer": "القطار",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-general-100-3ebc0abcb830",
+        "id": "fc-general-100-a3c05a016f38",
         "points": 100,
         "type": "text",
-        "question": "كم شهرًا في السنة الميلادية؟",
-        "answer": "12 شهرًا",
+        "question": "ما اللغة التي تُكتب من اليمين إلى اليسار في هذه اللعبة؟",
+        "answer": "العربية",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-200-a217acf9833c",
-        "points": 200,
-        "type": "text",
-        "question": "كم بتًا في البايت الواحد؟",
-        "answer": "8 بتات",
-        "options": [],
+        },
         "metadata": {
           "source": "curated",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-200-d3d9517101fe",
-        "points": 200,
-        "type": "text",
-        "question": "ما الجهاز الذي يعرض الصور والنصوص في الحاسوب؟",
-        "answer": "الشاشة",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -82,15 +50,16 @@ const defaultQuestions = [
         "question": "من كتب مسرحية روميو وجولييت؟",
         "answer": "ويليام شكسبير",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -100,87 +69,54 @@ const defaultQuestions = [
         "question": "ما معنى اختصار WWW في عناوين الويب؟",
         "answer": "الشبكة العنكبوتية العالمية",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-new-2f15359697b9",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الفن الذي يحرك دمى أو رسومات إطارًا بعد إطار لإنتاج فيلم؟",
-        "answer": "الرسوم المتحركة أو التحريك",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
         "id": "fc-general-new-339a062da782",
-        "points": 400,
+        "points": 500,
         "type": "text",
         "question": "ما الاسم العربي لفن الكتابة الجميلة بالحروف؟",
         "answer": "الخط العربي",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-general-new-0990eff58352",
+        "id": "fc-general-new-89bb0f701d2d",
         "points": 500,
         "type": "text",
-        "question": "من كتب رواية مئة عام من العزلة؟",
-        "answer": "غابرييل غارثيا ماركيث",
+        "question": "ما اسم الآلة الوترية العربية ذات الصندوق المجوف والرقبة القصيرة؟",
+        "answer": "العود",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-new-379253312901",
-        "points": 500,
-        "type": "text",
-        "question": "ما اسم فن الخط الياباني التقليدي بالفرشاة والحبر؟",
-        "answer": "شودو",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -188,187 +124,121 @@ const defaultQuestions = [
   {
     "id": "fc-geography",
     "category": "جغرافيا",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-geography-100-0d35093c64fb",
+        "id": "fc-geography-100-aaf7d1c44873",
         "points": 100,
         "type": "text",
-        "question": "في أي قارة أو منطقة جغرافية تقع الإمارات العربية المتحدة؟",
+        "question": "في أي قارة أو منطقة جغرافية تقع إندونيسيا؟",
         "answer": "آسيا",
         "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "country-dataset",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-geography-100-1bb0263a40a6",
+        "id": "fc-geography-100-75bb330b70aa",
         "points": 100,
         "type": "text",
-        "question": "في أي قارة أو منطقة جغرافية تقع تركيا؟",
-        "answer": "أوروبا وآسيا",
+        "question": "في أي قارة أو منطقة جغرافية تقع المغرب؟",
+        "answer": "أفريقيا",
         "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-200-b55b9c9cc931",
-        "points": 200,
-        "type": "text",
-        "question": "ما عكس كلمة شمال في الاتجاهات؟",
-        "answer": "جنوب",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-200-0c50530f8420",
-        "points": 200,
-        "type": "text",
-        "question": "ما مفتاح الاتصال الدولي لدولة الإمارات العربية المتحدة؟",
-        "answer": "+971",
-        "options": [],
         "metadata": {
           "source": "country-dataset",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-geography-300-4ee57efe043e",
+        "points": 300,
+        "type": "text",
+        "question": "ما الرمز الدولي الثنائي ISO لدولة قطر؟",
+        "answer": "QA",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-300-2a1b9c459b2d",
-        "points": 300,
-        "type": "text",
-        "question": "ما أكبر محيط في العالم؟",
-        "answer": "المحيط الهادئ",
-        "options": [],
+        },
         "metadata": {
-          "source": "curated",
+          "source": "country-dataset",
           "difficulty": "medium",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-geography-300-887bf0d19576",
+        "points": 300,
+        "type": "text",
+        "question": "ما الرمز الدولي الثنائي ISO لدولة المغرب؟",
+        "answer": "MA",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-300-173f60ce98a8",
-        "points": 300,
-        "type": "text",
-        "question": "ما الرمز الدولي الثنائي ISO لدولة سوريا؟",
-        "answer": "SY",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-geography-500-799b83be1181",
+        "points": 500,
+        "type": "text",
+        "question": "ما الرمز الدولي الثلاثي ISO لدولة هولندا؟",
+        "answer": "NLD",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-400-0146a157824f",
-        "points": 400,
-        "type": "text",
-        "question": "ما الرمز الدولي الثنائي ISO لدولة كوريا الجنوبية؟",
-        "answer": "KR",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-geography-400-ce4c572f5110",
+        "points": 500,
+        "type": "text",
+        "question": "ما الرمز الدولي الثنائي ISO لدولة الأرجنتين؟",
+        "answer": "AR",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-400-020ec42399d2",
-        "points": 400,
-        "type": "text",
-        "question": "ما الرمز الدولي الثلاثي ISO لدولة عُمان؟",
-        "answer": "OMN",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-500-0a39d292d578",
-        "points": 500,
-        "type": "text",
-        "question": "ما الرمز الدولي الثلاثي ISO لدولة إيطاليا؟",
-        "answer": "ITA",
-        "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-500-115edf650e2c",
-        "points": 500,
-        "type": "text",
-        "question": "ما الرمز الدولي الثلاثي ISO لدولة نيجيريا؟",
-        "answer": "NGA",
-        "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -376,185 +246,121 @@ const defaultQuestions = [
   {
     "id": "fc-history",
     "category": "تاريخ",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-history-100-03f5473e78ef",
+        "id": "fc-history-100-aa5d70e96b9f",
         "points": 100,
         "type": "text",
-        "question": "في أي عام حدث: اختراع الطباعة بالحروف المتحركة في أوروبا؟",
-        "answer": "1450",
+        "question": "من الشخصية أو الجهة المرتبطة تاريخيًا بحدث «إطلاق أول قمر صناعي سبوتنيك 1»؟",
+        "answer": "الاتحاد السوفيتي",
         "options": [],
-        "metadata": {
-          "source": "curated-history",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-100-040c25e8e546",
-        "points": 100,
-        "type": "text",
-        "question": "في أي عام حدث: أول إنسان في الفضاء؟",
-        "answer": "1961",
-        "options": [],
-        "metadata": {
-          "source": "curated-history",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-200-016b8826c741",
-        "points": 200,
-        "type": "text",
-        "question": "من الشخصية أو الجهة المرتبطة تاريخيًا بحدث «توقيع معاهدة فرساي»؟",
-        "answer": "دول الحلفاء وألمانيا",
-        "options": [],
         "metadata": {
           "source": "curated-history",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-history-100-55c0068336e7",
+        "points": 100,
+        "type": "text",
+        "question": "من الشخصية أو الجهة المرتبطة تاريخيًا بحدث «بدء الحرب العالمية الأولى»؟",
+        "answer": "القوى الأوروبية",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-200-03251fe22af6",
-        "points": 200,
-        "type": "text",
-        "question": "من الشخصية أو الجهة المرتبطة تاريخيًا بحدث «تأسيس الأمم المتحدة»؟",
-        "answer": "الدول المؤسسة للأمم المتحدة",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-history",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-history-300-039120e58bd4",
+        "id": "fc-history-300-ac395bd50033",
         "points": 300,
         "type": "text",
-        "question": "في أي قرن ميلادي وقع حدث «تأسيس الأمم المتحدة»؟",
+        "question": "في أي قرن ميلادي وقع حدث «بدء الحرب العالمية الأولى»؟",
         "answer": "القرن 20",
         "options": [],
-        "metadata": {
-          "source": "curated-history",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-history",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-history-300-04560e858efb",
+        "id": "fc-history-300-cc36ebbbc740",
         "points": 300,
         "type": "text",
-        "question": "من الشخصية أو الجهة المرتبطة تاريخيًا بحدث «افتتاح مترو لندن»؟",
-        "answer": "شركة متروبوليتان للسكك الحديدية",
+        "question": "ما الحدث الذي وقع عام 1902 وارتبط بـ الملك عبدالعزيز آل سعود في/حول الرياض؟",
+        "answer": "استرداد الرياض على يد الملك عبدالعزيز",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-history",
           "difficulty": "medium",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-history-400-6577cb1c8a47",
+        "points": 500,
+        "type": "text",
+        "question": "ما الحدث الذي وقع عام 1961 وارتبط بـ يوري غاغارين في/حول الفضاء؟",
+        "answer": "أول إنسان في الفضاء",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-400-028448f11d33",
-        "points": 400,
-        "type": "text",
-        "question": "في أي قرن ميلادي وقع حدث «معركة واترلو»؟",
-        "answer": "القرن 19",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-history",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-history-400-11969ce220b0",
+        "points": 500,
+        "type": "text",
+        "question": "ما الحدث الذي وقع عام 1957 وارتبط بـ الاتحاد السوفيتي في/حول الفضاء؟",
+        "answer": "إطلاق أول قمر صناعي سبوتنيك 1",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-400-03d417d8c198",
-        "points": 400,
-        "type": "text",
-        "question": "ما الحدث الذي وقع عام 1969 وارتبط بـ نيل أرمسترونغ وباز ألدرن في/حول القمر؟",
-        "answer": "هبوط أبولو 11 على القمر",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-history",
           "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-500-0099e6b47703",
-        "points": 500,
-        "type": "text",
-        "question": "ما الحدث الذي وقع عام 1450 وارتبط بـ يوهان غوتنبرغ في/حول ماينتس؟",
-        "answer": "اختراع الطباعة بالحروف المتحركة في أوروبا",
-        "options": [],
-        "metadata": {
-          "source": "curated-history",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-history-500-0372fcba1db1",
-        "points": 500,
-        "type": "text",
-        "question": "ما الحدث الذي وقع عام 1492 وارتبط بـ كريستوفر كولومبوس في/حول البحر الكاريبي؟",
-        "answer": "وصول كريستوفر كولومبوس إلى جزر في الأمريكتين",
-        "options": [],
-        "metadata": {
-          "source": "curated-history",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -562,117 +368,65 @@ const defaultQuestions = [
   {
     "id": "fc-image-fruits",
     "category": "صور الفواكه 🍎",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-images-100-apple-01",
+        "id": "fc-images-200-grapes-03",
         "points": 100,
         "type": "text",
-        "question": "ما اسم الفاكهة الظاهرة في الصورة؟",
-        "answer": "تفاحة",
+        "question": "أي فاكهة تشاهد في الصورة؟",
+        "answer": "عنب",
         "options": [],
-        "metadata": {
-          "author": "Abhijit Tembhekar from Mumbai, India",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "answer_ar": "تفاحة",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg",
-          "license_url": "https://creativecommons.org/licenses/by/2.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Red Apple.jpg",
-          "subject_slug": "apple",
-          "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1280px-Red_Apple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/100/apple/01.jpg",
-          "alt": "تفاحة"
-        }
-      },
-      {
-        "id": "fc-images-100-apple-02",
-        "points": 100,
-        "type": "text",
-        "question": "تعرّف على هذه الفاكهة.",
-        "answer": "تفاحة",
-        "options": [],
+          "path": "image-challenge/200/grapes/03.jpg",
+          "alt": "عنب"
+        },
         "metadata": {
-          "author": "W.carter",
+          "author": "Martin Kozák",
           "source": "Wikimedia Commons",
-          "license": "CC0",
-          "answer_ar": "تفاحة",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Tree_with_red_apples_in_Barkedal_4.jpg",
-          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "license": "Public domain",
+          "answer_ar": "عنب",
+          "difficulty": "easy",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Green_Grape_3.jpg",
+          "license_url": "",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Tree with red apples in Barkedal 4.jpg",
-          "subject_slug": "apple",
+          "source_title": "File:Green Grape 3.jpg",
+          "subject_slug": "grapes",
           "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Tree_with_red_apples_in_Barkedal_4.jpg/1280px-Tree_with_red_apples_in_Barkedal_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Green_Grape_3.jpg/1280px-Green_Grape_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "false"
-        },
+        }
+      },
+      {
+        "id": "fc-images-100-apple-05",
+        "points": 100,
+        "type": "text",
+        "question": "حدد اسم الفاكهة الموجودة أمامك.",
+        "answer": "تفاحة",
+        "options": [],
         "media": {
           "type": "image",
-          "path": "image-challenge/100/apple/02.jpg",
+          "path": "image-challenge/100/apple/05.jpg",
           "alt": "تفاحة"
-        }
-      },
-      {
-        "id": "fc-images-200-avocado-01",
-        "points": 200,
-        "type": "text",
-        "question": "ما اسم الفاكهة الظاهرة في الصورة؟",
-        "answer": "أفوكادو",
-        "options": [],
-        "metadata": {
-          "author": "Ivar Leidus",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "أفوكادو",
-          "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Avocado_Hass_-_single_and_halved.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Avocado Hass - single and halved.jpg",
-          "subject_slug": "avocado",
-          "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/1280px-Avocado_Hass_-_single_and_halved.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
         },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/avocado/01.jpg",
-          "alt": "أفوكادو"
-        }
-      },
-      {
-        "id": "fc-images-200-avocado-02",
-        "points": 200,
-        "type": "text",
-        "question": "تعرّف على هذه الفاكهة.",
-        "answer": "أفوكادو",
-        "options": [],
         "metadata": {
-          "author": "B.navez",
+          "author": "George Chernilevsky",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "answer_ar": "أفوكادو",
+          "license": "Public domain",
+          "answer_ar": "تفاحة",
           "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG",
-          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Apples_in_basket_2018_G2.jpg",
+          "license_url": "",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Persea americana fruit 2.JPG",
-          "subject_slug": "avocado",
+          "source_title": "File:Apples in basket 2018 G2.jpg",
+          "subject_slug": "apple",
           "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/1280px-Persea_americana_fruit_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/avocado/02.jpg",
-          "alt": "أفوكادو"
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Apples_in_basket_2018_G2.jpg/1280px-Apples_in_basket_2018_G2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "false"
         }
       },
       {
@@ -682,6 +436,11 @@ const defaultQuestions = [
         "question": "ما اسم الفاكهة الظاهرة في الصورة؟",
         "answer": "جوز الهند",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/coconut/01.jpg",
+          "alt": "جوز الهند"
+        },
         "metadata": {
           "author": "Ivar Leidus",
           "source": "Wikimedia Commons",
@@ -695,152 +454,95 @@ const defaultQuestions = [
           "subject_slug": "coconut",
           "subject_type": "fruit",
           "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Coconuts_-_single_and_cracked_open.jpg/1280px-Coconuts_-_single_and_cracked_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/coconut/01.jpg",
-          "alt": "جوز الهند"
         }
       },
       {
-        "id": "fc-images-300-coconut-02",
+        "id": "fc-images-300-coconut-05",
         "points": 300,
         "type": "text",
-        "question": "تعرّف على هذه الفاكهة.",
+        "question": "حدد اسم الفاكهة الموجودة أمامك.",
         "answer": "جوز الهند",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/coconut/05.jpg",
+          "alt": "جوز الهند"
+        },
         "metadata": {
-          "author": "Bijay chaurasia",
+          "author": "Obsidian Soul",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
+          "license": "CC0",
           "answer_ar": "جوز الهند",
           "difficulty": "medium",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Sliced_coconut_in_Vivah_Mandap,_Janakpur-September_22,_2016-IMG_7411.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Immature_coconut_fruit.jpg",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Sliced coconut in Vivah Mandap, Janakpur-September 22, 2016-IMG 7411.jpg",
+          "source_title": "File:Immature coconut fruit.jpg",
           "subject_slug": "coconut",
           "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Sliced_coconut_in_Vivah_Mandap%2C_Janakpur-September_22%2C_2016-IMG_7411.jpg/1280px-Sliced_coconut_in_Vivah_Mandap%2C_Janakpur-September_22%2C_2016-IMG_7411.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/coconut/02.jpg",
-          "alt": "جوز الهند"
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Immature_coconut_fruit.jpg/1280px-Immature_coconut_fruit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "false"
         }
       },
       {
-        "id": "fc-images-400-durian-01",
-        "points": 400,
+        "id": "fc-images-500-physalis-03",
+        "points": 500,
         "type": "text",
-        "question": "ما اسم الفاكهة الظاهرة في الصورة؟",
-        "answer": "دوريان",
+        "question": "أي فاكهة تشاهد في الصورة؟",
+        "answer": "حرنكش (فيزاليس)",
         "options": [],
-        "metadata": {
-          "author": "Rod Waddington",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 2.0",
-          "answer_ar": "دوريان",
-          "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Durian_Fruit_in_Yunnan.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Durian Fruit in Yunnan.jpg",
-          "subject_slug": "durian",
-          "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Durian_Fruit_in_Yunnan.jpg/1280px-Durian_Fruit_in_Yunnan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/400/durian/01.jpg",
-          "alt": "دوريان"
-        }
-      },
-      {
-        "id": "fc-images-400-durian-02",
-        "points": 400,
-        "type": "text",
-        "question": "تعرّف على هذه الفاكهة.",
-        "answer": "دوريان",
-        "options": [],
+          "path": "image-challenge/500/physalis/03.jpg",
+          "alt": "حرنكش (فيزاليس)"
+        },
         "metadata": {
-          "author": "Agnieszka Kwiecień, Nova",
+          "author": "Ajaykuyiloor .",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0",
-          "answer_ar": "دوريان",
+          "answer_ar": "حرنكش (فيزاليس)",
           "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Owoce_Durian.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Physalis_minima_fruit_from_Kerala_-_20090520.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Owoce Durian.jpg",
-          "subject_slug": "durian",
+          "source_title": "File:Physalis minima fruit from Kerala - 20090520.jpg",
+          "subject_slug": "physalis",
           "subject_type": "fruit",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Owoce_Durian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Physalis_minima_fruit_from_Kerala_-_20090520.jpg/1280px-Physalis_minima_fruit_from_Kerala_-_20090520.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/400/durian/02.jpg",
-          "alt": "دوريان"
         }
       },
       {
-        "id": "fc-images-500-cherimoya-01",
+        "id": "fc-images-400-persimmon-04",
         "points": 500,
         "type": "text",
-        "question": "ما اسم الفاكهة الظاهرة في الصورة؟",
-        "answer": "شيريمويا",
+        "question": "ما اسم هذه الفاكهة؟",
+        "answer": "كاكي",
         "options": [],
-        "metadata": {
-          "author": "Marcelo RosaMelo",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "شيريمويا",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Cherimoya_fruit_basket.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Cherimoya fruit basket.jpg",
-          "subject_slug": "cherimoya",
-          "subject_type": "fruit",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Cherimoya_fruit_basket.jpg/1280px-Cherimoya_fruit_basket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/500/cherimoya/01.jpg",
-          "alt": "شيريمويا"
-        }
-      },
-      {
-        "id": "fc-images-500-cherimoya-02",
-        "points": 500,
-        "type": "text",
-        "question": "تعرّف على هذه الفاكهة.",
-        "answer": "شيريمويا",
-        "options": [],
+          "path": "image-challenge/400/persimmon/04.jpg",
+          "alt": "كاكي"
+        },
         "metadata": {
-          "author": "Marcelo RosaMelo",
+          "author": "Nadiya Li",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0",
-          "answer_ar": "شيريمويا",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Cherimoya_fruit_Impressa.jpg",
+          "answer_ar": "كاكي",
+          "difficulty": "hard",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Persimmon_fruit_that_thaws_after_the_freezer.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Cherimoya fruit Impressa.jpg",
-          "subject_slug": "cherimoya",
+          "source_title": "File:Persimmon fruit that thaws after the freezer.jpg",
+          "subject_slug": "persimmon",
           "subject_type": "fruit",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Cherimoya_fruit_Impressa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Persimmon_fruit_that_thaws_after_the_freezer.jpg/1280px-Persimmon_fruit_that_thaws_after_the_freezer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/500/cherimoya/02.jpg",
-          "alt": "شيريمويا"
         }
       }
     ]
@@ -848,285 +550,181 @@ const defaultQuestions = [
   {
     "id": "fc-image-landmarks",
     "category": "صور المعالم 🏛️",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-images-100-big-ben-01",
+        "id": "fc-images-200-burj-khalifa-05",
         "points": 100,
         "type": "text",
-        "question": "ما اسم المعلم الظاهر في الصورة؟",
-        "answer": "بيغ بن",
+        "question": "حدد اسم هذا المعلم.",
+        "answer": "برج خليفة",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/200/burj-khalifa/05.jpg",
+          "alt": "برج خليفة"
+        },
         "metadata": {
-          "author": "Colin",
+          "author": "Ank Kumar",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0",
-          "answer_ar": "بيغ بن",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Big_Ben_at_sunset_-_2014-10-27_17-30.jpg",
+          "answer_ar": "برج خليفة",
+          "difficulty": "easy",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_making_of_Burj_Khalifa,_Dubai_(Ank_Kumar)_11.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Big Ben at sunset - 2014-10-27 17-30.jpg",
-          "subject_slug": "big-ben",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Big_Ben_at_sunset_-_2014-10-27_17-30.jpg/1280px-Big_Ben_at_sunset_-_2014-10-27_17-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/100/big-ben/01.jpg",
-          "alt": "بيغ بن"
-        }
-      },
-      {
-        "id": "fc-images-100-big-ben-02",
-        "points": 100,
-        "type": "text",
-        "question": "تعرّف على هذا المعلم الشهير.",
-        "answer": "بيغ بن",
-        "options": [],
-        "metadata": {
-          "author": "Julian Herzog ( Website )",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0",
-          "answer_ar": "بيغ بن",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Big_Ben_Elizabeth_Tower_London_2023_01.jpg",
-          "license_url": "https://creativecommons.org/licenses/by/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Big Ben Elizabeth Tower London 2023 01.jpg",
-          "subject_slug": "big-ben",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Big_Ben_Elizabeth_Tower_London_2023_01.jpg/1280px-Big_Ben_Elizabeth_Tower_London_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/100/big-ben/02.jpg",
-          "alt": "بيغ بن"
-        }
-      },
-      {
-        "id": "fc-images-200-burj-khalifa-01",
-        "points": 200,
-        "type": "text",
-        "question": "ما اسم المعلم الظاهر في الصورة؟",
-        "answer": "برج خليفة",
-        "options": [],
-        "metadata": {
-          "author": "Aheilner",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "answer_ar": "برج خليفة",
-          "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Burj_dubai_3.11.08.jpg",
-          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Burj dubai 3.11.08.jpg",
+          "source_title": "File:The making of Burj Khalifa, Dubai (Ank Kumar) 11.jpg",
           "subject_slug": "burj-khalifa",
           "subject_type": "landmark",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Burj_dubai_3.11.08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/The_making_of_Burj_Khalifa%2C_Dubai_%28Ank_Kumar%29_11.jpg/1280px-The_making_of_Burj_Khalifa%2C_Dubai_%28Ank_Kumar%29_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/burj-khalifa/01.jpg",
-          "alt": "برج خليفة"
         }
       },
       {
-        "id": "fc-images-200-burj-khalifa-02",
-        "points": 200,
+        "id": "fc-images-200-sydney-opera-house-01",
+        "points": 100,
         "type": "text",
-        "question": "تعرّف على هذا المعلم الشهير.",
-        "answer": "برج خليفة",
+        "question": "ما اسم المعلم الظاهر في الصورة؟",
+        "answer": "دار أوبرا سيدني",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/200/sydney-opera-house/01.jpg",
+          "alt": "دار أوبرا سيدني"
+        },
         "metadata": {
-          "author": "Vladimir Yaitskiy",
+          "author": "Diliff",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0",
-          "answer_ar": "برج خليفة",
+          "answer_ar": "دار أوبرا سيدني",
           "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_-_Dubai_Mall_Metro_Station_-_panoramio.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Burj Khalifa - Dubai Mall Metro Station - panoramio.jpg",
-          "subject_slug": "burj-khalifa",
+          "source_title": "File:Sydney Opera House - Dec 2008.jpg",
+          "subject_slug": "sydney-opera-house",
           "subject_type": "landmark",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Burj_Khalifa_-_Dubai_Mall_Metro_Station_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/1280px-Sydney_Opera_House_-_Dec_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/burj-khalifa/02.jpg",
-          "alt": "برج خليفة"
         }
       },
       {
-        "id": "fc-images-300-angkor-wat-01",
+        "id": "fc-images-300-sagrada-familia-03",
         "points": 300,
         "type": "text",
-        "question": "ما اسم المعلم الظاهر في الصورة؟",
-        "answer": "أنغكور وات",
+        "question": "أي معلم تشاهد في الصورة؟",
+        "answer": "ساغرادا فاميليا",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/sagrada-familia/03.jpg",
+          "alt": "ساغرادا فاميليا"
+        },
         "metadata": {
-          "author": "Satdeep Gill",
+          "author": "Didier Descouens",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0",
-          "answer_ar": "أنغكور وات",
+          "answer_ar": "ساغرادا فاميليا",
           "difficulty": "medium",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Exterior_of_the_Apse_of_the_Sagrada_Fam%C3%ADlia_-_Western_exposure.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Angkor Wat with its reflection (cropped).jpg",
-          "subject_slug": "angkor-wat",
+          "source_title": "File:Barcelona - Exterior of the Apse of the Sagrada Família - Western exposure.jpg",
+          "subject_slug": "sagrada-familia",
           "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Angkor_Wat_with_its_reflection_%28cropped%29.jpg/1280px-Angkor_Wat_with_its_reflection_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Barcelona_-_Exterior_of_the_Apse_of_the_Sagrada_Fam%C3%ADlia_-_Western_exposure.jpg/1280px-Barcelona_-_Exterior_of_the_Apse_of_the_Sagrada_Fam%C3%ADlia_-_Western_exposure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/angkor-wat/01.jpg",
-          "alt": "أنغكور وات"
         }
       },
       {
-        "id": "fc-images-300-angkor-wat-02",
+        "id": "fc-images-300-angkor-wat-03",
         "points": 300,
         "type": "text",
-        "question": "تعرّف على هذا المعلم الشهير.",
+        "question": "أي معلم تشاهد في الصورة؟",
         "answer": "أنغكور وات",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/angkor-wat/03.jpg",
+          "alt": "أنغكور وات"
+        },
         "metadata": {
           "author": "Pierre André Leclercq",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 4.0",
           "answer_ar": "أنغكور وات",
           "difficulty": "medium",
-          "source_url": "https://commons.wikimedia.org/wiki/File:2014-Cambodge_Angkor_Wat_(21).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Angkor_Thom_Bayon_relief_of_the_Battle_of_Tonl%C3%A9_Sap.jpg",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:2014-Cambodge Angkor Wat (21).jpg",
+          "source_title": "File:Angkor Thom Bayon relief of the Battle of Tonlé Sap.jpg",
           "subject_slug": "angkor-wat",
           "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2014-Cambodge_Angkor_Wat_%2821%29.jpg/1280px-2014-Cambodge_Angkor_Wat_%2821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Angkor_Thom_Bayon_relief_of_the_Battle_of_Tonl%C3%A9_Sap.jpg/1280px-Angkor_Thom_Bayon_relief_of_the_Battle_of_Tonl%C3%A9_Sap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/angkor-wat/02.jpg",
-          "alt": "أنغكور وات"
         }
       },
       {
-        "id": "fc-images-400-borobudur-01",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم المعلم الظاهر في الصورة؟",
-        "answer": "بوروبودور",
-        "options": [],
-        "metadata": {
-          "author": "CEphoto, Uwe Aranas",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "answer_ar": "بوروبودور",
-          "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-12.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Borobudur-Temple-Park Indonesia Stupas-of-Borobudur-12.jpg",
-          "subject_slug": "borobudur",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-12.jpg/1280px-Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/400/borobudur/01.jpg",
-          "alt": "بوروبودور"
-        }
-      },
-      {
-        "id": "fc-images-400-borobudur-02",
-        "points": 400,
-        "type": "text",
-        "question": "تعرّف على هذا المعلم الشهير.",
-        "answer": "بوروبودور",
-        "options": [],
-        "metadata": {
-          "author": "Gunawan Kartapranata",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "answer_ar": "بوروبودور",
-          "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Borobudur-Nothwest-view.jpg",
-          "subject_slug": "borobudur",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1280px-Borobudur-Nothwest-view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/400/borobudur/02.jpg",
-          "alt": "بوروبودور"
-        }
-      },
-      {
-        "id": "fc-images-500-bagan-01",
+        "id": "fc-images-400-neuschwanstein-04",
         "points": 500,
         "type": "text",
-        "question": "ما اسم المعلم الظاهر في الصورة؟",
-        "answer": "معابد باغان",
+        "question": "ما اسم المكان أو المعلم الموجود أمامك؟",
+        "answer": "قلعة نويشفانشتاين",
         "options": [],
-        "metadata": {
-          "author": "Vyacheslav Argenberg",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0",
-          "answer_ar": "معابد باغان",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Htilominlo_Temple_and_other_Buddhist_stupas_in_Bagan_plain.jpg",
-          "license_url": "https://creativecommons.org/licenses/by/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Bagan, Myanmar, Htilominlo Temple and other Buddhist stupas in Bagan plain.jpg",
-          "subject_slug": "bagan",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bagan%2C_Myanmar%2C_Htilominlo_Temple_and_other_Buddhist_stupas_in_Bagan_plain.jpg/1280px-Bagan%2C_Myanmar%2C_Htilominlo_Temple_and_other_Buddhist_stupas_in_Bagan_plain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/500/bagan/01.jpg",
-          "alt": "معابد باغان"
+          "path": "image-challenge/400/neuschwanstein/04.jpg",
+          "alt": "قلعة نويشفانشتاين"
+        },
+        "metadata": {
+          "author": "Ximonic , Simo Räsänen (post-processing) & Tauno Räsänen (photograph)",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "answer_ar": "قلعة نويشفانشتاين",
+          "difficulty": "hard",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_from_Marienbr%C3%BCcke,_2011_May.jpg",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:Neuschwanstein Castle from Marienbrücke, 2011 May.jpg",
+          "subject_slug": "neuschwanstein",
+          "subject_type": "landmark",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Neuschwanstein_Castle_from_Marienbr%C3%BCcke%2C_2011_May.jpg/1280px-Neuschwanstein_Castle_from_Marienbr%C3%BCcke%2C_2011_May.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "true"
         }
       },
       {
-        "id": "fc-images-500-bagan-02",
+        "id": "fc-images-500-lalibela-03",
         "points": 500,
         "type": "text",
-        "question": "تعرّف على هذا المعلم الشهير.",
-        "answer": "معابد باغان",
+        "question": "أي معلم تشاهد في الصورة؟",
+        "answer": "كنائس لاليبيلا",
         "options": [],
-        "metadata": {
-          "author": "Vyacheslav Argenberg",
-          "source": "Wikimedia Commons",
-          "license": "CC BY 4.0",
-          "answer_ar": "معابد باغان",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Sulamani_Temple_2.jpg",
-          "license_url": "https://creativecommons.org/licenses/by/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Bagan, Myanmar, Sulamani Temple 2.jpg",
-          "subject_slug": "bagan",
-          "subject_type": "landmark",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Bagan%2C_Myanmar%2C_Sulamani_Temple_2.jpg/1280px-Bagan%2C_Myanmar%2C_Sulamani_Temple_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/500/bagan/02.jpg",
-          "alt": "معابد باغان"
+          "path": "image-challenge/500/lalibela/03.jpg",
+          "alt": "كنائس لاليبيلا"
+        },
+        "metadata": {
+          "author": "Thomas Fuhrmann",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "answer_ar": "كنائس لاليبيلا",
+          "difficulty": "hard",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_sunset_at_Church_of_Saint_George,_Lalibela_02.jpg",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:Ethiopia - sunset at Church of Saint George, Lalibela 02.jpg",
+          "subject_slug": "lalibela",
+          "subject_type": "landmark",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ethiopia_-_sunset_at_Church_of_Saint_George%2C_Lalibela_02.jpg/1280px-Ethiopia_-_sunset_at_Church_of_Saint_George%2C_Lalibela_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "true"
         }
       }
     ]
@@ -1134,285 +732,181 @@ const defaultQuestions = [
   {
     "id": "fc-image-animals",
     "category": "صور الحيوانات 🐾",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-images-100-camel-01",
+        "id": "fc-images-100-dog-02",
         "points": 100,
         "type": "text",
-        "question": "ما اسم الحيوان الظاهر في الصورة؟",
-        "answer": "جمل",
+        "question": "تعرّف على الحيوان الموجود في الصورة.",
+        "answer": "كلب",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/100/dog/02.jpg",
+          "alt": "كلب"
+        },
         "metadata": {
-          "author": "Jjron",
+          "author": "Davidvraju",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "answer_ar": "كلب",
+          "difficulty": "easy",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dhole(Asiatic_wild_dog).jpg",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:Dhole(Asiatic wild dog).jpg",
+          "subject_slug": "dog",
+          "subject_type": "animal",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Dhole%28Asiatic_wild_dog%29.jpg/1280px-Dhole%28Asiatic_wild_dog%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "true"
+        }
+      },
+      {
+        "id": "fc-images-200-flamingo-02",
+        "points": 100,
+        "type": "text",
+        "question": "تعرّف على الحيوان الموجود في الصورة.",
+        "answer": "فلامنغو",
+        "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/200/flamingo/02.jpg",
+          "alt": "فلامنغو"
+        },
+        "metadata": {
+          "author": "Giles Laurent",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "answer_ar": "فلامنغو",
+          "difficulty": "easy",
+          "source_url": "https://commons.wikimedia.org/wiki/File:001_Greater_flamingo_in_flight_in_the_Camargue_Photo_by_Giles_Laurent.jpg",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:001 Greater flamingo in flight in the Camargue Photo by Giles Laurent.jpg",
+          "subject_slug": "flamingo",
+          "subject_type": "animal",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/001_Greater_flamingo_in_flight_in_the_Camargue_Photo_by_Giles_Laurent.jpg/1280px-001_Greater_flamingo_in_flight_in_the_Camargue_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "true"
+        }
+      },
+      {
+        "id": "fc-images-300-hippopotamus-02",
+        "points": 300,
+        "type": "text",
+        "question": "تعرّف على الحيوان الموجود في الصورة.",
+        "answer": "فرس النهر",
+        "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/hippopotamus/02.jpg",
+          "alt": "فرس النهر"
+        },
+        "metadata": {
+          "author": "Paul Maritz",
           "source": "Wikimedia Commons",
           "license": "CC BY-SA 3.0",
-          "answer_ar": "جمل",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:07._Camel_Profile,_near_Silverton,_NSW,_07.07.2007.jpg",
+          "answer_ar": "فرس النهر",
+          "difficulty": "medium",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hippo_pod_edit.jpg",
           "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:07. Camel Profile, near Silverton, NSW, 07.07.2007.jpg",
-          "subject_slug": "camel",
+          "source_title": "File:Hippo pod edit.jpg",
+          "subject_slug": "hippopotamus",
           "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg/1280px-07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hippo_pod_edit.jpg/1280px-Hippo_pod_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/100/camel/01.jpg",
-          "alt": "جمل"
         }
       },
       {
-        "id": "fc-images-100-camel-02",
-        "points": 100,
-        "type": "text",
-        "question": "تعرّف على الحيوان الموجود في الصورة.",
-        "answer": "جمل",
-        "options": [],
-        "metadata": {
-          "author": "Bernard Gagnon",
-          "source": "Wikimedia Commons",
-          "license": "CC0",
-          "answer_ar": "جمل",
-          "difficulty": "very_easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Camel_in_Gobi_Desert_01.jpg",
-          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Camel in Gobi Desert 01.jpg",
-          "subject_slug": "camel",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Camel_in_Gobi_Desert_01.jpg/1280px-Camel_in_Gobi_Desert_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "false"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/100/camel/02.jpg",
-          "alt": "جمل"
-        }
-      },
-      {
-        "id": "fc-images-200-cheetah-01",
-        "points": 200,
-        "type": "text",
-        "question": "ما اسم الحيوان الظاهر في الصورة؟",
-        "answer": "فهد",
-        "options": [],
-        "metadata": {
-          "author": "Charles J. Sharp",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "فهد",
-          "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus)_female_2.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Cheetah (Acinonyx jubatus) female 2.jpg",
-          "subject_slug": "cheetah",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg/1280px-Cheetah_%28Acinonyx_jubatus%29_female_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/cheetah/01.jpg",
-          "alt": "فهد"
-        }
-      },
-      {
-        "id": "fc-images-200-cheetah-02",
-        "points": 200,
-        "type": "text",
-        "question": "تعرّف على الحيوان الموجود في الصورة.",
-        "answer": "فهد",
-        "options": [],
-        "metadata": {
-          "author": "Arturo de Frias Marques",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "فهد",
-          "difficulty": "easy",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Cheetah_at_Sunset.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Cheetah at Sunset.jpg",
-          "subject_slug": "cheetah",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cheetah_at_Sunset.jpg/1280px-Cheetah_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/200/cheetah/02.jpg",
-          "alt": "فهد"
-        }
-      },
-      {
-        "id": "fc-images-300-capybara-01",
-        "points": 300,
-        "type": "text",
-        "question": "ما اسم الحيوان الظاهر في الصورة؟",
-        "answer": "كابيبارا",
-        "options": [],
-        "metadata": {
-          "author": "Clodomiro Esteves Junior",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "كابيبارا",
-          "difficulty": "medium",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Capivara(Hydrochoerus_hydrochaeris).jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Capivara(Hydrochoerus hydrochaeris).jpg",
-          "subject_slug": "capybara",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg/1280px-Capivara%28Hydrochoerus_hydrochaeris%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/capybara/01.jpg",
-          "alt": "كابيبارا"
-        }
-      },
-      {
-        "id": "fc-images-300-capybara-02",
+        "id": "fc-images-300-komodo-dragon-02",
         "points": 300,
         "type": "text",
         "question": "تعرّف على الحيوان الموجود في الصورة.",
-        "answer": "كابيبارا",
+        "answer": "تنين كومودو",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "image-challenge/300/komodo-dragon/02.jpg",
+          "alt": "تنين كومودو"
+        },
         "metadata": {
-          "author": "Charles J. Sharp",
+          "author": "Jakub Hałun",
           "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "كابيبارا",
+          "license": "CC BY 4.0",
+          "answer_ar": "تنين كومودو",
           "difficulty": "medium",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Yellow-headed_caracara_(Milvago_chimachima)_on_capybara_(Hydrochoeris_hydrochaeris).JPG",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Varanus_komodoensis,_Komodo_Island,_Indonesia,_20250822_1319_2749.jpg",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
           "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Yellow-headed caracara (Milvago chimachima) on capybara (Hydrochoeris hydrochaeris).JPG",
-          "subject_slug": "capybara",
+          "source_title": "File:Varanus komodoensis, Komodo Island, Indonesia, 20250822 1319 2749.jpg",
+          "subject_slug": "komodo-dragon",
           "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Yellow-headed_caracara_%28Milvago_chimachima%29_on_capybara_%28Hydrochoeris_hydrochaeris%29.JPG/1280px-Yellow-headed_caracara_%28Milvago_chimachima%29_on_capybara_%28Hydrochoeris_hydrochaeris%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Varanus_komodoensis%2C_Komodo_Island%2C_Indonesia%2C_20250822_1319_2749.jpg/1280px-Varanus_komodoensis%2C_Komodo_Island%2C_Indonesia%2C_20250822_1319_2749.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "difficulty_review": "three-tier-2026-09-25",
           "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/300/capybara/02.jpg",
-          "alt": "كابيبارا"
         }
       },
       {
-        "id": "fc-images-400-axolotl-01",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الحيوان الظاهر في الصورة؟",
-        "answer": "أكسولوتل",
-        "options": [],
-        "metadata": {
-          "author": "Kristof Magnusson",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "answer_ar": "أكسولوتل",
-          "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Axolotl_Ambystoma_mexicanum_Aquarium_Zoo_Berlin,_2007.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Axolotl Ambystoma mexicanum Aquarium Zoo Berlin, 2007.jpg",
-          "subject_slug": "axolotl",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Axolotl_Ambystoma_mexicanum_Aquarium_Zoo_Berlin%2C_2007.jpg/1280px-Axolotl_Ambystoma_mexicanum_Aquarium_Zoo_Berlin%2C_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/400/axolotl/01.jpg",
-          "alt": "أكسولوتل"
-        }
-      },
-      {
-        "id": "fc-images-400-axolotl-02",
-        "points": 400,
-        "type": "text",
-        "question": "تعرّف على الحيوان الموجود في الصورة.",
-        "answer": "أكسولوتل",
-        "options": [],
-        "metadata": {
-          "author": "Stan Shebs",
-          "source": "Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "answer_ar": "أكسولوتل",
-          "difficulty": "hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_1.jpg",
-          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Ambystoma mexicanum 1.jpg",
-          "subject_slug": "axolotl",
-          "subject_type": "animal",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ambystoma_mexicanum_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "attribution_required": "true"
-        },
-        "media": {
-          "type": "image",
-          "path": "image-challenge/400/axolotl/02.jpg",
-          "alt": "أكسولوتل"
-        }
-      },
-      {
-        "id": "fc-images-500-aye-aye-01",
+        "id": "fc-images-500-markhor-05",
         "points": 500,
         "type": "text",
-        "question": "ما اسم الحيوان الظاهر في الصورة؟",
-        "answer": "آي آي",
+        "question": "حدد اسم هذا الحيوان.",
+        "answer": "مارخور",
         "options": [],
-        "metadata": {
-          "author": "Alfred H. Miles",
-          "source": "Wikimedia Commons",
-          "license": "Public domain",
-          "answer_ar": "آي آي",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Natural_History_with_Anecdotes_(Miles_1895)_-_Aye-aye_illustration.jpg",
-          "license_url": "",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Natural History with Anecdotes (Miles 1895) - Aye-aye illustration.jpg",
-          "subject_slug": "aye-aye",
-          "subject_type": "animal",
-          "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Natural_History_with_Anecdotes_%28Miles_1895%29_-_Aye-aye_illustration.jpg/1280px-Natural_History_with_Anecdotes_%28Miles_1895%29_-_Aye-aye_illustration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "attribution_required": "false"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/500/aye-aye/01.jpg",
-          "alt": "آي آي"
+          "path": "image-challenge/500/markhor/05.jpg",
+          "alt": "مارخور"
+        },
+        "metadata": {
+          "author": "Westell, William Percival",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "answer_ar": "مارخور",
+          "difficulty": "hard",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_book_of_the_animal_kingdom_(Plate_XV)_(7335347898).jpg",
+          "license_url": "",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:The book of the animal kingdom (Plate XV) (7335347898).jpg",
+          "subject_slug": "markhor",
+          "subject_type": "animal",
+          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/The_book_of_the_animal_kingdom_%28Plate_XV%29_%287335347898%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "false"
         }
       },
       {
-        "id": "fc-images-500-aye-aye-02",
+        "id": "fc-images-400-narwhal-04",
         "points": 500,
         "type": "text",
-        "question": "تعرّف على الحيوان الموجود في الصورة.",
-        "answer": "آي آي",
+        "question": "ما الحيوان الموجود أمامك؟",
+        "answer": "حريش البحر (ناروال)",
         "options": [],
-        "metadata": {
-          "author": "Heinrich Harder for Wilhelm Bölsche",
-          "source": "Wikimedia Commons",
-          "license": "Public domain",
-          "answer_ar": "آي آي",
-          "difficulty": "very_hard",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Tierwanderungen_in_der_Urwelt_-_Fig._05_Madagaskars_Tiere.jpg",
-          "license_url": "",
-          "bank_version": "v0.8.1-image-bank",
-          "source_title": "File:Tierwanderungen in der Urwelt - Fig. 05 Madagaskars Tiere.jpg",
-          "subject_slug": "aye-aye",
-          "subject_type": "animal",
-          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tierwanderungen_in_der_Urwelt_-_Fig._05_Madagaskars_Tiere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-          "attribution_required": "false"
-        },
         "media": {
           "type": "image",
-          "path": "image-challenge/500/aye-aye/02.jpg",
-          "alt": "آي آي"
+          "path": "image-challenge/400/narwhal/04.jpg",
+          "alt": "حريش البحر (ناروال)"
+        },
+        "metadata": {
+          "author": "Conrad Gesner",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "answer_ar": "حريش البحر (ناروال)",
+          "difficulty": "hard",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gesner_Narwhal_sea_unicorn.jpg",
+          "license_url": "",
+          "bank_version": "v0.8.1-image-bank",
+          "source_title": "File:Gesner Narwhal sea unicorn.jpg",
+          "subject_slug": "narwhal",
+          "subject_type": "animal",
+          "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gesner_Narwhal_sea_unicorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "difficulty_review": "three-tier-2026-09-25",
+          "attribution_required": "false"
         }
       }
     ]
@@ -1420,185 +914,121 @@ const defaultQuestions = [
   {
     "id": "fc-islamic",
     "category": "عبادات ومعارف إسلامية",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-islamic-100-33efe6f60040",
+        "id": "fc-islamic-new-4402187fdfea",
         "points": 100,
         "type": "text",
-        "question": "كم عدد الصلوات المفروضة في اليوم والليلة؟",
-        "answer": "خمس صلوات",
+        "question": "ما الصلاة المفروضة التي تؤدى قبل شروق الشمس؟",
+        "answer": "صلاة الفجر",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-100-695677e8df21",
-        "points": 100,
-        "type": "text",
-        "question": "كم عدد أركان الإسلام؟",
-        "answer": "خمسة",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-0beac85c8bd3",
-        "points": 200,
-        "type": "text",
-        "question": "ما اسم الجبلين اللذين يسعى الحجاج والمعتمرون بينهما؟",
-        "answer": "الصفا والمروة",
-        "options": [],
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-islamic-new-f4509b222f65",
+        "points": 100,
+        "type": "text",
+        "question": "كم ركعة فرض صلاة المغرب؟",
+        "answer": "ثلاث ركعات",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-1e1d94be4b3c",
-        "points": 200,
-        "type": "text",
-        "question": "كم ركعة فرض صلاة العصر؟",
-        "answer": "أربع ركعات",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-islamic-new-79caa7d8b70f",
+        "points": 300,
+        "type": "text",
+        "question": "كم عدد أركان الإيمان؟",
+        "answer": "ستة",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-33df488f3143",
-        "points": 300,
-        "type": "text",
-        "question": "ماذا يسمى اليوم الثامن من ذي الحجة؟",
-        "answer": "يوم التروية",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-islamic-new-5c6878281a02",
+        "points": 300,
+        "type": "text",
+        "question": "من أي الجبلين يبدأ السعي؟",
+        "answer": "الصفا",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-3e07ba1f2951",
-        "points": 300,
-        "type": "text",
-        "question": "ما الصدقة التي تُخرج قبل صلاة عيد الفطر؟",
-        "answer": "زكاة الفطر",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-islamic-new-5b4d80a54d3b",
+        "points": 500,
+        "type": "text",
+        "question": "من أي ركن يبدأ الطواف حول الكعبة؟",
+        "answer": "ركن الحجر الأسود",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-f528667320db",
-        "points": 400,
-        "type": "text",
-        "question": "كم عدد الأشهر الحرم؟",
-        "answer": "أربعة",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-123e0a64b1a6",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الصلاة التي تُطلب بها السقيا من الله؟",
-        "answer": "صلاة الاستسقاء",
-        "options": [],
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-islamic-new-18fb9c666db7",
+        "id": "fc-islamic-new-23274c26edb4",
         "points": 500,
         "type": "text",
-        "question": "ما اسم الركن الذي يُستلم في الطواف غير ركن الحجر الأسود؟",
-        "answer": "الركن اليماني",
+        "question": "ما اسم الطواف الذي يؤديه الحاج عند مغادرة مكة؟",
+        "answer": "طواف الوداع",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-new-1baa27cc71d2",
-        "points": 500,
-        "type": "text",
-        "question": "ما اسم المال أو الأصل المحبوس الذي تُصرف منافعه في أوجه البر؟",
-        "answer": "الوقف",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -1606,167 +1036,102 @@ const defaultQuestions = [
   {
     "id": "fc-riddles",
     "category": "ألغاز",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-riddles-100-051b446c662d",
+        "id": "fc-riddles-100-d102a8db82db",
         "points": 100,
         "type": "text",
-        "question": "ما الشيء الذي ينام بحذائه؟",
-        "answer": "الحصان",
+        "question": "ما الشيء الذي يبدأ طويلًا وينتهي قصيرًا عندما يُستخدم؟",
+        "answer": "الشمعة",
         "options": [],
-        "metadata": {
-          "source": "curated-riddles",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-riddles",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-riddles-100-0539c44cd8c9",
+        "id": "fc-riddles-100-10757a5f44eb",
         "points": 100,
         "type": "text",
-        "question": "ما الشيء الذي يضيء ولا يحترق؟",
-        "answer": "المصباح الكهربائي",
+        "question": "ما الشيء الذي إذا نطقت باسمه كسرته؟",
+        "answer": "الصمت",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-riddles",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-riddles-new-2665b703087b",
-        "points": 200,
-        "type": "text",
-        "question": "أطرق الخشب برأسي المعدنية فيدخل فيه المسمار، ما أنا؟",
-        "answer": "المطرقة",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-riddles-new-27d7065fcd1e",
-        "points": 200,
-        "type": "text",
-        "question": "ألتف حول خصرك وأمنع ثوبك من السقوط، ولي مشبك. ما أنا؟",
-        "answer": "الحزام",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-riddles-new-08353c86797d",
+        "id": "fc-riddles-new-e708f8ee102d",
         "points": 300,
         "type": "text",
-        "question": "أُرفع في الميناء كي تسير السفينة وأُلقى لتثبت. ما أنا؟",
-        "answer": "المرساة",
+        "question": "أُقلب على رأسي لأبدأ قياس الوقت بحبات الرمل. ما أنا؟",
+        "answer": "الساعة الرملية",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-riddles-new-6b62c2ac3932",
+        "points": 300,
+        "type": "text",
+        "question": "تسمع رنيني حين يتصل أحدهم، ولي شاشة وأحمله في جيبي. ما أنا؟",
+        "answer": "الهاتف المحمول",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-riddles-new-0e1fb9b4c2eb",
-        "points": 300,
-        "type": "text",
-        "question": "أرافق الرسام بشعري وأشرب الألوان ولا أملك فمًا. ما أنا؟",
-        "answer": "فرشاة الرسم",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-riddles-new-0187d81130c3",
-        "points": 400,
-        "type": "text",
-        "question": "سائق يسير بعكس اتجاه شارع ولم يخالف لأنه لم يكن يقود شيئًا. كيف؟",
-        "answer": "كان يمشي على قدميه",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-riddles-new-0704bc809365",
-        "points": 400,
-        "type": "text",
-        "question": "أمنع الضوء وأتحرك على سكة أمام الزجاج. ما أنا؟",
-        "answer": "الستارة",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-riddles-new-0cf6159fccab",
+        "id": "fc-riddles-new-30b859317caf",
         "points": 500,
         "type": "text",
-        "question": "ما الذي يمتلئ بالهواء ويقل حجمه حين يخرج الهواء من فوهته؟",
-        "answer": "البالون",
+        "question": "أكشف الحرارة بعمود يتمدد أو شاشة أرقام، ولا أشعر بالبرد. ما أنا؟",
+        "answer": "مقياس الحرارة",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -1776,15 +1141,16 @@ const defaultQuestions = [
         "question": "حبلان يحترق كل منهما في ساعة لكن الاحتراق غير منتظم. كيف تقيس 45 دقيقة بإشعالهما؟",
         "answer": "أشعل الأول من طرفيه والثاني من طرف واحد؛ عند انتهاء الأول أشعل الطرف الآخر للثاني",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -1792,77 +1158,45 @@ const defaultQuestions = [
   {
     "id": "fc-sports",
     "category": "رياضة",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-sports-100-079b9ba7a4cc",
+        "id": "fc-sports-100-0c8b3b91ff11",
         "points": 100,
         "type": "text",
-        "question": "ما الرياضة التي تستخدم القفازات وحلبة مربعة؟",
-        "answer": "الملاكمة",
+        "question": "ما الرياضة التي تُلعب على الجليد باستخدام حجر ومكانس؟",
+        "answer": "الكيرلنغ",
         "options": [],
-        "metadata": {
-          "source": "curated-sports",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-sports",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-sports-100-0a1251b92ce4",
+        "id": "fc-sports-100-76f804e95c8f",
         "points": 100,
         "type": "text",
-        "question": "ما الرياضة التي تستخدم مضربًا وكرة صفراء؟",
-        "answer": "التنس",
+        "question": "كم لاعبًا من كل فريق في اتحاد الرجبي داخل الملعب؟",
+        "answer": "15 لاعبًا",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-sports",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-sports-new-2facf27fe993",
-        "points": 200,
-        "type": "text",
-        "question": "ما الرياضة التي يُستخدم فيها القوس والسهام؟",
-        "answer": "الرماية بالقوس",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-sports-new-33399f48499b",
-        "points": 200,
-        "type": "text",
-        "question": "ما الرياضة التي تقفز فيها الخيل فوق حواجز؟",
-        "answer": "قفز الحواجز للفروسية",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -1872,87 +1206,54 @@ const defaultQuestions = [
         "question": "ما الرياضة التي تُلعب بكرة بيضاوية ويُسمى أحد أنواعها يونيون؟",
         "answer": "الرغبي",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-sports-new-296997fc83ad",
+        "id": "fc-sports-new-6fcf9b00fcf3",
         "points": 300,
         "type": "text",
-        "question": "أي قطعة شطرنج تتحرك أفقيًا وعموديًا فقط؟",
-        "answer": "الرخ أو القلعة",
+        "question": "أي قطعة في الشطرنج تتحرك قطريًا فقط؟",
+        "answer": "الفيل",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-sports-new-07808cff2f3d",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الضربة في الغولف التي تدخل الكرة من أول محاولة من نقطة البداية؟",
-        "answer": "هول إن ون",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-sports-new-45bda59608eb",
-        "points": 400,
-        "type": "text",
-        "question": "ما الفن القتالي الأولمبي الذي نشأ في كوريا؟",
-        "answer": "التايكوندو",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-sports-new-2fb59d84c336",
+        "id": "fc-sports-new-cea081ec0f7c",
         "points": 500,
         "type": "text",
-        "question": "ما الرياضة التي ترتبط بكأس رايدر؟",
-        "answer": "الغولف",
+        "question": "ما نوع السلاح في المبارزة الذي تُحتسب فيه الإصابة في كامل الجسم؟",
+        "answer": "سيف المبارزة (الإيبيه)",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -1962,15 +1263,16 @@ const defaultQuestions = [
         "question": "ما الاسم الذي يطلق على وضع في الشطرنج لا يكون فيه الملك مهددًا لكن اللاعب لا يملك حركة قانونية؟",
         "answer": "البات، وينتهي بالتعادل",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -1978,27 +1280,31 @@ const defaultQuestions = [
   {
     "id": "fc-image-flags",
     "category": "أعلام الدول 🏳️",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-flags-ae",
+        "id": "fc-flags-br",
         "points": 100,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "الإمارات",
+        "answer": "البرازيل",
         "options": [],
-        "metadata": {
-          "subject_slug": "ae",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
-          "path": "site:media/flags/ae.svg",
+          "path": "site:media/flags/br.svg",
           "alt": "علم دولة — ما اسمها؟"
+        },
+        "metadata": {
+          "source": "flag-icons",
+          "license": "MIT",
+          "difficulty": "easy",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "bank_version": "0.9.0",
+          "subject_slug": "br",
+          "subject_type": "flag",
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
@@ -2008,195 +1314,117 @@ const defaultQuestions = [
         "question": "لأي دولة هذا العلم؟",
         "answer": "البحرين",
         "options": [],
-        "metadata": {
-          "subject_slug": "bh",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
           "path": "site:media/flags/bh.svg",
           "alt": "علم دولة — ما اسمها؟"
-        }
-      },
-      {
-        "id": "fc-flags-br",
-        "points": 200,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "البرازيل",
-        "options": [],
+        },
         "metadata": {
-          "subject_slug": "br",
-          "subject_type": "flag",
           "source": "flag-icons",
           "license": "MIT",
-          "bank_version": "0.9.0",
+          "difficulty": "easy",
           "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/br.svg",
-          "alt": "علم دولة — ما اسمها؟"
-        }
-      },
-      {
-        "id": "fc-flags-ca",
-        "points": 200,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "كندا",
-        "options": [],
-        "metadata": {
-          "subject_slug": "ca",
+          "bank_version": "0.9.0",
+          "subject_slug": "bh",
           "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/ca.svg",
-          "alt": "علم دولة — ما اسمها؟"
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-flags-ar",
+        "id": "fc-flags-tr",
         "points": 300,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "الأرجنتين",
+        "answer": "تركيا",
         "options": [],
-        "metadata": {
-          "subject_slug": "ar",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
-          "path": "site:media/flags/ar.svg",
+          "path": "site:media/flags/tr.svg",
           "alt": "علم دولة — ما اسمها؟"
+        },
+        "metadata": {
+          "source": "flag-icons",
+          "license": "MIT",
+          "difficulty": "medium",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "bank_version": "0.9.0",
+          "subject_slug": "tr",
+          "subject_type": "flag",
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-flags-au",
+        "id": "fc-flags-gr",
         "points": 300,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "أستراليا",
+        "answer": "اليونان",
         "options": [],
-        "metadata": {
-          "subject_slug": "au",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
-          "path": "site:media/flags/au.svg",
+          "path": "site:media/flags/gr.svg",
           "alt": "علم دولة — ما اسمها؟"
+        },
+        "metadata": {
+          "source": "flag-icons",
+          "license": "MIT",
+          "difficulty": "medium",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "bank_version": "0.9.0",
+          "subject_slug": "gr",
+          "subject_type": "flag",
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-flags-fi",
-        "points": 400,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "فنلندا",
-        "options": [],
-        "metadata": {
-          "subject_slug": "fi",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/fi.svg",
-          "alt": "علم دولة — ما اسمها؟"
-        }
-      },
-      {
-        "id": "fc-flags-id",
-        "points": 400,
-        "type": "text",
-        "question": "لأي دولة هذا العلم؟",
-        "answer": "إندونيسيا",
-        "options": [],
-        "metadata": {
-          "subject_slug": "id",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
-        "media": {
-          "type": "image",
-          "path": "site:media/flags/id.svg",
-          "alt": "علم دولة — ما اسمها؟"
-        }
-      },
-      {
-        "id": "fc-flags-bt",
+        "id": "fc-flags-la",
         "points": 500,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "بوتان",
+        "answer": "لاوس",
         "options": [],
-        "metadata": {
-          "subject_slug": "bt",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
-          "path": "site:media/flags/bt.svg",
+          "path": "site:media/flags/la.svg",
           "alt": "علم دولة — ما اسمها؟"
+        },
+        "metadata": {
+          "source": "flag-icons",
+          "license": "MIT",
+          "difficulty": "hard",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "bank_version": "0.9.0",
+          "subject_slug": "la",
+          "subject_type": "flag",
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-flags-kg",
+        "id": "fc-flags-kz",
         "points": 500,
         "type": "text",
         "question": "لأي دولة هذا العلم؟",
-        "answer": "قيرغيزستان",
+        "answer": "كازاخستان",
         "options": [],
-        "metadata": {
-          "subject_slug": "kg",
-          "subject_type": "flag",
-          "source": "flag-icons",
-          "license": "MIT",
-          "bank_version": "0.9.0",
-          "source_url": "https://github.com/lipis/flag-icons",
-          "asset_version": "7.3.2"
-        },
         "media": {
           "type": "image",
-          "path": "site:media/flags/kg.svg",
+          "path": "site:media/flags/kz.svg",
           "alt": "علم دولة — ما اسمها؟"
+        },
+        "metadata": {
+          "source": "flag-icons",
+          "license": "MIT",
+          "difficulty": "hard",
+          "source_url": "https://github.com/lipis/flag-icons",
+          "bank_version": "0.9.0",
+          "subject_slug": "kz",
+          "subject_type": "flag",
+          "asset_version": "7.3.2",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -2204,195 +1432,133 @@ const defaultQuestions = [
   {
     "id": "fc-symbols",
     "category": "فك الرموز 🧩",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-symbols-100-01",
+        "id": "fc-symbols-100-09",
         "points": 100,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "كرة القدم",
+        "answer": "سيارة الإطفاء",
         "options": [],
-        "metadata": {
-          "symbols": "⚽ 🦶",
-          "hint": "رياضة",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "hint": "مركبة",
+          "symbols": "🚒 🔥",
+          "difficulty": "easy",
+          "puzzle_type": "symbols",
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-symbols-100-02",
+        "id": "fc-symbols-200-07",
         "points": 100,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "كرة السلة",
+        "answer": "بيت عائم",
         "options": [],
-        "metadata": {
-          "symbols": "🏀 🧺",
-          "hint": "رياضة",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-symbols-200-01",
-        "points": 200,
-        "type": "text",
-        "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "نجم البحر",
-        "options": [],
-        "metadata": {
-          "symbols": "⭐ 🌊",
-          "hint": "كائن بحري",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-symbols-200-02",
-        "points": 200,
-        "type": "text",
-        "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "فرس البحر",
-        "options": [],
         "metadata": {
-          "symbols": "🐴 🌊",
-          "hint": "كائن بحري",
+          "hint": "نوع من البيوت",
+          "symbols": "🏠 🚤",
+          "difficulty": "easy",
           "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-symbols-300-01",
+        "id": "fc-symbols-300-10",
         "points": 300,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "الأسد الملك / الملك الأسد",
+        "answer": "علاء الدين والمصباح السحري",
         "options": [],
-        "metadata": {
-          "symbols": "🦁 👑",
-          "hint": "فيلم رسوم متحركة",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "hint": "حكاية مشهورة",
+          "symbols": "🧞 🪔 🧑",
+          "difficulty": "medium",
+          "puzzle_type": "symbols",
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-symbols-300-02",
+        "id": "fc-symbols-300-09",
         "points": 300,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "البحث عن نيمو",
+        "answer": "الجميلة والوحش",
         "options": [],
-        "metadata": {
-          "symbols": "🔎 🐠",
-          "hint": "فيلم رسوم متحركة",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-symbols-400-01",
-        "points": 400,
-        "type": "text",
-        "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "الوقت من ذهب",
-        "options": [],
-        "metadata": {
-          "symbols": "⏰ 🟰 🥇",
-          "hint": "عبارة مشهورة",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-symbols-400-02",
-        "points": 400,
-        "type": "text",
-        "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "العلم نور",
-        "options": [],
         "metadata": {
-          "symbols": "📚 🟰 💡",
-          "hint": "عبارة مشهورة",
+          "hint": "حكاية مشهورة",
+          "symbols": "👸 🌹 👹",
+          "difficulty": "medium",
           "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-symbols-500-01",
+        "id": "fc-symbols-400-05",
         "points": 500,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "عصفور في اليد خير من عشرة على الشجرة",
+        "answer": "إذا كان الكلام من فضة فالسكوت من ذهب",
         "options": [],
-        "metadata": {
-          "symbols": "🐦 ✋ 👍 🐦 🔟 🌳",
-          "hint": "مثل",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "hint": "حكمة",
+          "symbols": "💬 🥈 🤫 🥇",
+          "difficulty": "hard",
+          "puzzle_type": "symbols",
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-symbols-500-02",
+        "id": "fc-symbols-500-08",
         "points": 500,
         "type": "text",
         "question": "فك الرموز: ما الكلمة أو العبارة المقصودة؟",
-        "answer": "يد واحدة لا تصفق",
+        "answer": "الكلاب تنبح والقافلة تسير",
         "options": [],
-        "metadata": {
-          "symbols": "✋ 1️⃣ 🚫 👏",
-          "hint": "مثل",
-          "puzzle_type": "symbols",
-          "bank_version": "0.9.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "hint": "مثل",
+          "symbols": "🐕 🔊 🐪 🚶",
+          "difficulty": "hard",
+          "puzzle_type": "symbols",
+          "bank_version": "0.9.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -2400,82 +1566,12 @@ const defaultQuestions = [
   {
     "id": "fc-bab-al-hara",
     "category": "باب الحارة",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-bab-al-hara-001",
-        "points": 100,
-        "type": "text",
-        "question": "ما اسم الحارة الرئيسية في الأجزاء الأصلية؟",
-        "answer": "حارة الضبع",
-        "options": [
-          "حارة الصالحية",
-          "حارة الضبع",
-          "حارة الماوي",
-          "حارة الشاغور"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 1,
-          "source_level": "1 - سهل جدًا",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-002",
-        "points": 100,
-        "type": "text",
-        "question": "من كان زعيم حارة الضبع في بداية المسلسل؟",
-        "answer": "أبو صالح",
-        "options": [
-          "أبو شهاب",
-          "أبو حاتم",
-          "أبو صالح",
-          "أبو النار"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 2,
-          "source_level": "1 - سهل جدًا",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-021",
-        "points": 200,
-        "type": "text",
-        "question": "من قتل حارس الحارة أبو سمعو؟",
-        "answer": "الإدعشري",
-        "options": [
-          "صطيف",
-          "الإدعشري",
-          "أبو دراع",
-          "أبو النار"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 21,
-          "source_level": "2 - سهل",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
         "id": "fc-bab-al-hara-022",
-        "points": 200,
+        "points": 100,
         "type": "text",
         "question": "ما اسم زوجة الإدعشري؟",
         "answer": "نظمية",
@@ -2485,396 +1581,300 @@ const defaultQuestions = [
           "شهيرة",
           "سعاد"
         ],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "user_workbook",
+          "difficulty": "easy",
           "source_row": 22,
+          "bank_version": "0.10.0",
           "source_level": "2 - سهل",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-bab-al-hara-041",
-        "points": 300,
+        "id": "fc-bab-al-hara-016",
+        "points": 100,
         "type": "text",
-        "question": "في أي جزء توفي أبو إبراهيم؟",
-        "answer": "الثالث",
-        "options": [
-          "الأول",
-          "الثاني",
-          "الثالث",
-          "الخامس"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 41,
-          "source_level": "3 - متوسط",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-042",
-        "points": 300,
-        "type": "text",
-        "question": "من استشهد في بداية الجزء الرابع وكان زوجًا لدلال؟",
+        "question": "من كان الزوج الأول لدلال؟",
         "answer": "إبراهيم",
         "options": [
-          "إبراهيم",
-          "بشير",
-          "خاطر",
-          "سعيد"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 42,
-          "source_level": "3 - متوسط",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-061",
-        "points": 400,
-        "type": "text",
-        "question": "ماذا كان وضع زهرة ابنة أبو خاطر في بداية المسلسل؟",
-        "answer": "فاقدة للسمع والنطق",
-        "options": [
-          "لا ترى",
-          "فاقدة للسمع والنطق",
-          "لا تمشي",
-          "فاقدة للذاكرة"
-        ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 61,
-          "source_level": "4 - صعب",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-062",
-        "points": 400,
-        "type": "text",
-        "question": "بمن تزوجت زهرة؟",
-        "answer": "رياض",
-        "options": [
-          "رياض",
+          "سمعو",
           "معتز",
-          "بشير",
-          "سعيد"
+          "إبراهيم",
+          "ظافر"
         ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 62,
-          "source_level": "4 - صعب",
-          "bank_version": "0.10.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-bab-al-hara-081",
-        "points": 500,
-        "type": "text",
-        "question": "من كان ينشر الأفكار المتطرفة ويؤثر على سمعو في الجزء الثامن؟",
-        "answer": "فكري",
-        "options": [
-          "فكري",
-          "زهدي",
-          "النمس",
-          "أبو غالب"
-        ],
+        },
         "metadata": {
           "source": "user_workbook",
-          "source_row": 81,
-          "source_level": "5 - خبير",
-          "bank_version": "0.10.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "difficulty": "easy",
+          "source_row": 16,
+          "bank_version": "0.10.0",
+          "source_level": "1 - سهل جدًا",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-bab-al-hara-082",
-        "points": 500,
+        "id": "fc-bab-al-hara-051",
+        "points": 300,
         "type": "text",
-        "question": "من طلّق زوجته فوزية بالثلاثة؟",
-        "answer": "أبو بدر",
+        "question": "من استشهد بعد هجوم الفرنسيين عليه في الجزء الخامس؟",
+        "answer": "أبو حسن",
         "options": [
-          "أبو بدر",
-          "أبو ظافر",
+          "أبو حسن",
+          "أبو جودت",
           "أبو قاسم",
-          "أبو مرزوق"
+          "أبو ظافر"
         ],
-        "metadata": {
-          "source": "user_workbook",
-          "source_row": 82,
-          "source_level": "5 - خبير",
-          "bank_version": "0.10.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "user_workbook",
+          "difficulty": "medium",
+          "source_row": 51,
+          "bank_version": "0.10.0",
+          "source_level": "3 - متوسط",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-bab-al-hara-043",
+        "points": 300,
+        "type": "text",
+        "question": "من اعتنى بخاطر أثناء إصابته؟",
+        "answer": "أم جوزيف",
+        "options": [
+          "أم زكي",
+          "أم جوزيف",
+          "فريال",
+          "أم بشير"
+        ],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "user_workbook",
+          "difficulty": "medium",
+          "source_row": 43,
+          "bank_version": "0.10.0",
+          "source_level": "3 - متوسط",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-bab-al-hara-079",
+        "points": 500,
+        "type": "text",
+        "question": "من تزوجت بهية؟",
+        "answer": "ظافر",
+        "options": [
+          "ظافر",
+          "قاعود",
+          "معتز",
+          "سمعو"
+        ],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "user_workbook",
+          "difficulty": "hard",
+          "source_row": 79,
+          "bank_version": "0.10.0",
+          "source_level": "4 - صعب",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-bab-al-hara-064",
+        "points": 500,
+        "type": "text",
+        "question": "ما العمل الذي كان سمعو يرغب في الالتحاق به؟",
+        "answer": "الدرك والشرطة",
+        "options": [
+          "الطب",
+          "الدرك والشرطة",
+          "التجارة",
+          "الخياطة"
+        ],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "user_workbook",
+          "difficulty": "hard",
+          "source_row": 64,
+          "bank_version": "0.10.0",
+          "source_level": "4 - صعب",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
   },
   {
     "id": "fc-makeup",
-    "category": "ميكاب",
+    "category": "ميكاب بالصور 💄",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-makeup-002",
+        "id": "fc-makeup-v3-001",
         "points": 100,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Studio Radiance Serum-Powered Foundation»؟",
+        "question": "ما اسم البراند؟",
         "answer": "MAC",
         "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0",
-          "source_id": 2,
-          "product": "Studio Radiance Serum-Powered Foundation",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 100,
-          "format": "product-name"
-        },
         "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "type": "image",
+          "path": "makeup-v3/001.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
+        "metadata": {
+          "brand": "MAC",
+          "format": "brand-shape-v3",
+          "difficulty": "easy",
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-001-img-1.webp",
+          "source_question_id": "fc-makeup-001-img-1"
         }
       },
       {
-        "id": "fc-makeup-004",
+        "id": "fc-makeup-v3-002",
         "points": 100,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Mineralize Skinfinish Natural»؟",
+        "question": "ما اسم البراند؟",
         "answer": "MAC",
         "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0",
-          "source_id": 4,
-          "product": "Mineralize Skinfinish Natural",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 100,
-          "format": "product-name"
-        },
         "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-makeup-001",
-        "points": 200,
-        "type": "text",
-        "question": "ما ماركة منتج الميكاب «Studio Fix Fluid SPF 15»؟",
-        "answer": "MAC",
-        "options": [],
+          "type": "image",
+          "path": "makeup-v3/002.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
         "metadata": {
-          "source": "user_makeup_archive",
+          "brand": "MAC",
+          "format": "brand-shape-v3",
           "difficulty": "easy",
-          "bank_version": "0.12.0",
-          "source_id": 1,
-          "product": "Studio Fix Fluid SPF 15",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 200,
-          "format": "product-name"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-001-img-2.webp",
+          "source_question_id": "fc-makeup-001-img-2"
         }
       },
       {
-        "id": "fc-makeup-011",
-        "points": 200,
-        "type": "text",
-        "question": "ما ماركة منتج الميكاب «Light Reflecting Foundation»؟",
-        "answer": "NARS",
-        "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "easy",
-          "bank_version": "0.12.0",
-          "source_id": 11,
-          "product": "Light Reflecting Foundation",
-          "source_url": "https://www.narscosmetics.com/",
-          "original_level": 200,
-          "format": "product-name"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-makeup-003",
+        "id": "fc-makeup-v3-201",
         "points": 300,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Pro Longwear Concealer»؟",
-        "answer": "MAC",
+        "question": "ما اسم البراند؟",
+        "answer": "Too Faced",
         "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "medium",
-          "bank_version": "0.12.0",
-          "source_id": 3,
-          "product": "Pro Longwear Concealer",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 300,
-          "format": "product-name"
-        },
         "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "type": "image",
+          "path": "makeup-v3/201.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
+        "metadata": {
+          "brand": "Too Faced",
+          "format": "brand-shape-v3",
+          "difficulty": "medium",
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-101-img-1.webp",
+          "source_question_id": "fc-makeup-101-img-1"
         }
       },
       {
-        "id": "fc-makeup-005",
+        "id": "fc-makeup-v3-202",
         "points": 300,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Glow Play Blush»؟",
-        "answer": "MAC",
+        "question": "ما اسم البراند؟",
+        "answer": "Too Faced",
         "options": [],
+        "media": {
+          "type": "image",
+          "path": "makeup-v3/202.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
         "metadata": {
-          "source": "user_makeup_archive",
+          "brand": "Too Faced",
+          "format": "brand-shape-v3",
           "difficulty": "medium",
-          "bank_version": "0.12.0",
-          "source_id": 5,
-          "product": "Glow Play Blush",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 300,
-          "format": "product-name"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-101-img-2.webp",
+          "source_question_id": "fc-makeup-101-img-2"
         }
       },
       {
-        "id": "fc-makeup-009",
-        "points": 400,
-        "type": "text",
-        "question": "ما ماركة منتج الميكاب «Extended Play Gigablack Lash»؟",
-        "answer": "MAC",
-        "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "hard",
-          "bank_version": "0.12.0",
-          "source_id": 9,
-          "product": "Extended Play Gigablack Lash",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 400,
-          "format": "product-name"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-makeup-014",
-        "points": 400,
-        "type": "text",
-        "question": "ما ماركة منتج الميكاب «Orgasm Blush»؟",
-        "answer": "NARS",
-        "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "hard",
-          "bank_version": "0.12.0",
-          "source_id": 14,
-          "product": "Orgasm Blush",
-          "source_url": "https://www.narscosmetics.com/",
-          "original_level": 400,
-          "format": "product-name"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-makeup-007",
+        "id": "fc-makeup-v3-451",
         "points": 500,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Retro Matte Lipstick»؟",
-        "answer": "MAC",
+        "question": "ما اسم البراند؟",
+        "answer": "Kosas",
         "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0",
-          "source_id": 7,
-          "product": "Retro Matte Lipstick",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 500,
-          "format": "product-name"
-        },
         "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "type": "image",
+          "path": "makeup-v3/451.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
+        "metadata": {
+          "brand": "Kosas",
+          "format": "brand-shape-v3",
+          "difficulty": "hard",
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-251-img-1.webp",
+          "source_question_id": "fc-makeup-251-img-1"
         }
       },
       {
-        "id": "fc-makeup-008",
+        "id": "fc-makeup-v3-452",
         "points": 500,
         "type": "text",
-        "question": "ما ماركة منتج الميكاب «Lip Pencil» و«Studio Fix Fluid SPF 15»؟",
-        "answer": "MAC",
+        "question": "ما اسم البراند؟",
+        "answer": "Kosas",
         "options": [],
-        "metadata": {
-          "source": "user_makeup_archive",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0",
-          "source_id": 8,
-          "product": "Lip Pencil",
-          "source_url": "https://www.maccosmetics.com/products/13847/products/makeup/face/foundation",
-          "original_level": 500,
-          "format": "product-name"
-        },
         "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "type": "image",
+          "path": "makeup-v3/452.png",
+          "alt": "شكل منتج ميكاب مع إخفاء تفاصيل اسم وشعار البراند"
+        },
+        "metadata": {
+          "brand": "Kosas",
+          "format": "brand-shape-v3",
+          "difficulty": "hard",
+          "bank_version": "0.13.0-makeup-rebuild",
+          "brand_obscured": true,
+          "obscuring_method": "pixelate_64px_then_upscale_1000px",
+          "difficulty_review": "three-tier-2026-09-25",
+          "source_media_path": "makeup-obscured/fc-makeup-252-img-1.webp",
+          "source_question_id": "fc-makeup-252-img-1"
         }
       }
     ]
@@ -2882,225 +1882,145 @@ const defaultQuestions = [
   {
     "id": "fc-disney",
     "category": "ديزني",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-disney-001",
+        "id": "fc-disney-072",
         "points": 100,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم لعبة راعي البقر التي يقود بها وودي ألعاب آندي؟",
-        "answer": "وودي (Woody)",
+        "question": "في فيلم «Finding Nemo» (2003): ما المشكلة التي تعاني منها دوري في ذاكرتها؟",
+        "answer": "فقدان الذاكرة قصيرة المدى",
         "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0",
-          "source_id": "D100-001",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 100
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "film": "Finding Nemo",
+          "year": 2003,
+          "source": "user_disney_workbook",
+          "source_id": "D200-022",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "original_level": 200,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-disney-002",
+        "id": "fc-disney-050",
         "points": 100,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم لعبة رائد الفضاء التي تصل إلى غرفة آندي؟",
-        "answer": "باز يطير (Buzz Lightyear)",
+        "question": "في فيلم «Monsters University» (2013): ما المهنة التي يحلم مايك وازاوسكي بأن يتأهل لها منذ طفولته؟",
+        "answer": "أن يصبح مخيفًا محترفًا / Scarer",
         "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0",
-          "source_id": "D100-002",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 100
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-disney-051",
-        "points": 200,
-        "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم جار آندي الذي يستمتع بتفكيك وتعذيب الألعاب؟",
-        "answer": "سيد فيليبس (Sid Phillips)",
-        "options": [],
+        },
         "metadata": {
+          "film": "Monsters University",
+          "year": 2013,
           "source": "user_disney_workbook",
+          "source_id": "D100-050",
           "difficulty": "easy",
           "bank_version": "0.12.0",
-          "source_id": "D200-001",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 200
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "original_level": 100,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-disney-052",
-        "points": 200,
-        "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما العبارة الشهيرة التي يرددها باز عند الاستعداد للطيران؟",
-        "answer": "إلى اللانهاية وما بعدها",
-        "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "easy",
-          "bank_version": "0.12.0",
-          "source_id": "D200-002",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 200
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-disney-101",
+        "id": "fc-disney-147",
         "points": 300,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): إلى أي مطعم تذهب عائلة آندي ويصل إليه وودي وباز؟",
-        "answer": "بيتزا بلانيت (Pizza Planet)",
+        "question": "في فيلم «Frozen» (2013): ما اسم حيوان الرنة الذي يرافق كريستوف؟",
+        "answer": "سفين (Sven)",
         "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "medium",
-          "bank_version": "0.12.0",
-          "source_id": "D300-001",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 300
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "film": "Frozen",
+          "year": 2013,
+          "source": "user_disney_workbook",
+          "source_id": "D300-047",
+          "difficulty": "medium",
+          "bank_version": "0.12.0",
+          "original_level": 300,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-disney-102",
+        "id": "fc-disney-124",
         "points": 300,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما الذي يجعل باز يدرك أنه لعبة وليس حارس فضاء حقيقيًا؟",
-        "answer": "مشاهدة إعلان تلفزيوني للعبة باز يطير",
+        "question": "في فيلم «Pirates of the Caribbean: The Curse of the Black Pearl» (2003): ما نوع الكنز الذي تسبب في لعنة طاقم باربوسا؟",
+        "answer": "ذهب أزتيكي مسروق",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
+          "film": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "year": 2003,
           "source": "user_disney_workbook",
+          "source_id": "D300-024",
           "difficulty": "medium",
           "bank_version": "0.12.0",
-          "source_id": "D300-002",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 300
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "original_level": 300,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-disney-151",
-        "points": 400,
-        "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): كيف ينجح وودي في إخافة سيد ومنعه من إيذاء الألعاب؟",
-        "answer": "يجعل ألعاب سيد تتحرك أمامه وتواجهه",
-        "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "hard",
-          "bank_version": "0.12.0",
-          "source_id": "D400-001",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 400
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-disney-152",
-        "points": 400,
-        "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم الراعية الخزفية التي تربطها علاقة ودية بوودي؟",
-        "answer": "بو بيب (Bo Peep)",
-        "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "hard",
-          "bank_version": "0.12.0",
-          "source_id": "D400-002",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 400
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-disney-201",
+        "id": "fc-disney-210",
         "points": 500,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم قائد جنود الألعاب الخضراء في غرفة آندي؟",
-        "answer": "الرقيب سارج (Sarge)",
+        "question": "في فيلم «A Bug's Life» (1998): ما اسم شقيق هوبر الأصغر والأقل رهبة؟",
+        "answer": "مولت (Molt)",
         "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0",
-          "source_id": "D500-001",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 500
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "film": "A Bug's Life",
+          "year": 1998,
+          "source": "user_disney_workbook",
+          "source_id": "D500-010",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "original_level": 500,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-disney-202",
+        "id": "fc-disney-209",
         "points": 500,
         "type": "text",
-        "question": "في فيلم «حكاية لعبة» (1995): ما اسم كلب سيد الذي يطارد وودي وباز؟",
-        "answer": "سكود (Scud)",
+        "question": "في فيلم «Mulan» (1998): ما الحارس الذي يحاول موشو إيقاظه ثم يتسبب في تحطيم تمثاله؟",
+        "answer": "التنين الحجري العظيم (Great Stone Dragon)",
         "options": [],
-        "metadata": {
-          "source": "user_disney_workbook",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0",
-          "source_id": "D500-002",
-          "film": "حكاية لعبة",
-          "year": 1995,
-          "original_level": 500
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "film": "Mulan",
+          "year": 1998,
+          "source": "user_disney_workbook",
+          "source_id": "D500-009",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "original_level": 500,
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -3108,195 +2028,127 @@ const defaultQuestions = [
   {
     "id": "fc-math",
     "category": "رياضيات",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-general-100-05aa11786310",
+        "id": "fc-riddles-200-ac0e844e4eca",
         "points": 100,
         "type": "text",
-        "question": "كم ضلعًا للمثلث؟",
-        "answer": "3 أضلاع",
+        "question": "معك 36 قطعة حلوى وأعطيت صديقك 5. كم بقي معك؟",
+        "answer": "31",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-100-133dbe7eecef",
-        "points": 100,
-        "type": "text",
-        "question": "كم يساوي 13 + 8؟",
-        "answer": "21",
-        "options": [],
-        "metadata": {
-          "source": "generated-math",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+        "metadata": {
+          "source": "generated-logic",
+          "difficulty": "easy",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-riddles"
         }
       },
       {
         "id": "fc-general-200-07395f420d26",
-        "points": 200,
+        "points": 100,
         "type": "text",
         "question": "كم درجة في الزاوية القائمة؟",
         "answer": "90 درجة",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated",
           "difficulty": "easy",
           "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
           "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
         }
       },
       {
-        "id": "fc-general-200-11300529544f",
-        "points": 200,
-        "type": "text",
-        "question": "كم يساوي 8 × 11؟",
-        "answer": "88",
-        "options": [],
-        "metadata": {
-          "source": "generated-math",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-300-10cb4467d464",
+        "id": "fc-general-300-ab8c0b783ffb",
         "points": 300,
         "type": "text",
-        "question": "كم يساوي 50% من 72؟",
-        "answer": "36.0000000000000000",
+        "question": "كم يساوي 75% من 76؟",
+        "answer": "57.0000000000000000",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "generated-math",
           "difficulty": "medium",
           "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
           "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
         }
       },
       {
-        "id": "fc-general-300-162dd2a1411a",
+        "id": "fc-sports-300-0a59f16392d6",
         "points": 300,
         "type": "text",
-        "question": "كم يساوي 10% من 80؟",
-        "answer": "8.0000000000000000",
+        "question": "في دوري كرة القدم: عدد الانتصارات 41 وعدد التعادلات 0. بنظام 3 نقاط للفوز ونقطة للتعادل، كم نقطة جُمعت؟",
+        "answer": "123",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
-          "source": "generated-math",
+          "source": "generated-sports",
           "difficulty": "medium",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-sports"
         }
       },
       {
-        "id": "fc-general-400-0bb9e270cf74",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم المقياس اللوغاريتمي الشائع لقياس الحموضة والقلوية؟",
-        "answer": "مقياس pH",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-400-13dd2c0d2364",
-        "points": 400,
-        "type": "text",
-        "question": "إذا كان 4س + 8 = 104، فما قيمة س؟",
-        "answer": "24",
-        "options": [],
-        "metadata": {
-          "source": "generated-math",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-500-0749706ba1a7",
+        "id": "fc-riddles-500-e05bf688280d",
         "points": 500,
         "type": "text",
-        "question": "ما مجموع الأعداد الصحيحة من 1 إلى 30؟",
-        "answer": "465",
+        "question": "فكرتُ في عدد، ضربته في 5 ثم أضفت 6 فصار 266. ما العدد الذي فكرت فيه؟",
+        "answer": "52",
         "options": [],
-        "metadata": {
-          "source": "generated-math",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "generated-logic",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-riddles"
         }
       },
       {
-        "id": "fc-general-500-0b48b6aac9c5",
+        "id": "fc-sports-400-d36e41bb62ff",
         "points": 500,
         "type": "text",
-        "question": "ما مجموع الأعداد الصحيحة من 1 إلى 27؟",
-        "answer": "378",
+        "question": "عدّاء أكمل 35 لفات على مضمار طوله 400 متر. ما المسافة الكلية التي قطعها بالمتر؟",
+        "answer": "14000",
         "options": [],
-        "metadata": {
-          "source": "generated-math",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "generated-sports",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-sports"
         }
       }
     ]
@@ -3304,391 +2156,127 @@ const defaultQuestions = [
   {
     "id": "fc-science",
     "category": "علوم وطبيعة",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-general-100-0b5559234a58",
+        "id": "fc-general-200-f395fd658c4e",
         "points": 100,
         "type": "text",
-        "question": "ما العضو الذي نستخدمه للشم؟",
-        "answer": "الأنف",
+        "question": "ما اسم الطبقة الصلبة الخارجية للأرض؟",
+        "answer": "القشرة الأرضية",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-100-47e5210456de",
-        "points": 100,
-        "type": "text",
-        "question": "ما المعدن السائل الشهير في درجة حرارة الغرفة؟",
-        "answer": "الزئبق",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-200-00cfee011750",
-        "points": 200,
-        "type": "text",
-        "question": "ما العضو المسؤول أساسًا عن التنفس؟",
-        "answer": "الرئتان",
-        "options": [],
         "metadata": {
           "source": "curated",
           "difficulty": "easy",
           "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
           "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
         }
       },
       {
-        "id": "fc-general-200-18f14dcd69cf",
-        "points": 200,
-        "type": "text",
-        "question": "ما اسم العملية التي تصنع بها النباتات غذاءها باستخدام الضوء؟",
-        "answer": "البناء الضوئي",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-300-06de09cdccd5",
-        "points": 300,
-        "type": "text",
-        "question": "ما اسم العلم الذي يدرس الزلازل؟",
-        "answer": "علم الزلازل (السيزمولوجيا)",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-300-093a116e9845",
-        "points": 300,
-        "type": "text",
-        "question": "ما اسم الجهاز الذي يحول الطاقة الكهربائية إلى حركة ميكانيكية؟",
-        "answer": "المحرك الكهربائي",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-400-0085a814ccfe",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الحمض الموجود في المعدة ويساعد على الهضم؟",
-        "answer": "حمض الهيدروكلوريك",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-400-0606295ce080",
-        "points": 400,
-        "type": "text",
-        "question": "ما اسم الجسيم ذو الشحنة السالبة في الذرة؟",
-        "answer": "الإلكترون",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-500-0b169c194289",
-        "points": 500,
-        "type": "text",
-        "question": "ما اسم البروتين الذي ينقل الأكسجين في خلايا الدم الحمراء؟",
-        "answer": "الهيموغلوبين",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-general-500-0b7ff9aaea8c",
-        "points": 500,
-        "type": "text",
-        "question": "ما اسم العملية التي تتحول فيها نواة ثقيلة إلى نواتين أخف؟",
-        "answer": "الانشطار النووي",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-general"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      }
-    ]
-  },
-  {
-    "id": "fc-quran",
-    "category": "القرآن الكريم",
-    "questions": [
-      {
-        "id": "fc-islamic-100-093c1464f3ad",
+        "id": "fc-general-100-a39e46e53c5e",
         "points": 100,
         "type": "text",
-        "question": "كم عدد آيات سورة الزلزلة؟",
-        "answer": "8",
+        "question": "ما الحاسة التي نستخدمها لسماع الأصوات؟",
+        "answer": "السمع",
         "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-100-0b1398e842e1",
-        "points": 100,
-        "type": "text",
-        "question": "ما ترتيب سورة الفاتحة في المصحف؟",
-        "answer": "1",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-0242ed6f3872",
-        "points": 200,
-        "type": "text",
-        "question": "كم عدد آيات سورة النصر؟",
-        "answer": "3",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-03be0265c914",
-        "points": 200,
-        "type": "text",
-        "question": "ما ترتيب سورة الأعلى في المصحف؟",
-        "answer": "87",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-300-06538ff02e39",
-        "points": 300,
-        "type": "text",
-        "question": "ما ترتيب سورة المطففين في المصحف؟",
-        "answer": "83",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-300-099aa7e095a9",
-        "points": 300,
-        "type": "text",
-        "question": "ما ترتيب سورة القصص في المصحف؟",
-        "answer": "28",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "medium",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-03e667fcea11",
-        "points": 400,
-        "type": "text",
-        "question": "كم عدد آيات سورة الإنفطار؟",
-        "answer": "19",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-0a8695a9ec76",
-        "points": 400,
-        "type": "text",
-        "question": "كم عدد آيات سورة الطور؟",
-        "answer": "49",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-00532df29d12",
-        "points": 500,
-        "type": "text",
-        "question": "كم عدد آيات سورة المدثر؟",
-        "answer": "56",
-        "options": [],
-        "metadata": {
-          "source": "quran-metadata",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-0480bfae9a61",
-        "points": 500,
-        "type": "text",
-        "question": "ما السورة التي وردت فيها البسملة مرتين؟",
-        "answer": "سورة النمل",
-        "options": [],
         "metadata": {
           "source": "curated",
-          "difficulty": "very_hard",
+          "difficulty": "easy",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-general"
+        }
+      },
+      {
+        "id": "fc-general-300-c5af7e140762",
+        "points": 300,
+        "type": "text",
+        "question": "أي كوكب أقرب إلى الشمس؟",
+        "answer": "عطارد",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-general"
+        }
+      },
+      {
+        "id": "fc-general-300-9472ffe6d83f",
+        "points": 300,
+        "type": "text",
+        "question": "ما اسم عملية انقسام الخلية الجسدية إلى خليتين متماثلتين؟",
+        "answer": "الانقسام المتساوي",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "curated",
+          "difficulty": "medium",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-general"
+        }
+      },
+      {
+        "id": "fc-general-500-fd8719963275",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم القانون الذي ينص على أن ضغط وحجم الغاز يتناسبان عكسيًا عند ثبوت الحرارة؟",
+        "answer": "قانون بويل",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-general"
+        }
+      },
+      {
+        "id": "fc-general-500-69d78a87f899",
+        "points": 500,
+        "type": "text",
+        "question": "ما اسم الجهاز الذي يفصل النظائر أو الجسيمات وفق نسبة الكتلة إلى الشحنة؟",
+        "answer": "مطياف الكتلة",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "curated",
+          "difficulty": "hard",
+          "bank_version": "v0.8.1-beta",
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-general"
         }
       }
     ]
@@ -3696,380 +2284,243 @@ const defaultQuestions = [
   {
     "id": "fc-seerah",
     "category": "السيرة النبوية",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-seerah-new-320ff14d73c3",
+        "id": "fc-seerah-new-54dd0523aa2a",
         "points": 100,
         "type": "text",
-        "question": "من صاحب النبي ﷺ في رحلة الهجرة؟",
-        "answer": "أبو بكر الصديق رضي الله عنه",
+        "question": "إلى أي قبيلة ينتمي النبي محمد ﷺ؟",
+        "answer": "قريش",
         "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-seerah-new-40251c3d521a",
+        "id": "fc-seerah-new-76589e8c85fc",
         "points": 100,
         "type": "text",
-        "question": "في أي مدينة وُلد النبي محمد ﷺ؟",
-        "answer": "مكة المكرمة",
+        "question": "من مؤذن النبي ﷺ المشهور الذي عُذّب في مكة؟",
+        "answer": "بلال بن رباح رضي الله عنه",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-13be909407ac",
-        "points": 200,
-        "type": "text",
-        "question": "من أول الخلفاء الراشدين؟",
-        "answer": "أبو بكر الصديق رضي الله عنه",
-        "options": [],
-        "metadata": {
-          "source": "curated",
           "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-islamic-200-3d223cf5f648",
-        "points": 200,
-        "type": "text",
-        "question": "من أول زوجات النبي محمد ﷺ؟",
-        "answer": "خديجة بنت خويلد رضي الله عنها",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-seerah-new-198180ca36d3",
+        "id": "fc-seerah-new-7470139095f1",
         "points": 300,
         "type": "text",
-        "question": "في أي سنة هجرية كان صلح الحديبية؟",
-        "answer": "السنة السادسة للهجرة",
+        "question": "في أي سنة هجرية كان فتح مكة؟",
+        "answer": "السنة الثامنة للهجرة",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-seerah-new-945e526fa73b",
+        "points": 300,
+        "type": "text",
+        "question": "ما كنية النبي محمد ﷺ؟",
+        "answer": "أبو القاسم",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-seerah-new-23faf7fbf724",
-        "points": 300,
-        "type": "text",
-        "question": "ما الاسم الآخر لغزوة الخندق؟",
-        "answer": "غزوة الأحزاب",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-islamic-400-a3d920a5f645",
-        "points": 400,
-        "type": "text",
-        "question": "ما أول مسجد بناه النبي ﷺ بعد الهجرة؟",
-        "answer": "مسجد قباء",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-bf737c9f29fd",
-        "points": 400,
-        "type": "text",
-        "question": "إلى أي مدينة هاجر النبي محمد ﷺ من مكة؟",
-        "answer": "المدينة المنورة",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-8dc515d00aff",
+        "id": "fc-seerah-new-fa2c88748ec4",
         "points": 500,
         "type": "text",
-        "question": "ما الغزوة التي وقعت في رمضان من السنة الثانية للهجرة؟",
-        "answer": "غزوة بدر",
+        "question": "في أي سنة هجرية كانت غزوة خيبر؟",
+        "answer": "السنة السابعة للهجرة",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-seerah-new-4f8eb8ca3bb9",
-        "points": 500,
-        "type": "text",
-        "question": "من تولى القيادة في مؤتة بعد استشهاد القادة الثلاثة؟",
-        "answer": "خالد بن الوليد رضي الله عنه",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
-          "difficulty": "very_hard",
-          "bank_version": "0.12.0"
-        },
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-seerah-new-ac05ed0423f8",
+        "points": 500,
+        "type": "text",
+        "question": "ما آخر غزوة خرج فيها النبي ﷺ؟",
+        "answer": "غزوة تبوك",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
   },
   {
     "id": "fc-quran-stories",
-    "category": "قصص القرآن",
+    "category": "قصص من القرآن",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-quran-stories-new-16d0c48d3b90",
+        "id": "fc-quran-stories-new-98c4e88ee33c",
         "points": 100,
         "type": "text",
-        "question": "من أم عيسى عليه السلام المذكورة في القرآن؟",
-        "answer": "مريم عليها السلام",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-quran-stories-new-1dd345c0b6b6",
-        "points": 100,
-        "type": "text",
-        "question": "ما الطائر الذي نقل لسليمان خبر سبأ؟",
-        "answer": "الهدهد",
-        "options": [],
-        "metadata": {
-          "source": "curated-topic-expansion",
-          "difficulty": "very_easy",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-200-c54fc1236707",
-        "points": 200,
-        "type": "text",
-        "question": "من النبي الذي صنع السفينة بأمر الله؟",
+        "question": "من النبي الذي صنع الفلك استعدادًا للطوفان؟",
         "answer": "نوح عليه السلام",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-quran-stories-new-1b167f8628d7",
-        "points": 200,
-        "type": "text",
-        "question": "من النبي الذي ابتُلي بالضر فدعا ربه فشفاه؟",
-        "answer": "أيوب عليه السلام",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "easy",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-db96c19e4578",
+        "points": 100,
+        "type": "text",
+        "question": "ما اسم والد سليمان عليه السلام؟",
+        "answer": "داود عليه السلام",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "easy",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-quran-stories-new-1b3423c54997",
+        "id": "fc-quran-stories-new-ec963c7e29f1",
         "points": 300,
         "type": "text",
-        "question": "من المرأة التي قالت عن موسى الرضيع: قرة عين لي ولك؟",
-        "answer": "امرأة فرعون",
+        "question": "ما عدد البقرات السمان في رؤيا ملك مصر؟",
+        "answer": "سبع بقرات",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-quran-stories-new-f31487241599",
+        "points": 300,
+        "type": "text",
+        "question": "ما الذي رآه يوسف في رؤياه يسجد له مع الشمس والقمر؟",
+        "answer": "أحد عشر كوكبًا",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-quran-stories-new-317e3ef4a46d",
-        "points": 300,
-        "type": "text",
-        "question": "ما الشيء الذي جاء به إخوة يوسف وعليه دم كذب؟",
-        "answer": "قميص يوسف",
-        "options": [],
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "medium",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-400-818358023580",
-        "points": 400,
-        "type": "text",
-        "question": "من النبي الذي ابتلعه الحوت؟",
-        "answer": "يونس عليه السلام",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
         "id": "fc-quran-stories-new-0dbe347c822e",
-        "points": 400,
+        "points": 500,
         "type": "text",
         "question": "من القومان اللذان بُني الردم لمنع إفسادهما؟",
         "answer": "يأجوج ومأجوج",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "curated-topic-expansion",
           "difficulty": "hard",
-          "bank_version": "0.12.0"
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-islamic-500-282cea11e730",
+        "id": "fc-quran-stories-new-0f5aa969d117",
         "points": 500,
         "type": "text",
-        "question": "من النبي الذي أُرسل إلى قوم عاد؟",
-        "answer": "هود عليه السلام",
+        "question": "ما اللقب القرآني ليونس عليه السلام الذي يعني صاحب الحوت؟",
+        "answer": "ذو النون",
         "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-islamic-500-b4d233c072a1",
-        "points": 500,
-        "type": "text",
-        "question": "من النبيان اللذان رفعا قواعد الكعبة؟",
-        "answer": "إبراهيم وإسماعيل عليهما السلام",
-        "options": [],
-        "metadata": {
-          "source": "curated",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-islamic"
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+        "metadata": {
+          "source": "curated-topic-expansion",
+          "difficulty": "hard",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]
@@ -4077,205 +2528,266 @@ const defaultQuestions = [
   {
     "id": "fc-currencies",
     "category": "عملات العالم",
+    "imagePath": null,
+    "imageAlt": "",
     "questions": [
       {
-        "id": "fc-geography-100-1399d10f7558",
+        "id": "fc-geography-100-59dd13e1489d",
         "points": 100,
         "type": "text",
-        "question": "ما رمز العملة المستخدم في المملكة العربية السعودية وفق معيار ISO؟",
-        "answer": "SAR",
+        "question": "ما رمز العملة المستخدم في تركيا وفق معيار ISO؟",
+        "answer": "TRY",
         "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 100
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-100-2ad65add10eb",
-        "points": 100,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في الجزائر وفق معيار ISO؟",
-        "answer": "DZD",
-        "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_easy",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 100
         },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-100-2d1e1b2793b6",
-        "points": 200,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في عُمان وفق معيار ISO؟",
-        "answer": "OMR",
-        "options": [],
         "metadata": {
           "source": "country-dataset",
           "difficulty": "easy",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 100
-        },
+          "original_level": 100,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
+        }
+      },
+      {
+        "id": "fc-geography-100-e4f179a001a9",
+        "points": 100,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في قطر وفق معيار ISO؟",
+        "answer": "QAR",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-100-4467248ff7af",
-        "points": 200,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في ليبيا وفق معيار ISO؟",
-        "answer": "LYD",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "easy",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 100
-        },
+          "original_level": 100,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
+        }
+      },
+      {
+        "id": "fc-geography-200-d9e15cb89fc5",
+        "points": 300,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في المكسيك وفق معيار ISO؟",
+        "answer": "MXN",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-200-54aef1a10d94",
-        "points": 300,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في الولايات المتحدة وفق معيار ISO؟",
-        "answer": "USD",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "medium",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 200
-        },
+          "original_level": 200,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
+        }
+      },
+      {
+        "id": "fc-geography-200-f718a976dbee",
+        "points": 300,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في الصين وفق معيار ISO؟",
+        "answer": "CNY",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-200-7f79f8101c7d",
-        "points": 300,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في باكستان وفق معيار ISO؟",
-        "answer": "PKR",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "medium",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 200
-        },
-        "media": {
-          "type": "none",
-          "path": null,
-          "alt": ""
+          "original_level": 200,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
         }
       },
       {
         "id": "fc-geography-200-0c7ab14018b1",
-        "points": 400,
+        "points": 500,
         "type": "text",
         "question": "ما رمز العملة المستخدم في كوريا الجنوبية وفق معيار ISO؟",
         "answer": "KRW",
         "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "hard",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 200
-        },
+          "original_level": 200,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
+        }
+      },
+      {
+        "id": "fc-geography-300-92d02c596f9b",
+        "points": 500,
+        "type": "text",
+        "question": "ما رمز العملة المستخدم في البرتغال وفق معيار ISO؟",
+        "answer": "EUR",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
-        }
-      },
-      {
-        "id": "fc-geography-200-b4700e36f4a6",
-        "points": 400,
-        "type": "text",
-        "question": "ما رمز العملة المستخدم في ماليزيا وفق معيار ISO؟",
-        "answer": "MYR",
-        "options": [],
+        },
         "metadata": {
           "source": "country-dataset",
           "difficulty": "hard",
           "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 200
-        },
+          "original_level": 300,
+          "difficulty_review": "three-tier-2026-09-25",
+          "previous_category_id": "fc-geography"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fc-prison-break",
+    "category": "Prison Break",
+    "imagePath": "categories/fc-prison-break.jpg",
+    "imageAlt": "Prison Break promotional poster",
+    "questions": [
+      {
+        "id": "fc-prison-break-200-060",
+        "points": 100,
+        "type": "text",
+        "question": "كيف يتمكن بعض السجناء الباقين من مغادرة سونا قبل بداية الموسم الرابع؟",
+        "answer": "حريق وتمرد داخل سونا",
+        "options": [],
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "topic": "events",
+          "season": 3,
+          "source": "curated_prison_break_canon",
+          "difficulty": "easy",
+          "bank_version": "0.12.1-content",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-geography-300-2273d6375fa9",
-        "points": 500,
+        "id": "fc-prison-break-200-001",
+        "points": 100,
         "type": "text",
-        "question": "ما رمز العملة المستخدم في سويسرا وفق معيار ISO؟",
-        "answer": "CHF",
+        "question": "ما المرض الذي يدعي مايكل أنه مصاب به ليزور العيادة يوميًا؟",
+        "answer": "السكري من النوع الأول",
         "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 300
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "topic": "escape",
+          "season": 1,
+          "source": "curated_prison_break_canon",
+          "difficulty": "easy",
+          "bank_version": "0.12.1-content",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       },
       {
-        "id": "fc-geography-300-415684489f2b",
-        "points": 500,
+        "id": "fc-prison-break-300-030",
+        "points": 300,
         "type": "text",
-        "question": "ما رمز العملة المستخدم في النرويج وفق معيار ISO؟",
-        "answer": "NOK",
+        "question": "بأي اسم مزيف يدخل T-Bag عالم المبيعات في الموسم الرابع؟",
+        "answer": "كول فايفر",
         "options": [],
-        "metadata": {
-          "source": "country-dataset",
-          "difficulty": "very_hard",
-          "bank_version": "v0.8.1-beta",
-          "previous_category_id": "fc-geography",
-          "original_level": 300
-        },
         "media": {
           "type": "none",
           "path": null,
           "alt": ""
+        },
+        "metadata": {
+          "topic": "aliases",
+          "season": "4",
+          "source": "curated_prison_break_canon",
+          "difficulty": "medium",
+          "bank_version": "0.12.1-content",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-prison-break-300-040",
+        "points": 300,
+        "type": "text",
+        "question": "من يعود لدور مخطط الهروب عندما تدخل سارة السجن؟",
+        "answer": "مايكل سكوفيلد",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "topic": "events",
+          "season": "Final Break",
+          "source": "curated_prison_break_canon",
+          "difficulty": "medium",
+          "bank_version": "0.12.1-content",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-prison-break-400-004",
+        "points": 500,
+        "type": "text",
+        "question": "ما الكلمات الثلاث المرتبطة باختبار مايكل لمسار سيارات الشرطة خارج فوكس ريفر؟",
+        "answer": "English وFitz وPercy",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "topic": "escape",
+          "season": "1",
+          "source": "curated_prison_break_canon",
+          "difficulty": "hard",
+          "bank_version": "0.12.1-content",
+          "difficulty_review": "three-tier-2026-09-25"
+        }
+      },
+      {
+        "id": "fc-prison-break-500-008",
+        "points": 500,
+        "type": "text",
+        "question": "ما عنوان الحلقة رقم 8 من الموسم 1؟",
+        "answer": "The Old Head",
+        "options": [],
+        "media": {
+          "type": "none",
+          "path": null,
+          "alt": ""
+        },
+        "metadata": {
+          "source": "wikipedia-episode-list",
+          "difficulty": "hard",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_Prison_Break_episodes",
+          "bank_version": "0.12.0",
+          "difficulty_review": "three-tier-2026-09-25"
         }
       }
     ]

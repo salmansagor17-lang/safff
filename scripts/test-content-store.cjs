@@ -26,7 +26,7 @@ function fixture(size, cap = 1000, failAt = Infinity) {
           : { data: rows.slice(from, Math.min(to + 1, from + cap)), count: size });
       },
       then(resolve, reject) {
-        return Promise.resolve({ data: [{ id: "images", title: "Images" }] }).then(resolve, reject);
+        return Promise.resolve({ data: [{ id: "images", title: "Images", image_path: "categories/test.jpg", image_alt: "Cover" }] }).then(resolve, reject);
       }
     };
     return query;
@@ -41,6 +41,8 @@ for (const size of [0, 500, 2000, 2001]) {
     const { load, orders } = fixture(size);
     const result = await load();
     const questions = result.categories[0].questions;
+    assert.equal(result.categories[0].imagePath, "categories/test.jpg");
+    assert.equal(result.categories[0].imageAlt, "Cover");
     assert.equal(questions.length, size);
     assert.equal(new Set(questions.map(q => q.id)).size, size);
     for (let i = 0; i < orders.length; i += 2) assert.deepEqual(orders.slice(i, i + 2), ["sort_order", "id"]);

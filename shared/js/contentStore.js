@@ -32,7 +32,7 @@
 
     const [gameResult, categoriesResult, questions] = await Promise.all([
       client.from("games").select("id,title,description,icon,status,settings").eq("id", gameId).maybeSingle(),
-      client.from("game_categories").select("id,game_id,title,sort_order,active").eq("game_id", gameId).eq("active", true).order("sort_order", { ascending: true }),
+      client.from("game_categories").select("id,game_id,title,sort_order,active,image_path,image_alt").eq("game_id", gameId).eq("active", true).order("sort_order", { ascending: true }),
       loadQuestions(client, gameId)
     ]);
 
@@ -57,6 +57,8 @@
     const categories = (categoriesResult.data || []).map(category => ({
       id: category.id,
       category: category.title,
+      imagePath: category.image_path || null,
+      imageAlt: category.image_alt || "",
       questions: questionsByCategory.get(category.id) || []
     }));
 
