@@ -1854,21 +1854,24 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-obscured/fc-makeup-251-img-1.webp",
-          "alt": "صورة واضحة لمنتج ميكاب لمعرفة اسم البراند"
+          "path": "makeup-v4/451.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "Kosas",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "hard",
-          "bank_version": "0.13.0-makeup-rebuild",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
           "image_quality": "original_clear",
           "brand_obscured": false,
-          "obscuring_method": "none",
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-251-img-1.webp",
+          "clear_v4_attempted": true,
           "source_question_id": "fc-makeup-251-img-1",
-          "original_media_path": "makeup/fc-makeup-251/01-c3f6efa4.jpg"
+          "original_media_path": "makeup/fc-makeup-251/01-c3f6efa4.jpg",
+          "processed_source_path": "makeup/fc-makeup-251/01-c3f6efa4.jpg"
         }
       },
       {
@@ -1880,21 +1883,24 @@ const defaultQuestions = [
         "options": [],
         "media": {
           "type": "image",
-          "path": "makeup-obscured/fc-makeup-252-img-1.webp",
-          "alt": "صورة واضحة لمنتج ميكاب لمعرفة اسم البراند"
+          "path": "makeup-v4/452.png",
+          "alt": "صورة واضحة لمنتج ميكاب مع إخفاء مناطق اسم وشعار البراند"
         },
         "metadata": {
           "brand": "Kosas",
-          "format": "brand-shape-v3",
+          "format": "brand-shape-v4",
           "difficulty": "hard",
-          "bank_version": "0.13.0-makeup-rebuild",
+          "bank_version": "0.13.1-makeup-clear",
+          "image_clarity": "original_preserved_except_logo_zones",
           "image_quality": "original_clear",
           "brand_obscured": false,
-          "obscuring_method": "none",
+          "obscuring_method": "localized_pixelation_three_bands",
           "difficulty_review": "three-tier-2026-09-25",
           "source_media_path": "makeup-obscured/fc-makeup-252-img-1.webp",
+          "clear_v4_attempted": true,
           "source_question_id": "fc-makeup-252-img-1",
-          "original_media_path": "makeup/fc-makeup-252/01-02dd8d45.jpg"
+          "original_media_path": "makeup/fc-makeup-252/01-02dd8d45.jpg",
+          "processed_source_path": "makeup/fc-makeup-252/01-02dd8d45.jpg"
         }
       }
     ]
